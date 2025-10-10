@@ -11,7 +11,7 @@
 - [Nom] - [Rôle principal]
 - [Nom] - [Rôle principal] (si équipe de 4)
 
-*Date de début:* [Date]  
+*Date de début: 10-09-2025  
 *Date de livraison finale:* [Date]  
 *Version du document:* 1.0
 
