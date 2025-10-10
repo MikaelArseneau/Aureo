@@ -6,9 +6,9 @@
 *Nom de l'équipe:* [Nom de votre équipe]  
 *Membres:*
 
-- [Nom] - Chef de projet / [Rôle principal]
-- [Nom] - [Rôle principal]
-- [Nom] - [Rôle principal]
+- Mikael Arseneau - Chef de projet / [Rôle principal]
+- Alexandre Gendron - [Rôle principal]
+- Rafael Angon Dubé - [Rôle principal]
 
 
 * Date de début: 9-10-2025  
