@@ -12,7 +12,7 @@
 
 
 *Date de début:* 9-10-2025  
-*Date de livraison finale:* 10-12-2025 
+*Date de livraison finale:* 10-12-2025
 *Version du document:* 1.0
 
 
