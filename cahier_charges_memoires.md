@@ -6,9 +6,9 @@
 *Nom de l'équipe:* [Nom de votre équipe]  
 *Membres:*
 
-- Mikael Arseneau - Chef de projet / [Rôle principal]
-- Alexandre Gendron - [Rôle principal]
-- Rafael Angon Dubé - [Rôle principal]
+- Mikael Arseneau - Chef de projet / Architecture
+- Alexandre Gendron - Responsable du Design + Animations
+- Rafael Angon Dubé - Données + Systèmes
 
 
 * Date de début: 9-10-2025  
