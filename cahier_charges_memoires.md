@@ -39,13 +39,13 @@ Décrivez en 2-3 paragraphes le concept de votre musée interactif:
 
 ### 1.2 Public cible
 
-- *Âge:* [ex: 18-45 ans]
-- *Profil:* [ex: Personnes nostalgiques, amateurs d'histoire personnelle]
-- *Niveau technique:* [ex: Utilisateurs grand public, aucune connaissance technique requise]
+- *Âge:* [ex: 18-45 ans] 18-30 ans
+- *Profil:* [ex: Personnes nostalgiques, amateurs d'histoire personnelle] personnes artistique
+- *Niveau technique:* [ex: Utilisateurs grand public, aucune connaissance technique requise] aucune connaissance requise
 
 ### 1.3 Objectifs du projet
 
-- [ ] Créer une expérience émotionnelle immersive
+- [x ] Créer une expérience émotionnelle immersive
 - [ ] Permettre aux utilisateurs de sauvegarder et partager leurs mémoires
 - [ ] Démontrer la maîtrise de Vue.js, GSAP et Pinia
 - [ ] Créer une interface accessible et responsive
