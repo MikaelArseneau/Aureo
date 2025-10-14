@@ -2,8 +2,8 @@
 
 ## 📌 Informations du Projet
 
-*Nom du projet:* [Aureo]  
-*Nom de l'équipe:* [équipe de métrage]  
+*Nom du projet:*Aureo
+*Nom de l'équipe:* équipe de métrage 
 *Membres:*
 
 - Mikael Arseneau - Chef de projet / Architecture
