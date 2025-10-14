@@ -61,8 +61,8 @@ Listez toutes les salles de votre musée (minimum 4, idéal 6-8):
 
 | # | Nom de la salle | Thème/Concept | Couleur dominante | Ambiance sonore |
 |---|----------------|---------------|-------------------|-----------------|
-| 1 | [Ex: Salle de l'enfance] | [Jouets, école, famille] | #FFB6C1 (rose) | Sons d'école, rires d'enfants |
-| 2 | [Ex: Salle des voyages] | [Destinations, aventures] | #87CEEB (bleu) | Vagues, ambiance aéroport |
+| 1 | Design Graphique | [logo, affiches, typos] | #FFB6C1 (rose) | Sons d'école, rires d'enfants |
+| 2 | Photographie  | [paysage, portrait, macro] | #87CEEB (bleu) | Vagues, ambiance aéroport |
 | 3 | | | | |
 | 4 | | | | |
 | 5 | | | | |
