@@ -2,7 +2,7 @@
 
 ## 📌 Informations du Projet
 
-*Nom du projet:*Aureo
+*Nom du projet:* Aureo
 *Nom de l'équipe:* équipe de métrage 
 *Membres:*
 
