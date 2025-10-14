@@ -63,10 +63,10 @@ Listez toutes les salles de votre musée (minimum 4, idéal 6-8):
 |---|----------------|---------------|-------------------|-----------------|
 | 1 | Design Graphique | [logo, affiches, typos] | #FFB6C1 (rose) | Sons d'école, rires d'enfants |
 | 2 | Photographie  | [paysage, portrait, macro] | #87CEEB (bleu) | Vagues, ambiance aéroport |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
-| 6 | | | | |
+| 3 | Illustration & Art Numérique|[digital painting, concept art, BD] | | |
+| 4 | Architecture & Intérieur|[bâtiments, espaces, design d’intérieur] | | |
+| 5 |Mode & Style Personnel |[tenues, accessoires, street style] | | |
+| 6 | Vidéo & Motion Design|[courts-métrages, animations, clips] | | |
 
 ### 2.2 Types de mémoires
 
