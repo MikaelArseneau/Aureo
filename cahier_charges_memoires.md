@@ -4,7 +4,7 @@
 
 *Nom du projet:* Aureo
 *Nom de l'équipe:* équipe de métrage 
-*Membres:*
+*Membres:* Mikael Arseneau Alexandre Gendron Rafael Angon Dubé
 
 - Mikael Arseneau - Chef de projet / Architecture
 - Alexandre Gendron - Responsable du Design + Animations
@@ -28,12 +28,20 @@
 
 Décrivez en 2-3 paragraphes le concept de votre musée interactif:
 
-- Quelle est la thématique principale?
-- Quel est l'objectif émotionnel/narratif?
+- Quelle est la thématique principale?: L'art
+- Quel est l'objectif émotionnel/narratif?: inspiré les gens
 - Quelle expérience voulez-vous créer pour l'utilisateur?
-
+  un envie de recherche
 *Exemple (interdit de prendre l'exemple comme histoire pour votre projet)*
+#  Aureo
 
+**Aureo** est une plateforme dédiée à la **créativité** et à **l’inspiration**.  
+Elle permet à chacun de **découvrir**, **partager** et **admirer** des œuvres artistiques variées — qu’il s’agisse de **peinture**, de **photographie**, de **design**, de **musique** ou de **projets multimédias**.
+
+Sur Aureo, les utilisateurs peuvent **mettre en avant les créations qu’ils aiment** ou **trouver de nouvelles idées** à travers les partages de la communauté.  
+C’est un espace d’échange où la passion pour l’art et l’expression visuelle prend vie, dans un environnement **simple**, **accueillant** et **inspirant**.
+
+L’objectif d’Aureo est de **favoriser la découverte et la mise en valeur du talent**, en créant un lieu où **artistes**, **amateurs** et **curieux** peuvent s’inspirer mutuellement et contribuer à un **univers artistique riche et collaboratif**.
 > "Mémoires d'Antan" est un musée interactif qui explore les souvenirs d'enfance à travers différentes décennies. Chaque salle représente une époque (années 60, 70, 80, 90) avec des objets, des sons et des histoires qui évoquent la nostalgie. L'utilisateur peut ajouter ses propres souvenirs et créer des connexions entre les générations.
 
 
