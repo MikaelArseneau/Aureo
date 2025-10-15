@@ -82,8 +82,7 @@ Décrivez les types de mémoires que les utilisateurs peuvent créer:
 
 - *Mémoire texte:* Titre + description + date + tags
 - *Mémoire photo:* Image + légende + date + tags
-- *Mémoire audio:* [Optionnel] Enregistrement vocal + titre + date
-- *Mémoire mixte:* Combinaison texte + photo + audio
+- *Mémoire vidéo:* vidéo + date + audio + tags
 
 ### 2.3 Système de tags/catégories
 
@@ -91,15 +90,24 @@ Listez les tags prédéfinis et permettez les tags personnalisés:
 
 *Tags prédéfinis:*
 
-- Famille
-- Amis
-- Voyage
-- Enfance
-- Adolescence
-- Premier...
+- Logo
+- Affiches
+- typos
+- paysage
+- portrait
+- macro
+- concept
+- art
+- BD
+- bâtiments
+- espaces
+- tenues
+- accessoires
+- animation
+- clips
 - [Ajoutez vos tags]
 
-*Tags personnalisés:* Oui ☐ / Non ☐
+*Tags personnalisés:* Oui ☐ / Non x
 
 
 
@@ -145,7 +153,7 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 ### 3.4 Style visuel
 
 Choisissez un ou plusieurs styles:
-- [ ] Minimaliste
+- [x] Minimaliste
 - [ ] Vintage/Rétro
 - [ ] Moderne/Futuriste
 - [ ] Organique/Naturel
