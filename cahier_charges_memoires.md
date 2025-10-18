@@ -47,9 +47,9 @@ L’objectif d’Aureo est de **favoriser la découverte et la mise en valeur du
 
 ### 1.2 Public cible
 
-- *Âge:* [ex: 18-45 ans] 18-30 ans
-- *Profil:* [ex: Personnes nostalgiques, amateurs d'histoire personnelle] personnes artistique
-- *Niveau technique:* [ex: Utilisateurs grand public, aucune connaissance technique requise] aucune connaissance requise
+- *Âge:*  18-30 ans
+- *Profil:* personnes artistique
+- *Niveau technique:* aucune connaissance requise
 
 ### 1.3 Objectifs du projet
 
@@ -126,16 +126,18 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 
 *Couleurs principales:*
 
-- Primaire: [#XXXXXX] - Utilisée pour: [navigation, boutons principaux]
-- Secondaire: [#XXXXXX] - Utilisée pour: [accents, hover states]
-- Tertiaire: [#XXXXXX] - Utilisée pour: [backgrounds, cartes]
+- Primaire: [#D33F49,FF8CC6,F8F32B,A675A1,4B88A2,5FBB97] - Utilisée pour: [navigation, boutons principaux]
+- Secondaire: [#D33F49,FF8CC6,F8F32B,A675A1,4B88A2,5FBB97] - Utilisée pour: [accents, hover states]
+- Tertiaire: [#1E1E1E] - Utilisée pour: [backgrounds, cartes]
 
 *Couleurs par salle:*
 
-- Salle 1: [#XXXXXX]
-- Salle 2: [#XXXXXX]
-- [etc.]
-
+- Salle 1: [#D33F49]
+- Salle 2: [#B783A9]
+- Salle 3: [#F8F32B]
+- Salle 4: [#A675A1]
+- Salle 5: [#4B88A2]
+- Salle 6: [#5FBB97]
 *Couleurs système:*
 
 - Succès: [#10B981]
@@ -145,9 +147,9 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 
 ### 3.3 Typographie
 
-- *Titres (H1-H2):* [Nom de la police] - [Lien Google Fonts]
-- *Sous-titres (H3-H4):* [Nom de la police]
-- *Corps de texte:* [Nom de la police]
+- *Titres (H1-H2):* [Instrument Serif] - [Lien Google Fonts]
+- *Sous-titres (H3-H4):* [Switzer Variable]
+- *Corps de texte:* [Switzer]
 - *Poids utilisés:* Regular (400), Medium (500), Bold (700)
 
 ### 3.4 Style visuel
@@ -384,7 +386,7 @@ Listez vos composants Vue principaux:
 
 ### 6.1 Lien vers les maquettes Figma
 
-*Lien:* [Insérez votre lien Figma]
+*Lien:* [https://www.figma.com/design/BHqRt2kwqxnABE3SfXrv0y/projet-final-web5?node-id=0-1&t=0gPd6Xn6m55bQeTN-1]
 
 ### 6.2 Écrans principaux à maquetter
 
@@ -412,9 +414,9 @@ Listez vos composants Vue principaux:
 
 | Membre | Rôle principal | Responsabilités |
 |--------|----------------|-----------------|
-| [Nom] | Chef de projet + Architecture Vue | Coordination, Vue Router, stores Pinia, structure des composants |
-| [Nom] | Design + Animations | CSS, design visuel, animations GSAP, transitions |
-| [Nom] | Données + Validation | LocalStorage/Firebase, validation formulaires, gestion erreurs |
+| [Mikael Arseneau] | Chef de projet + Architecture Vue | Coordination, Vue Router, stores Pinia, structure des composants |
+| [Alexandre Gendron] | Design + Animations | CSS, design visuel, animations GSAP, transitions |
+| [Rafael Angon Dubé] | Données + Validation | LocalStorage/Firebase, validation formulaires, gestion erreurs |
 | [Nom] | UX + Accessibilité | Tests utilisateurs, accessibilité, responsive, contenus |
 
 *Note:* Tous participent au développement, mais chacun a sa spécialité.
