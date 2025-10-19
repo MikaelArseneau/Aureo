@@ -28,6 +28,20 @@
 
 Décrivez en 2-3 paragraphes le concept de votre musée interactif:
 
+Notre musée interactif est un espace en ligne où chacun peut partager et découvrir des créations visuelles. Inspiré de Pinterest, il met l’accent sur l’art et la créativité sous toutes leurs formes. Les visiteurs peuvent y publier des images, des vidéos ou des projets personnels, mais aussi explorer ceux des autres pour trouver de nouvelles idées. Le but est de créer un lieu d’échange simple, humain et inspirant, où la curiosité et la passion guident chaque visite.
+
+Le site est organisé en plusieurs pages thématiques : Design Graphique, Photographie, Illustration & Art Numérique, Architecture & Intérieur, Mode & Style Personnel, Vidéo & Motion Design. Chacune de ces pages agit comme une galerie dédiée à un type de création, où les utilisateurs peuvent déposer leurs œuvres, consulter celles des autres et se construire une collection d’inspirations personnelles.
+
+Ce musée interactif veut avant tout rassembler une communauté créative. C’est un endroit où tout le monde peut participer, s’exprimer et s’enrichir du regard des autres. Ensemble, les utilisateurs donnent vie à un grand espace collaboratif, où chaque contribution, petite ou grande, fait partie d’une même œuvre collective : celle du partage et de la créativité.
+
+
+
+
+
+
+
+
+
 - Quelle est la thématique principale?: L'art
 - Quel est l'objectif émotionnel/narratif?: inspiré les gens
 - Quelle expérience voulez-vous créer pour l'utilisateur?
