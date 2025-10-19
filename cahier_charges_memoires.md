@@ -118,7 +118,11 @@ Listez les tags prédéfinis et permettez les tags personnalisés:
 Insérez ici 3-5 images d'inspiration (ou liens):
 
 - [Image 1: Style visuel général]
+- <img width="467" height="328" alt="image 18" src="https://github.com/user-attachments/assets/650a42ce-a34a-412b-a089-d287e56c2f68" />
+
 - [Image 2: Palette de couleurs]
+- <img width="1063" height="402" alt="Frame 47" src="https://github.com/user-attachments/assets/2804c196-39d2-4df7-ae7b-97655aecd410" />
+
 - [Image 3: Typographie inspirante]
 - [Image 4: Animations de référence]
 
@@ -181,7 +185,7 @@ Choisissez un ou plusieurs styles:
 
 - [ ] VueUse (composables utilitaires)
 - [ ] Vuelidate (validation de formulaires)
-- [ ] Day.js (manipulation de dates)
+- [x] Day.js (manipulation de dates)
 - [ ] [Autre:]
 
 ### 4.2 Architecture des composants
