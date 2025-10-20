@@ -28,11 +28,11 @@
 
 Décrivez en 2-3 paragraphes le concept de votre musée interactif:
 
-Notre musée interactif est un espace en ligne où chacun peut partager et découvrir des créations visuelles. Inspiré de Pinterest, il met l’accent sur l’art et la créativité sous toutes leurs formes. Les visiteurs peuvent y publier des images, des vidéos ou des projets personnels, mais aussi explorer ceux des autres pour trouver de nouvelles idées. Le but est de créer un lieu d’échange simple, humain et inspirant, où la curiosité et la passion guident chaque visite.
+Notre site interactif est un espace en ligne où chacun peut partager et découvrir des créations visuelles. Inspiré de Pinterest, il met l’accent sur l’art et la créativité sous toutes leurs formes. Les visiteurs peuvent y publier des images, des vidéos ou des projets personnels, mais aussi explorer ceux des autres pour trouver de nouvelles idées. Le but est de créer un lieu d’échange simple, humain et inspirant, où la curiosité et la passion guident chaque visite.
 
 Le site est organisé en plusieurs pages thématiques : Design Graphique, Photographie, Illustration & Art Numérique, Architecture & Intérieur, Mode & Style Personnel, Vidéo & Motion Design. Chacune de ces pages agit comme une galerie dédiée à un type de création, où les utilisateurs peuvent déposer leurs œuvres, consulter celles des autres et se construire une collection d’inspirations personnelles.
 
-Ce musée interactif veut avant tout rassembler une communauté créative. C’est un endroit où tout le monde peut participer, s’exprimer et s’enrichir du regard des autres. Ensemble, les utilisateurs donnent vie à un grand espace collaboratif, où chaque contribution, petite ou grande, fait partie d’une même œuvre collective : celle du partage et de la créativité.
+Ce site interactif veut avant tout rassembler une communauté créative. C’est un endroit où tout le monde peut participer, s’exprimer et s’enrichir du regard des autres. Ensemble, les utilisateurs donnent vie à un grand espace collaboratif, où chaque contribution, petite ou grande, fait partie d’une même œuvre collective : celle du partage et de la créativité.
 
 
 
@@ -56,7 +56,8 @@ Sur Aureo, les utilisateurs peuvent **mettre en avant les créations qu’ils ai
 C’est un espace d’échange où la passion pour l’art et l’expression visuelle prend vie, dans un environnement **simple**, **accueillant** et **inspirant**.
 
 L’objectif d’Aureo est de **favoriser la découverte et la mise en valeur du talent**, en créant un lieu où **artistes**, **amateurs** et **curieux** peuvent s’inspirer mutuellement et contribuer à un **univers artistique riche et collaboratif**.
-> "Mémoires d'Antan" est un musée interactif qui explore les souvenirs d'enfance à travers différentes décennies. Chaque salle représente une époque (années 60, 70, 80, 90) avec des objets, des sons et des histoires qui évoquent la nostalgie. L'utilisateur peut ajouter ses propres souvenirs et créer des connexions entre les générations.
+
+
 
 
 ### 1.2 Public cible
@@ -83,8 +84,8 @@ Listez toutes les salles de votre musée (minimum 4, idéal 6-8):
 
 | # | Nom de la salle | Thème/Concept | Couleur dominante | Ambiance sonore |
 |---|----------------|---------------|-------------------|-----------------|
-| 1 | Design Graphique | [logo, affiches, typos] | #FFB6C1 (rose) | Sons d'école, rires d'enfants |
-| 2 | Photographie  | [paysage, portrait, macro] | #87CEEB (bleu) | Vagues, ambiance aéroport |
+| 1 | Design Graphique | [logo, affiches, typos] 
+| 2 | Photographie  | [paysage, portrait, macro] 
 | 3 | Illustration & Art Numérique|[digital painting, concept art, BD] | | |
 | 4 | Architecture & Intérieur|[bâtiments, espaces, design d’intérieur] | | |
 | 5 |Mode & Style Personnel |[tenues, accessoires, street style] | | |
@@ -133,13 +134,16 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 
 - [Image 1: Style visuel général]
 - <img width="467" height="328" alt="image 18" src="https://github.com/user-attachments/assets/650a42ce-a34a-412b-a089-d287e56c2f68" />
+  <img width="467" height="380" alt="image 17" src="https://github.com/user-attachments/assets/a6f06153-bb77-44e8-ac20-3655b46e3706" />
 
 - [Image 2: Palette de couleurs]
 - <img width="1063" height="402" alt="Frame 47" src="https://github.com/user-attachments/assets/2804c196-39d2-4df7-ae7b-97655aecd410" />
 
 - [Image 3: Typographie inspirante]
-- [Image 4: Animations de référence]
+  ![instrument-5-thumb](https://github.com/user-attachments/assets/01c8d8ce-fd15-462c-9b6d-af7d83142953)
 
+- [Image 4: Animations de référence]
+  https://www.youtube.com/watch?v=F8YITQVOvuM
 ### 3.2 Palette de couleurs
 
 *Couleurs principales:*
@@ -166,8 +170,8 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 ### 3.3 Typographie
 
 - *Titres (H1-H2):* [Instrument Serif] - [https://fonts.google.com/specimen/Instrument+Serif]
-- *Sous-titres (H3-H4):* [Switzer Variable]
-- *Corps de texte:* [Switzer]
+- *Sous-titres (H3-H4):* [Switzer Variable] []
+- *Corps de texte:* [Switzer]  [https://www.fontshare.com/fonts/switzer]
 - *Poids utilisés:* Regular (400), Medium (500), Bold (700)
 
 ### 3.4 Style visuel
@@ -232,12 +236,12 @@ Listez vos composants Vue principaux:
 | Route | Composant | Description | Authentification requise? |
 |-------|-----------|-------------|---------------------------|
 | `/` | `HomeView.vue` | Page d'accueil/intro | Non |
-| `/musee` | `MuseumView.vue` | Vue d'ensemble du musée | Oui |
+| `/siteweb` | `SiteView.vue` | Vue d'ensemble du site | non |
 | `/salle/:id` | `RoomView.vue` | Vue détaillée d'une salle | Oui |
 | `/memoire/:id` | `MemoryDetailView.vue` | Détail d'une mémoire | Oui |
 | `/recherche` | `SearchView.vue` | Recherche de mémoires | Oui |
 | `/profil` | `ProfileView.vue` | Profil utilisateur | Oui |
-| `/login` | `LoginView.vue` | Connexion | Non |
+| `/Connexion` | `LoginView.vue` | Connexion | Non |
 
 ### 4.4 Gestion de l'état (Pinia)
 
@@ -301,7 +305,7 @@ Listez vos composants Vue principaux:
 
 *Obligatoires pour la livraison:*
 
-- [ ] *F1 - Navigation entre salles*
+- [x] *F1 - Navigation entre salles*
   - L'utilisateur peut naviguer entre 4-6 salles différentes
   - Transitions animées avec GSAP
   - Menu de navigation visible
@@ -324,7 +328,7 @@ Listez vos composants Vue principaux:
   - Confirmation avant suppression
   - Suppression permanente
 
-- [ ] *F6 - Filtres et recherche*
+- [x] *F6 - Filtres et recherche*
   - Recherche par mot-clé (titre/description)
   - Filtrage par tags
   - Filtrage par salle
@@ -334,11 +338,11 @@ Listez vos composants Vue principaux:
   - Chargement automatique au démarrage
   - Export en fichier JSON
 
-- [ ] *F8 - Import de données*
+- [x] *F8 - Import de données*
   - Importer un fichier JSON de musée
   - Validation du format
 
-- [ ] *F9 - Responsive*
+- [x] *F9 - Responsive*
   - Mobile (320px+)
   - Tablette (768px+)
   - Desktop (1024px+)
@@ -359,7 +363,7 @@ Listez vos composants Vue principaux:
   - Contrôle volume
   - Mute toggle
 
-- [ ] *B3 - Timeline chronologique*
+- [x] *B3 - Timeline chronologique*
   - Vue chronologique des mémoires
   - Tri par date
 
@@ -367,7 +371,7 @@ Listez vos composants Vue principaux:
   - Toggle dark/light mode
   - Sauvegarde de la préférence
 
-- [ ] *B5 - Partage social*
+- [x] *B5 - Partage social*
   - Génération de lien de partage
   - Aperçu Open Graph
 
@@ -380,21 +384,21 @@ Listez vos composants Vue principaux:
 
 *Format:* En tant que [rôle], je veux [action] afin de [bénéfice]
 
-1. *US-01:* En tant qu'utilisateur, je veux créer mon musée personnel afin de préserver mes souvenirs importants.
+1 .US-01: En tant qu’utilisateur, je veux créer un profil personnel afin de partager mes inspirations et créations artistiques sur la plateforme.
 
-2. *US-02:* En tant qu'utilisateur, je veux organiser mes mémoires en salles thématiques afin de les retrouver facilement.
+2.US-02: En tant qu’utilisateur, je veux publier des images et vidéos afin de partager mon travail ou mes inspirations visuelles.
 
-3. *US-03:* En tant qu'utilisateur, je veux ajouter des photos à mes mémoires afin de les rendre plus vivantes.
+ 3.US-03: En tant qu’utilisateur, je veux organiser mes publications en tableaux thématiques afin de classer mes inspirations par sujet.
 
-4. *US-04:* En tant qu'utilisateur, je veux taguer mes mémoires afin de les catégoriser et les filtrer.
+4.US-04: En tant qu’utilisateur, je veux ajouter des tags à mes publications afin de les catégoriser et les filtrer facilement.
 
-5. *US-05:* En tant qu'utilisateur, je veux rechercher dans mes mémoires afin de retrouver un souvenir spécifique rapidement.
+5.US-05: En tant qu’utilisateur, je veux rechercher des publications par mot-clé, tag ou auteur afin de trouver rapidement des inspirations précises.
 
-6. *US-06:* En tant qu'utilisateur, je veux que mes données soient sauvegardées automatiquement afin de ne jamais perdre mes souvenirs.
+6.US-06: En tant qu’utilisateur, je veux que mes publications soient sauvegardées automatiquement afin de ne pas perdre mes créations.
 
-7. *US-07:* En tant qu'utilisateur, je veux pouvoir exporter mon musée afin de le sauvegarder ou le partager.
+7.US-07: En tant qu’utilisateur, je veux enregistrer ou partager les publications d’autres créateurs afin de me constituer une collection personnelle d’inspirations.
 
-8. *US-08:* En tant qu'utilisateur mobile, je veux accéder à mon musée sur mon téléphone afin de consulter mes souvenirs partout.
+8.US-08: En tant qu’utilisateur mobile, je veux accéder à Aureo sur mon téléphone afin de parcourir et publier du contenu où que je sois.
 
 9. [Ajoutez vos user stories]
 
@@ -451,10 +455,10 @@ Listez vos composants Vue principaux:
 ### 7.3 Outils de collaboration
 
 - *Git/GitHub:* [Lien du repo]
-- *Gestion de projet:* [Trello / Word / GitHub Projects]
+- *Gestion de projet:* [Trello]
 - *Communication:* [Teams]
 - *Design:* [Figma]
-- *Documentation:* [Word / Google Docs / README.md]
+- *Documentation:* [ README.md]
 
 
 
