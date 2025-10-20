@@ -643,8 +643,8 @@ Listez vos composants Vue principaux:
 
 *Inspirations:*
 
-- [Site 1]
-- [Site 2]
+- [https://www.cosmos.so/]
+- [https://ca.pinterest.com/]
 
 ### 11.2 Glossaire
 
