@@ -170,7 +170,7 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 ### 3.3 Typographie
 
 - *Titres (H1-H2):* [Instrument Serif] - [https://fonts.google.com/specimen/Instrument+Serif]
-- *Sous-titres (H3-H4):* [Switzer Variable] []
+- *Sous-titres (H3-H4):* [Switzer ] [https://www.fontshare.com/fonts/switzer]
 - *Corps de texte:* [Switzer]  [https://www.fontshare.com/fonts/switzer]
 - *Poids utilisés:* Regular (400), Medium (500), Bold (700)
 
