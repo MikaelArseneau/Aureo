@@ -82,8 +82,8 @@ L’objectif d’Aureo est de **favoriser la découverte et la mise en valeur du
 
 Listez toutes les salles de votre musée (minimum 4, idéal 6-8):
 
-| # | Nom de la salle | Thème/Concept | Couleur dominante | Ambiance sonore |
-|---|----------------|---------------|-------------------|-----------------|
+| # | Nom de la salle | Thème/Concept 
+|---|----------------|---------------|
 | 1 | Design Graphique | [logo, affiches, typos] 
 | 2 | Photographie  | [paysage, portrait, macro] 
 | 3 | Illustration & Art Numérique|[digital painting, concept art, BD] | | |
@@ -235,12 +235,12 @@ Listez vos composants Vue principaux:
 
 | Route | Composant | Description | Authentification requise? |
 |-------|-----------|-------------|---------------------------|
-| `/` | `HomeView.vue` | Page d'accueil/intro | Non |
+| `/acceuil/:id` | `HomeView.vue` | Page d'accueil/intro | Non |
 | `/siteweb` | `SiteView.vue` | Vue d'ensemble du site | non |
 | `/salle/:id` | `RoomView.vue` | Vue détaillée d'une salle | Oui |
 | `/memoire/:id` | `MemoryDetailView.vue` | Détail d'une mémoire | Oui |
-| `/recherche` | `SearchView.vue` | Recherche de mémoires | Oui |
-| `/profil` | `ProfileView.vue` | Profil utilisateur | Oui |
+| `/recherche` | `rechercheView.vue` | Recherche de mémoires | Oui |
+| `/profil` | `ProfileView.vue` | Profil utilisateur | non |
 | `/Connexion` | `LoginView.vue` | Connexion | Non |
 
 ### 4.4 Gestion de l'état (Pinia)
@@ -271,25 +271,24 @@ Listez vos composants Vue principaux:
 
 ```json
 {
-  "museumName": "Mon Musée",
+  "pageName": "page",
   "theme": "default",
   "createdAt": "2025-01-15T10:00:00Z",
   "rooms": [
     {
-      "id": "room-1",
+      "id": "site-1",
       "name": "Salle de l'enfance",
       "description": "Mes premiers souvenirs...",
       "theme": "childhood",
       "color": "#FFB6C1",
       "memories": [
         {
-          "id": "mem-1",
+          "id": "art",
           "title": "Mon premier vélo",
           "description": "Un vélo rouge que j'ai reçu à 6 ans...",
           "date": "1995-06-15",
           "image": "data:image/jpeg;base64,...",
           "tags": ["enfance", "cadeau", "famille"],
-          "createdAt": "2025-01-15T10:30:00Z"
         }
       ]
     }
