@@ -1,5 +1,5 @@
 Projet Aurero — Option A
-👥 Équipe
+
 
 Mikael Arseneau — Chef de projet / Architecture
 
