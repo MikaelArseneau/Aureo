@@ -22,11 +22,7 @@
 
 ### 1.1 Concept général
 
-!!! tip "Phase de création"
-    (Ce paragraphe "Conseil" devra être retiré du Cahier de charge final)
-    Pour développer votre concept général, vous devez faire une session de remue-méninges (*brainstorm*) en équipe via *Figjam* avec une carte conceptuelle (*mindmap*) ou encore par la création collaborative et spontanée via des *post-it* individuels et groupés. Il est possible d'utiliser d'autres procédés de création. Vous devrez partager votre processus de création (*brainstorm*) avec votre enseignante. Si c'est virtuel, partagez le lien. Si c'est papier ou sur tableau blanc, veuillez partager une ou des photographie(s) de votre processus.
 
-Décrivez en 2-3 paragraphes le concept de votre musée interactif:
 
 Notre site interactif est un espace en ligne où chacun peut partager et découvrir des créations visuelles. Inspiré de Pinterest, il met l’accent sur l’art et la créativité sous toutes leurs formes. Les visiteurs peuvent y publier des images, des vidéos ou des projets personnels, mais aussi explorer ceux des autres pour trouver de nouvelles idées. Le but est de créer un lieu d’échange simple, humain et inspirant, où la curiosité et la passion guident chaque visite.
 
