@@ -272,19 +272,19 @@ Listez vos composants Vue principaux:
   "createdAt": "2025-01-15T10:00:00Z",
   "rooms": [
     {
-      "id": "site-1",
-      "name": "Salle de l'enfance",
-      "description": "Mes premiers souvenirs...",
-      "theme": "childhood",
-      "color": "#FFB6C1",
+      "id": "photo",
+      "name": "photographie",
+      "description": photo prise par des gens"...",
+      "theme": "photos",
+      "color": "#E2E0DA",
       "memories": [
         {
-          "id": "art",
-          "title": "Mon premier vélo",
-          "description": "Un vélo rouge que j'ai reçu à 6 ans...",
+          "id": "style mode",
+          "title": "Mode",
+          "description": "mode et style vestimentaire...",
           "date": "1995-06-15",
-          "image": "data:image/jpeg;base64,...",
-          "tags": ["enfance", "cadeau", "famille"],
+          "image": "data:image/mode.jpg,...",
+          "tags": ["mode", "vetement", "accessoires"],
         }
       ]
     }
