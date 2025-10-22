@@ -274,7 +274,7 @@ Listez vos composants Vue principaux:
     {
       "id": "photo",
       "name": "photographie",
-      "description": photo prise par des gens"...",
+      "description": "photo prise par des gens"...",
       "theme": "photos",
       "color": "#E2E0DA",
       "memories": [
