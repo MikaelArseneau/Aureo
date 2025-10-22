@@ -319,7 +319,7 @@ Listez vos composants Vue principaux:
   - Modifier les informations d'une mémoire existante
   - Sauvegarde instantanée
 
-- [ ] *F5 - Suppression de mémoire*
+- [x] *F5 - Suppression de mémoire*
   - Confirmation avant suppression
   - Suppression permanente
 
@@ -366,7 +366,7 @@ Listez vos composants Vue principaux:
   - Toggle dark/light mode
   - Sauvegarde de la préférence
 
-- [x] *B5 - Partage social*
+- [x] *B5 - Partage social* question
   - Génération de lien de partage
   - Aperçu Open Graph
 
@@ -653,13 +653,13 @@ Listez vos composants Vue principaux:
 
 ## ✅ Validation du Cahier de Charges
 
-*Date de validation:* [Date]
+*Date de validation:* [21-10-25]
 
 *Signatures:*
 
-- Chef de projet: _______________
-- Membre 2: _______________
-- Membre 3: _______________
+- Chef de projet: ___mikael Arseneau____________
+- Membre 2: ________Alexandre Gendron_______
+- Membre 3: _________Rafael Angon Dube______
 - Membre 4: _______________ (si applicable)
 
 *Validation enseignant:* _______________  
