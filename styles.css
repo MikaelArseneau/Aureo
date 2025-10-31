@@ -93,6 +93,11 @@
     .architecture {
         font-size: 12rem;
     }
+
+    .bg_photographie::before {
+        background-size: contain;
+        background-position: 0%;
+    }
 }
 
 @media (max-width: 1650px) {
@@ -104,5 +109,11 @@
 @media (max-width: 1350px) {
     .architecture {
         font-size: 6rem;
+    }
+}
+
+@media (max-width: 600) {
+    .photographie_titre {
+        text-orientation: upright;
     }
 }
