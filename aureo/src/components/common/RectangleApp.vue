@@ -1,8 +1,6 @@
 <script setup></script>
 <template>
-  <nav class="app-header">
-    <h1>Aureo</h1>
-  </nav>
+  <div class="rectangle"></div>
 </template>
 
 <style scoped>
@@ -11,14 +9,12 @@
   src: url("../../assets/font/InstrumentSerif-Regular.ttf") open
     format("truetype");
 }
-.app-header {
-  background-color: none;
-  text-align: center;
+.rectangle {
   position: absolute;
+  left: 0%;
+  height: 100vh;
+  width: 25vw;
+  background-color: aqua;
   top: 0%;
-  width: 100vw;
-  left: 0;
-  font-family: "Instrument", serif;
-  text-transform: uppercase;
 }
 </style>

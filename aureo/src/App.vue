@@ -1,15 +1,13 @@
 <script setup>
-  import Allo from "./components/Allo.vue"
-  import Allo2 from "./components/Allo2.vue"
-  import Allo3 from "./components/Allo3.vue"
+import RectangleApp from "./components/common/RectangleApp.vue";
+import AppHeader from "./components/layout/AppHeader.vue";
+import HomeView from "./views/HomeView.vue";
 </script>
 
 <template>
-  <allo />
-  <allo2 />
-  <allo3 />
+  <AppHeader />
+  <RectangleApp />
+  <HomeView />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
