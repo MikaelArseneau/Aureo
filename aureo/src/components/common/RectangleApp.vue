@@ -14,7 +14,8 @@
   left: 0%;
   height: 100vh;
   width: 25vw;
-  background-color: aqua;
+  background-color: #f8f32b;
   top: 0%;
+  filter: brightness(95%);
 }
 </style>

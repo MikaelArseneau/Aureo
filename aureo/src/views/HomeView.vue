@@ -6,10 +6,12 @@
 <style scoped>
 .room_selection {
   position: absolute;
-  right: 10%;
+  left: 15%;
   height: 60vh;
-  width: 50vw;
-  background-color: red;
-  top: 20%;
+  width: 65vw;
+  background-image: url("../assets/photo/bg_photographie.jpg");
+  background-size: cover;
+  background-position: center;
+  bottom: 20%;
 }
 </style>

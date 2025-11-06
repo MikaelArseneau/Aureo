@@ -20,5 +20,6 @@
   left: 0;
   font-family: "Instrument", serif;
   text-transform: uppercase;
+  color: black;
 }
 </style>
