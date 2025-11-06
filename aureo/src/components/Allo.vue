@@ -1,6 +1,3 @@
-<script setup>
-
-</script>
 
 <template>
  <h1>Allo rafael</h1>
