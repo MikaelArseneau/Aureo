@@ -49,11 +49,13 @@
     @slideChange="onSlideChange"
   >
     <swiper-slide>
-      <div class="room_title">
+      <div class="room_title photo">
         *Photo<span class="titre_photo2">graphie*</span>
       </div>
     </swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide
+      ><div class="room_title design">Design graphique</div></swiper-slide
+    >
     <swiper-slide>Slide 3</swiper-slide>
     <swiper-slide>Slide 4</swiper-slide>
     <swiper-slide>Slide 5</swiper-slide>
@@ -128,13 +130,28 @@ export default {
 .autre2 {
   top: 900px;
 }
-.room_title {
+.photo {
   display: block;
   font-size: 10em;
   font-family: "switzer";
   letter-spacing: -3px;
   font-weight: 600;
   color: #e2dd1f;
+  cursor: default;
+}
+
+.design {
+  display: block;
+  font-size: 8em;
+  font-family: "switzer";
+  letter-spacing: -3px;
+  font-weight: 600;
+  background: linear-gradient (135deg, #42d392, #647eff);
+  cursor: default;
+  text-transform: uppercase;
+}
+
+.room_title:hover {
   cursor: default;
 }
 .titre_photo2 {
