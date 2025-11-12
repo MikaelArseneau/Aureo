@@ -1,334 +1,152 @@
-{
-  "categories": [
-    {
+[
+  {
+    "photo": {
       "id": 1,
-      "name": "architecture",
-      "photodemo": "./medias/img/demos/imgdemo_architecture.png",
-      "photos": [
-        {
-          "id": 1,
-          "title": "photo architecture 1",
-          "type": "architecture",
-          "date": "02/12/2025",
-          "desc": "Photo architecture 1",
-          "url": "./medias/img/architecture/image_01.png"
-        },
-        {
-          "id": 2,
-          "title": "photo architecture 2",
-          "type": "architecture",
-          "date": "02/12/2025",
-          "desc": "Photo architecture 2",
-          "url": "./medias/img/architecture/image_02.png"
-        },
-        {
-          "id": 3,
-          "title": "photo architecture 3",
-          "type": "architecture",
-          "date": "02/12/2025",
-          "desc": "photo architecture 3.",
-          "url": "./medias/img/architecture/image_03.png"
-        },
-        {
-          "id": 4,
-          "title": "photo architecture 4",
-          "type": "architecture",
-          "date": "02/12/2025",
-          "desc": "photo architecture 4",
-          "url": "./medias/img/architecture/image_04.png"
-        },
-        {
-          "id": 5,
-          "title": "photo architecture 5",
-          "type": "architecture",
-          "date": "02/12/2025",
-          "desc": "photo architecture 5",
-          "url": "./medias/img/architecture/image_05.png"
-        },
-        {
-          "id": 6,
-          "title": "photo architecture 6",
-          "type": "photo architecture 6",
-          "date": "02/12/2025",
-          "desc": "Photo d’un escalier au design unique.",
-          "url": "./medias/img/architecture/image_06.png"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "art_numérique",
-      "photodemo": "./medias/img/demos/imgdemo_artnum.png",
-      "photos": [
-        {
-          "id": 1,
-          "title": "art numérique 1",
-          "type": "art numérique",
-          "date": "02/12/2025",
-          "desc": "art numérique 1.",
-          "url": "./medias/img/art_numerique/image_01.png"
-        },
-        {
-          "id": 2,
-          "title": "art numérique 2",
-          "type": "art numérique",
-          "date": "02/12/2025",
-          "desc": "art numérique 2",
-          "url": "./medias/img/art_numerique/image_02.png"
-        },
-        {
-          "id": 3,
-          "title": "art numérique 3",
-          "type": "art numérique",
-          "date": "02/12/2025",
-          "desc": "art numérique 3",
-          "url": "./medias/img/art_numerique/image_03.png"
-        },
-        {
-          "id": 4,
-          "title": "art numérique 4",
-          "type": "art numérique",
-          "date": "02/12/2025",
-          "desc": "art numérique 4.",
-          "url": "./medias/img/art_numerique/image_04.png"
-        },
-        {
-          "id": 5,
-          "title": "art numérique 5",
-          "type": "art numérique",
-          "date": "02/12/2025",
-          "desc": "art numérique 5",
-          "url": "./medias/img/art_numerique/image_05.png"
-        },
-        {
-          "id": 6,
-          "title": "art numérique 6",
-          "type": "art numérique",
-          "date": "02/12/2025",
-          "desc": "art numérique 6",
-          "url": "./medias/img/art_numerique/image_06.png"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "mode",
-      "photodemo": "./medias/img/demos/imgdemo_mode.png",
-      "photos": [
-        {
-          "id": 1,
-          "title": "mode 1",
-          "type": "mode",
-          "date": "02/12/2025",
-          "desc": "mode 1",
-          "url": "./medias/img/mode/image_01.png"
-        },
-        {
-          "id": 2,
-          "title": "mode 2",
-          "type": "mode",
-          "date": "02/12/2025",
-          "desc": "mode 2",
-          "url": "./medias/img/mode/image_02.png"
-        },
-        {
-          "id": 3,
-          "title": "mode 3",
-          "type": "mode",
-          "date": "02/12/2025",
-          "desc": "mode 3",
-          "url": "./medias/img/mode/image_03.png"
-        },
-        {
-          "id": 4,
-          "title": "mode 4",
-          "type": "mode",
-          "date": "02/12/2025",
-          "desc": "mode 4",
-          "url": "./medias/img/mode/image_04.png"
-        },
-        {
-          "id": 5,
-          "title": "mode 5",
-          "type": "mode",
-          "date": "02/12/2025",
-          "desc": "mode 5",
-          "url": "./medias/img/mode/image_05.png"
-        },
-        {
-          "id": 6,
-          "title": "mode  6",
-          "type": "mode",
-          "date": "02/12/2025",
-          "desc": "mode 6",
-          "url": "./medias/img/mode/image_06.png"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "design_graphique",
-      "photodemo": "./medias/img/demos/imgdemo_designgraphique.png",
-      "photos": [
-        {
-          "id": 1,
-          "title": "design graphique 1",
-          "type": "design graphique",
-          "date": "02/12/2025",
-          "desc": "design graphique 1",
-          "url": "./medias/img/design_graphique/image_01.png"
-        },
-        {
-          "id": 2,
-          "title": "design graphique 2",
-          "type": "design graphique",
-          "date": "02/12/2025",
-          "desc": "design graphique 2",
-          "url": "./medias/img/design_graphique/image_02.png"
-        },
-        {
-          "id": 3,
-          "title": "design graphique 3",
-          "type": "design graphique",
-          "date": "02/12/2025",
-          "desc": "design graphique 3.",
-          "url": "./medias/img/design_graphique/image_03.png"
-        },
-        {
-          "id": 4,
-          "title": "design graphique 4",
-          "type": "design graphique",
-          "date": "02/12/2025",
-          "desc": "design graphique 4",
-          "url": "./medias/img/design_graphique/image_04.png"
-        },
-        {
-          "id": 5,
-          "title": "design graphique 5",
-          "type": "design graphique",
-          "date": "02/12/2025",
-          "desc": "design graphique 5",
-          "url": "./medias/img/design_graphique/image_05.png"
-        },
-        {
-          "id": 6,
-          "title": "design graphique 6",
-          "type": "design graphique",
-          "date": "02/12/2025",
-          "desc": "design graphique 6.",
-          "url": "./medias/img/design_graphique/image_06.png"
-        }
-      ]
-    },
-    {
-      "id": 5,
       "name": "photographie",
-      "photodemo": "./medias/img/demos/imgdemophoto.png",
+      "photodemo": "src/assets/photo/bg_photographie.jpg",
       "photos": [
         {
           "id": 1,
-          "title": "Photo 1",
-          "type": "paysage",
-          "date": "02/12/2025",
-          "desc": "Photo 1.",
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
           "url": "./medias/img/photo/image_01.png"
         },
         {
           "id": 2,
-          "title": "Photo 2",
-          "type": "portrait",
-          "date": "02/12/2025",
-          "desc": "Photo 2",
-          "url": "./medias/img/photo/image_02.png"
-        },
-        {
-          "id": 3,
-          "title": "Photo 3",
-          "type": "paysage",
-          "date": "02/12/2025",
-          "desc": "Photo 3",
-          "url": "./medias/img/photo/image_03.png"
-        },
-        {
-          "id": 4,
-          "title": "Photo  4",
-          "type": "urbain",
-          "date": "02/12/2025",
-          "desc": "Photo 4",
-          "url": "./medias/img/photo/image_04.png"
-        },
-        {
-          "id": 5,
-          "title": "Photo 5",
-          "type": "macro",
-          "date": "02/12/2025",
-          "desc": "Photo 5",
-          "url": "./medias/img/photo/image_05.png"
-        },
-        {
-          "id": 6,
-          "title": "Photo 6",
-          "type": "paysage",
-          "date": "02/12/2025",
-          "desc": "Photo 6",
-          "url": "./medias/img/photo/image_06.png"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "name": "video",
-      "photodemo": "./medias/img/demos/imgdemo_video.png",
-      "photos": [
-        {
-          "id": 1,
-          "title": "Vidéo 1",
-          "type": "vidéo",
-          "date": "02/12/2025",
-          "desc": "Vidéo 1",
-          "url": "./medias/video/video_01.png"
-        },
-        {
-          "id": 2,
-          "title": "Vidéo 2",
-          "type": "Vidéo 2",
-          "date": "02/12/2025",
-          "desc": "Extrait d’un court métrage.",
-          "url": "./medias/video/video_02.png"
-        },
-        {
-          "id": 3,
-          "title": "Vidéo 3",
-          "type": "vidéo",
-          "date": "02/12/2025",
-          "desc": "Vidéo 3",
-          "url": "./medias/video/video_03.png"
-        },
-        {
-          "id": 4,
-          "title": "Vidéo 4",
-          "type": "vidéo",
-          "date": "02/12/2025",
-          "desc": "Vidéo 4.",
-          "url": "./medias/video/video_04.png"
-        },
-        {
-          "id": 5,
-          "title": "Vidéo 5",
-          "type": "vidéo",
-          "date": "02/12/2025",
-          "desc": "Vidéo 5",
-          "url": "./medias/video/video_05.png"
-        },
-        {
-          "id": 6,
-          "title": "Vidéo 6",
-          "type": "vidéo",
-          "date": "02/12/2025",
-          "desc": "Vidéo 6",
-          "url": "./medias/video/video_06.png"
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "./medias/img/photo/image_01.png"
         }
       ]
     }
-  ]
-}
+  },
+  {
+    "cinema": {
+      "id": 2,
+      "name": "cinema",
+      "cinemademo": "./medias/img/demos/imgdemocinema.png",
+      "videos": [
+        {
+          "id": 1,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "./medias/img/photo/image_01.png"
+        },
+        {
+          "id": 2,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "./medias/img/photo/image_01.png"
+        }
+      ]
+    }
+  },
+  {
+    "design": {
+      "id": 3,
+      "name": "design",
+      "cinemademo": "./medias/img/demos/imgdemocinema.png",
+      "design": [
+        {
+          "id": 1,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "./medias/img/photo/image_01.png"
+        },
+        {
+          "id": 2,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "./medias/img/photo/image_01.png"
+        }
+      ]
+    }
+  },
+  {
+    "illustration": {
+      "id": 4,
+      "name": "illustration",
+      "cinemademo": "./medias/img/demos/imgdemocinema.png",
+      "illustration": [
+        {
+          "id": 1,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "./medias/img/photo/image_01.png"
+        },
+        {
+          "id": 2,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "./medias/img/photo/image_01.png"
+        }
+      ]
+    }
+  },
+  {
+    "architecture": {
+      "id": 5,
+      "name": "architecture",
+      "cinemademo": "/src/assets/photo/bg_architecture.jpg",
+      "architecture ": [
+        {
+          "id": 1,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "./medias/img/photo/image_01.png"
+        },
+        {
+          "id": 6,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "./medias/img/photo/image_01.png"
+        }
+      ]
+    }
+  },
+  {
+    "style": {
+      "id": 1,
+      "name": "style",
+      "cinemademo": "./medias/img/demos/imgdemocinema.png",
+      "style": [
+        {
+          "id": 1,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "./medias/img/photo/image_01.png"
+        },
+        {
+          "id": 2,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "./medias/img/photo/image_01.png"
+        }
+      ]
+    }
+  }
+]
