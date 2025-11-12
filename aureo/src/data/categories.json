@@ -3,7 +3,7 @@
     "photo": {
       "id": 1,
       "name": "photographie",
-      "photodemo": "./medias/img/demos/imgdemophoto.png",
+      "photodemo": "src/assets/photo/bg_photographie.jpg",
       "photos": [
         {
           "id": 1,
@@ -26,7 +26,7 @@
   },
   {
     "cinema": {
-      "id": 1,
+      "id": 2,
       "name": "cinema",
       "cinemademo": "./medias/img/demos/imgdemocinema.png",
       "videos": [
@@ -51,7 +51,7 @@
   },
   {
     "design": {
-      "id": 1,
+      "id": 3,
       "name": "design",
       "cinemademo": "./medias/img/demos/imgdemocinema.png",
       "design": [
@@ -76,7 +76,7 @@
   },
   {
     "illustration": {
-      "id": 1,
+      "id": 4,
       "name": "illustration",
       "cinemademo": "./medias/img/demos/imgdemocinema.png",
       "illustration": [
@@ -101,9 +101,9 @@
   },
   {
     "architecture": {
-      "id": 1,
+      "id": 5,
       "name": "architecture",
-      "cinemademo": "./medias/img/demos/imgdemocinema.png",
+      "cinemademo": "/src/assets/photo/bg_architecture.jpg",
       "architecture ": [
         {
           "id": 1,
@@ -114,7 +114,7 @@
           "url": "./medias/img/photo/image_01.png"
         },
         {
-          "id": 2,
+          "id": 6,
           "title": "photo_test",
           "type": "paysages",
           "date": "2025-12-02",

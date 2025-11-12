@@ -31,6 +31,9 @@
     </svg>
   </div>
 
+  <img class="image" :src="currentImage" alt="category demo" />
+  <img class="image autre1" :src="currentImage" alt="category demo" />
+  <img class="image autre2" :src="currentImage" alt="category demo" />
   <swiper
     :slidesPerView="1"
     :spaceBetween="30"
@@ -68,23 +71,37 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
+import categories from "../data/categories.json";
 
 export default {
   components: { Swiper, SwiperSlide },
   setup() {
     const modules = [Pagination, Navigation];
     const currentSlide = ref(0);
+    const currentImage = ref("");
+
+    // ✅ Extract an array of your demo images in correct order
+    const demoImages = [
+      categories[0].photo.photodemo,
+      categories[1].cinema.cinemademo,
+      categories[2].design.cinemademo,
+      categories[3].illustration.cinemademo,
+      categories[4].architecture.cinemademo,
+      categories[5].style.cinemademo,
+    ];
 
     const onSwiperInit = (swiper) => {
       currentSlide.value = swiper.realIndex;
+      currentImage.value = demoImages[swiper.realIndex];
     };
 
     const onSlideChange = (swiper) => {
       currentSlide.value = swiper.realIndex;
-      console.log("slide:", swiper.realIndex);
+      currentImage.value = demoImages[swiper.realIndex];
+      console.log("Slide:", swiper.realIndex, "Image:", currentImage.value);
     };
 
-    return { modules, currentSlide, onSwiperInit, onSlideChange };
+    return { modules, currentSlide, currentImage, onSwiperInit, onSlideChange };
   },
 };
 </script>
@@ -99,6 +116,18 @@ export default {
   src: url("../assets/font/switzer.ttf") format("truetype");
 }
 
+.image {
+  height: 300px;
+  width: 300px;
+  background-color: aqua;
+  position: absolute;
+}
+.autre1 {
+  top: 300px;
+}
+.autre2 {
+  top: 900px;
+}
 .room_title {
   display: block;
   font-size: 10em;
