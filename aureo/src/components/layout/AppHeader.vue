@@ -8,8 +8,7 @@
 <style scoped>
 @font-face {
   font-family: "Instrument";
-  src: url("../../assets/font/InstrumentSerif-Regular.ttf") open
-    format("truetype");
+  src: url("../../assets/font/InstrumentSerif-Regular.ttf") format("truetype");
 }
 .app-header {
   background-color: none;
@@ -21,5 +20,10 @@
   font-family: "Instrument", serif;
   text-transform: uppercase;
   color: black;
+}
+h1{
+  font-size: 6em;
+  margin-top: 24px;
+  letter-spacing: 1px;
 }
 </style>

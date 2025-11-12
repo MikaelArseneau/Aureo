@@ -7,11 +7,12 @@
 .room_selection {
   position: absolute;
   left: 15%;
-  height: 60vh;
+  height: 70vh;
+  bottom: 15%;
   width: 65vw;
   background-image: url("../assets/photo/bg_photographie.jpg");
   background-size: cover;
   background-position: center;
-  bottom: 20%;
+  background-repeat: no-repeat;
 }
 </style>

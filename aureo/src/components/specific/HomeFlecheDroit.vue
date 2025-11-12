@@ -12,7 +12,7 @@
 <style scoped>
 .fleche {
   position: absolute;
-  width: 5vw;
+  width: 40px;
   height: auto;
   right: 20%;
   bottom: 5%;
