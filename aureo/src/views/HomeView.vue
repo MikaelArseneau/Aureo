@@ -39,7 +39,6 @@
     :slidesPerView="1"
     :spaceBetween="30"
     :loop="true"
-    :pagination="{ clickable: true }"
     :navigation="{
       nextEl: '.custom-next',
       prevEl: '.custom-prev',
