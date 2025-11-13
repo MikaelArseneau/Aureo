@@ -1,4 +1,8 @@
+<script setup></script>
 <template>
+  <div class="bouton" @click="test()">
+    <p>Visiter la salle</p>
+  </div>
   <div class="fleche_display">
     <!-- flèche droite (next) -->
     <svg
@@ -31,9 +35,6 @@
     </svg>
   </div>
 
-  <img class="image" :src="currentImage" alt="category demo" />
-  <img class="image autre1" :src="currentImage" alt="category demo" />
-  <img class="image autre2" :src="currentImage" alt="category demo" />
   <swiper
     :slidesPerView="1"
     :spaceBetween="30"
@@ -48,6 +49,30 @@
     @swiper="onSwiperInit"
     @slideChange="onSlideChange"
   >
+    <img
+      class="image autre1"
+      id="image1"
+      :src="currentImage"
+      alt="category demo"
+    />
+    <img
+      class="image autre2"
+      id="image2"
+      :src="currentImage"
+      alt="category demo"
+    />
+    <img
+      class="image autre3"
+      id="image3"
+      :src="currentImage"
+      alt="category demo"
+    />
+    <img
+      class="image autre4"
+      id="image4"
+      :src="currentImage"
+      alt="category demo"
+    />
     <swiper-slide>
       <div class="room_title photo">
         *Photo<span class="titre_photo2">graphie*</span>
@@ -56,25 +81,40 @@
     <swiper-slide
       ><div class="room_title design">Design graphique</div></swiper-slide
     >
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide>
-    <swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide
+      ><div class="room_title illustration">
+        illustration <span class="art">art numérique</span>
+      </div>
+    </swiper-slide>
+    <swiper-slide
+      ><div class="room_title mode">
+        mode <span class="art"> & </span>style
+      </div></swiper-slide
+    >
+    <swiper-slide
+      ><div class="room_title architecture">
+        architecture
+        <div class="ligne"></div>
+        <span class="art">design intérieur</span>
+      </div></swiper-slide
+    >
+    <swiper-slide
+      ><div class="room_title video">
+        vidéo <span class="cinema">&</span>cinéma
+      </div></swiper-slide
+    >
   </swiper>
-
-  <!-- Display current slide index -->
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
+import { gsap } from "gsap";
 import categories from "../data/categories.json";
-
 export default {
   components: { Swiper, SwiperSlide },
   setup() {
@@ -82,7 +122,6 @@ export default {
     const currentSlide = ref(0);
     const currentImage = ref("");
 
-    // ✅ Extract an array of your demo images in correct order
     const demoImages = [
       categories[0].photo.photodemo,
       categories[1].cinema.cinemademo,
@@ -100,15 +139,104 @@ export default {
     const onSlideChange = (swiper) => {
       currentSlide.value = swiper.realIndex;
       currentImage.value = demoImages[swiper.realIndex];
-      console.log("Slide:", swiper.realIndex, "Image:", currentImage.value);
+      console.log(swiper.realIndex + 1);
     };
+
+    onMounted(() => {
+      const image1 = document.getElementById("image1");
+      const image2 = document.getElementById("image2");
+      const image3 = document.getElementById("image3");
+      const image4 = document.getElementById("image4");
+      let tl = gsap.timeline();
+      let tl2 = gsap.timeline();
+      let tl3 = gsap.timeline();
+      let tl4 = gsap.timeline();
+      tl.fromTo(
+        image1,
+        { bottom: "-15%" },
+        {
+          duration: 20,
+          bottom: "110%",
+          repeat: -1,
+          ease: "none",
+        }
+      );
+      tl2.delay(4);
+      tl2.fromTo(
+        image2,
+        { bottom: "-15%" },
+        {
+          duration: 25,
+          bottom: "110%",
+          repeat: -1,
+          ease: "none",
+        }
+      );
+      tl3.delay(8);
+      tl3.fromTo(
+        image3,
+        { bottom: "-15%" },
+        {
+          duration: 25,
+          bottom: "110%",
+          repeat: -1,
+          ease: "none",
+        }
+      );
+      tl4.delay(14);
+      tl4.fromTo(
+        image4,
+        { bottom: "-15%" },
+        {
+          duration: 25,
+          bottom: "110%",
+          repeat: -1,
+          ease: "none",
+        }
+      );
+      image1.addEventListener("mouseenter", () => {
+        tl.pause();
+      });
+      image1.addEventListener("mouseleave", () => {
+        tl.resume();
+      });
+
+      image2.addEventListener("mouseenter", () => {
+        tl2.pause();
+      });
+
+      image2.addEventListener("mouseleave", () => {
+        tl2.resume();
+      });
+
+      image3.addEventListener("mouseenter", () => {
+        tl3.pause();
+      });
+
+      image3.addEventListener("mouseleave", () => {
+        tl3.resume();
+      });
+      image4.addEventListener("mouseenter", () => {
+        tl4.pause();
+      });
+
+      image4.addEventListener("mouseleave", () => {
+        tl4.resume();
+      });
+    });
 
     return { modules, currentSlide, currentImage, onSwiperInit, onSlideChange };
   },
 };
+function test() {
+  alert("dw");
+}
 </script>
 
 <style scoped>
+* {
+  user-select: none;
+}
 @font-face {
   font-family: "Instrument";
   src: url("../assets/font/InstrumentSerif-Regular.ttf") format("truetype");
@@ -118,17 +246,60 @@ export default {
   src: url("../assets/font/switzer.ttf") format("truetype");
 }
 
-.image {
-  height: 300px;
+.bouton {
   width: 300px;
+  height: 80px;
+  position: absolute;
+  bottom: 4%;
+  left: 7%;
+  border: solid 3px black;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+.bouton p {
+  font-family: "instrument";
+  font-size: 2.5em;
+  letter-spacing: 0.3px;
+  color: black;
+  transition: all 0.4s ease-out;
+}
+.bouton:hover {
+  background-color: black;
+}
+.bouton:hover p {
+  color: #f3f3f3;
+}
+.image {
+  height: 100px;
+  aspect-ratio: 16/9;
+  filter: blur(2.5px);
   background-color: aqua;
   position: absolute;
+  z-index: 3;
+  transition: filter 0.4s;
+  z-index: 100;
+}
+
+.image:hover {
+  filter: blur(0px);
 }
 .autre1 {
-  top: 300px;
+  left: 3%;
 }
 .autre2 {
-  top: 900px;
+  left: 44%;
+}
+.autre3 {
+  right: 8%;
+}
+.autre4 {
+  left: 23%;
+}
+.room_title {
 }
 .photo {
   display: block;
@@ -138,6 +309,7 @@ export default {
   font-weight: 600;
   color: #e2dd1f;
   cursor: default;
+  z-index: 1;
 }
 
 .design {
@@ -150,7 +322,59 @@ export default {
   cursor: default;
   text-transform: uppercase;
 }
+.illustration {
+  display: block;
+  font-size: 8em;
+  font-family: "instrument";
+  letter-spacing: -3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+.art {
+  font-family: "switzer";
+}
+.mode {
+  font-size: 8em;
+  font-family: "instrument";
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
 
+.architecture {
+  display: block;
+  font-size: 8em;
+  font-family: "instrument";
+  letter-spacing: -3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ligne {
+  height: 2px;
+  width: 80%;
+  background-color: aqua;
+}
+
+.video {
+  font-size: 8em;
+  font-family: "instrument";
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.cinema {
+  font-family: "switzer";
+}
 .room_title:hover {
   cursor: default;
 }
@@ -167,6 +391,7 @@ export default {
   justify-content: space-around;
   align-items: flex-end;
   right: 10%;
+  z-index: 9999;
 }
 
 .fleche {
@@ -202,6 +427,7 @@ export default {
   width: 100vw;
   color: black;
   position: relative;
+  z-index: 1;
 }
 
 .swiper-slide {

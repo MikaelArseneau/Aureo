@@ -60,5 +60,5 @@ button:focus-visible {
 }
 
 body {
-  overflow-y: hidden;
+  overflow: hidden;
 }
