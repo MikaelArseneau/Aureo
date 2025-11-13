@@ -77,14 +77,15 @@
         *Photo<span class="titre_photo2">graphie*</span>
       </div>
     </swiper-slide>
-    <swiper-slide
-      ><div class="room_title design">Design graphique</div></swiper-slide
-    >
+  
     <swiper-slide
       ><div class="room_title illustration">
         illustration <span class="art">art numérique</span>
       </div>
     </swiper-slide>
+    <swiper-slide
+      ><div class="room_title design">Design graphique</div></swiper-slide
+    >
     <swiper-slide
       ><div class="room_title mode">
         mode <span class="art"> & </span>style

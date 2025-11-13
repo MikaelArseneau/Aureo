@@ -53,7 +53,7 @@
     "design": {
       "id": 3,
       "name": "design",
-      "cinemademo": "./medias/img/demos/imgdemocinema.png",
+      "cinemademo": "src/assets/photo/designBg.webp",
       "design": [
         {
           "id": 1,
