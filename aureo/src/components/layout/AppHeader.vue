@@ -1,4 +1,4 @@
-<script setup></script>
+
 <template>
   <nav class="app-header">
     <p class="titre">Aureo</p>
@@ -27,7 +27,7 @@
   left: 0;
   font-family: "Instrument", serif;
   text-transform: uppercase;
-  color: black;
+  color: #1a1a1a;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -49,3 +49,25 @@
   cursor: pointer;
 }
 </style>
+
+<script setup>
+import { gsap } from "gsap";
+import { onMounted } from "vue";
+
+onMounted(() => {
+  const aureo = document.querySelectorAll(".app-header p");
+  const tl = gsap.timeline();
+tl.delay(0.5);
+tl.fromTo(
+    aureo,
+    { opacity: 0, y: 20 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: "power2.out",
+      stagger: 0.25, 
+    }
+  );
+});
+</script>

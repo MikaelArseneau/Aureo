@@ -142,6 +142,7 @@ export default {
     };
 
     onMounted(() => {
+      const swiper = document.getElementsByClassName("swiper-slide");
       const image1 = document.getElementById("image1");
       const image2 = document.getElementById("image2");
       const image3 = document.getElementById("image3");
@@ -150,6 +151,7 @@ export default {
       let tl2 = gsap.timeline();
       let tl3 = gsap.timeline();
       let tl4 = gsap.timeline();
+      tl.delay(1);
       tl.fromTo(
         image1,
         { bottom: "-15%" },
@@ -160,7 +162,7 @@ export default {
           ease: "none",
         }
       );
-      tl2.delay(4);
+      tl2.delay(5);
       tl2.fromTo(
         image2,
         { bottom: "-15%" },
@@ -171,7 +173,7 @@ export default {
           ease: "none",
         }
       );
-      tl3.delay(8);
+      tl3.delay(9);
       tl3.fromTo(
         image3,
         { bottom: "-15%" },
@@ -182,7 +184,7 @@ export default {
           ease: "none",
         }
       );
-      tl4.delay(14);
+      tl4.delay(15);
       tl4.fromTo(
         image4,
         { bottom: "-15%" },
@@ -251,7 +253,7 @@ function test() {
   position: absolute;
   bottom: 4%;
   left: 7%;
-  border: solid 3px black;
+  border: solid 3px #1a1a1a;
   z-index: 999999;
   display: flex;
   justify-content: center;
@@ -263,11 +265,11 @@ function test() {
   font-family: "instrument";
   font-size: 2.5em;
   letter-spacing: 0.3px;
-  color: black;
+  color: #1a1a1a;
   transition: all 0.4s ease-out;
 }
 .bouton:hover {
-  background-color: black;
+  background-color: #1a1a1a;
 }
 .bouton:hover p {
   color: #f3f3f3;
@@ -396,7 +398,7 @@ function test() {
 .fleche {
   width: 50px;
   height: auto;
-  fill: black;
+  fill: #1a1a1a;
   transition: fill 0.3s ease;
   cursor: pointer;
   z-index: 9999;
@@ -406,9 +408,6 @@ function test() {
   transform: scaleX(-1);
 }
 
-.fleche:hover {
-  fill: red;
-}
 
 /* remove native arrows */
 .swiper-button-prev::after,
@@ -437,11 +436,4 @@ function test() {
   cursor: auto;
 }
 
-.slide-index {
-  position: absolute;
-  bottom: 2%;
-  left: 2%;
-  color: black;
-  font-size: 1.2rem;
-}
 </style>
