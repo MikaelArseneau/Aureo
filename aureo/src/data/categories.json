@@ -78,7 +78,7 @@
     "illustration": {
       "id": 4,
       "name": "illustration",
-      "photodemo": "./medias/img/demos/imgdemocinema.png",
+      "photodemo": "src/assets/photo/bg_numerique.webp",
       "illustration": [
         {
           "id": 1,

@@ -11,14 +11,26 @@ const catName = cat[catKey].name; // nom de la catégorie
 </script>
  
 <template>
-  <div class="containerDisplayName">
+  <div class="containerRoom">
     <h1 class="displayName">/ {{ catName }} / <span class="lowercase">images</span></h1>
-    
-    
   </div>
+  <h2>allo</h2>
+
+  
+
+
+  
 </template>
  
 <style scoped>
+
+h2{
+  position: absolute;
+  color: aqua;
+  font-size: 30px;
+  top: 0px;
+}
+
 .room-view {
   padding: 20px;
 }
@@ -33,7 +45,7 @@ const catName = cat[catKey].name; // nom de la catégorie
   font-size: 0.6em;
 }
 
-.containerDisplayName {
+.containerRoom {
   display: flex;
   justify-content: center;
   align-items: flex-end;
