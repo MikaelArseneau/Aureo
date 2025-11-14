@@ -28,7 +28,7 @@
     "cinema": {
       "id": 2,
       "name": "cinema",
-      "cinemademo": "./medias/img/demos/imgdemocinema.png",
+      "photodemo": "./medias/img/demos/imgdemocinema.png",
       "videos": [
         {
           "id": 1,
@@ -53,7 +53,7 @@
     "design": {
       "id": 3,
       "name": "design",
-      "cinemademo": "src/assets/photo/designBg.webp",
+      "photodemo": "src/assets/photo/designBg.webp",
       "design": [
         {
           "id": 1,
@@ -78,7 +78,7 @@
     "illustration": {
       "id": 4,
       "name": "illustration",
-      "cinemademo": "./medias/img/demos/imgdemocinema.png",
+      "photodemo": "./medias/img/demos/imgdemocinema.png",
       "illustration": [
         {
           "id": 1,
@@ -103,7 +103,7 @@
     "architecture": {
       "id": 5,
       "name": "architecture",
-      "cinemademo": "/src/assets/photo/bg_architecture.jpg",
+      "photodemo": "src/assets/photo/bg_architecture.wepb",
       "architecture ": [
         {
           "id": 1,
@@ -128,7 +128,7 @@
     "style": {
       "id": 6,
       "name": "style",
-      "cinemademo": "./medias/img/demos/imgdemocinema.png",
+      "photodemo": "./medias/img/demos/imgdemocinema.png",
       "style": [
         {
           "id": 1,

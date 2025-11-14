@@ -129,11 +129,11 @@ export default {
 
     const demoImages = [
       categories[0].photo.photodemo,
-      categories[1].cinema.cinemademo,
-      categories[2].design.cinemademo,
-      categories[3].illustration.cinemademo,
-      categories[4].architecture.cinemademo,
-      categories[5].style.cinemademo,
+      categories[1].cinema.photodemo,
+      categories[2].design.photodemo,
+      categories[3].illustration.photodemo,
+      categories[4].architecture.photodemo,
+      categories[5].style.photodemo,
     ];
 
     const onSwiperInit = (swiper) => {
