@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="bouton" @click="$emit('click')">
+  <div class="bouton" @click="$emit('click', id_cat)">
     <p>Visiter la salle</p>
   </div>
   <div class="fleche_display">
@@ -139,7 +139,8 @@ export default {
     const onSlideChange = (swiper) => {
       currentSlide.value = swiper.realIndex;
       currentImage.value = demoImages[swiper.realIndex];
-      console.log(swiper.realIndex + 1);
+      console.log(swiper.realIndex);
+      const id_cat = swiper.realIndex + 1;
     };
 
     onMounted(() => {
