@@ -11,10 +11,23 @@ const catName = cat[catKey].name; // nom de la catégorie
 </script>
  
 <template>
+<main>
+  <div class="caroussel">
+    
+
+
+  </div>
+
+</main>
+<footer>
   <div class="containerRoom">
     <h1 class="displayName">/ {{ catName }} / <span class="lowercase">images</span></h1>
   </div>
-  <h2>allo</h2>
+
+</footer>
+
+ 
+  
 
   
 
@@ -25,10 +38,9 @@ const catName = cat[catKey].name; // nom de la catégorie
 <style scoped>
 
 h2{
-  position: absolute;
   color: aqua;
   font-size: 30px;
-  top: 0px;
+
 }
 
 .room-view {
@@ -45,13 +57,24 @@ h2{
   font-size: 0.6em;
 }
 
-.containerRoom {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 100vh;
-  width: 100vw;
+main{
+position: absolute;
+height: 60%;
+width: 100%;
+top: 25%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
+
+footer{
+position: absolute;
+bottom: 0;
+text-align: center;
+width: 100%;
+}
+
+
 
 .displayName {
   font-family: "Instrument", serif;

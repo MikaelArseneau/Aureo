@@ -1,5 +1,7 @@
-<script setup></script>
+<script setup>
+</script>
 <template>
+  <AppHeader />
   <router-link :to="{ name: 'room', params : { id: id_cat}}" class="bouton">
     <p>Visiter la salle</p>
   </router-link>
