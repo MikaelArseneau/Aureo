@@ -1,12 +1,13 @@
 <template>
-  <div class="bouton">
-    <p>Visiter la salle</p>
-  </div>
+  <div class="suivie">Aureo</div>
 </template>
 
 <style scoped>
-.bouton {
-  width: 80px;
-  height: 80px;
+@font-face {
+  font-family: "Instrument";
+  src: url("../../assets/font/InstrumentSerif-Regular.ttf") format("truetype");
+}
+.suivi {
+  font-family: "instrument";
 }
 </style>

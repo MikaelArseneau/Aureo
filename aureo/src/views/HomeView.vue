@@ -143,16 +143,17 @@ export default {
     };
 
     onMounted(() => {
-      const swiper = document.getElementsByClassName("swiper-slide");
+      const swiper = document.getElementsByClassName("swiper");
       const image1 = document.getElementById("image1");
       const image2 = document.getElementById("image2");
       const image3 = document.getElementById("image3");
       const image4 = document.getElementById("image4");
+      let tl_swiper = gsap.timeline();
       let tl = gsap.timeline();
       let tl2 = gsap.timeline();
       let tl3 = gsap.timeline();
       let tl4 = gsap.timeline();
-      tl.delay(1);
+      tl.delay(2);
       tl.fromTo(
         image1,
         { bottom: "-15%" },
@@ -163,7 +164,7 @@ export default {
           ease: "none",
         }
       );
-      tl2.delay(5);
+      tl2.delay(6);
       tl2.fromTo(
         image2,
         { bottom: "-15%" },
@@ -174,7 +175,7 @@ export default {
           ease: "none",
         }
       );
-      tl3.delay(9);
+      tl3.delay(10);
       tl3.fromTo(
         image3,
         { bottom: "-15%" },
@@ -185,7 +186,7 @@ export default {
           ease: "none",
         }
       );
-      tl4.delay(15);
+      tl4.delay(16);
       tl4.fromTo(
         image4,
         { bottom: "-15%" },
@@ -194,6 +195,17 @@ export default {
           bottom: "110%",
           repeat: -1,
           ease: "none",
+        }
+      );
+      tl_swiper.delay(1.5);
+      tl_swiper.fromTo(
+        swiper,
+        { opacity: "0", y: 40 },
+        {
+          y: 0,
+          duration: 0.6,
+          opacity: "1",
+          ease: "power1",
         }
       );
       image1.addEventListener("mouseenter", () => {
