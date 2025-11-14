@@ -121,6 +121,7 @@ export default {
     const modules = [Pagination, Navigation];
     const currentSlide = ref(0);
     const currentImage = ref("");
+    const id_cat = ref(1);
 
     const demoImages = [
       categories[0].photo.photodemo,
@@ -134,13 +135,14 @@ export default {
     const onSwiperInit = (swiper) => {
       currentSlide.value = swiper.realIndex;
       currentImage.value = demoImages[swiper.realIndex];
+      id_cat.value = swiper.realIndex + 1;
     };
 
     const onSlideChange = (swiper) => {
       currentSlide.value = swiper.realIndex;
       currentImage.value = demoImages[swiper.realIndex];
       console.log(swiper.realIndex);
-      const id_cat = swiper.realIndex + 1;
+     id_cat.value = swiper.realIndex + 1;
     };
 
     onMounted(() => {
@@ -240,7 +242,7 @@ export default {
       });
     });
 
-    return { modules, currentSlide, currentImage, onSwiperInit, onSlideChange };
+    return { modules, currentSlide, currentImage, onSwiperInit, onSlideChange, id_cat };
   },
 };
 function test() {

@@ -17,7 +17,7 @@ import HomeView from "./views/HomeView.vue";
 
 <router-view />
 
-  <!-- <HomeView /> -->
+
   </div>
 </template>
 
