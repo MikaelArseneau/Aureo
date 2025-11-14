@@ -1,35 +1,14 @@
-<!-- src/views/RoomView.vue -->
+<!-- RoomView.vue -->
+<script setup>
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+</script>
+
 <template>
   <div>
-    <h1>Salle: {{ room.name }}</h1>
-    <p>ID: {{ roomId }}</p>
+    <h1>Bienvenue dans la salle !</h1>
+    <p>ID de la salle : {{ route.params.id }}</p>
+    <p>Ici tu peux mettre tout le contenu de ta room : images, boutons, etc.</p>
   </div>
 </template>
-
-<script>
-
-
-export default {
-  data() {
-    return {
-      
-    }
-  },
-
-  created() {
-    // Accès au paramètre dynamique :id
-    this.roomId = this.$route.params.id;
-
-    // Charger les données de la salle
-   
-  },
-
-  watch: {
-    // Réagir aux changements de paramètre
-    '$route.params.id'(newId) {
-      this.roomId = newId;
-      
-    }
-  }
-}
-</script>
