@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="bouton" @click="test()">
+  <div class="bouton" @click="$emit('click')">
     <p>Visiter la salle</p>
   </div>
   <div class="fleche_display">
