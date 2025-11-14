@@ -13,7 +13,7 @@ const catName = cat[catKey].name; // nom de la catégorie
 <template>
 <main>
   <div class="caroussel">
-    
+
 
 
   </div>
@@ -25,17 +25,15 @@ const catName = cat[catKey].name; // nom de la catégorie
   </div>
 
 </footer>
-
- 
-  
-
-  
-
-
-  
 </template>
  
 <style scoped>
+
+.caroussel{
+  display: flex;
+  flex-direction: wrap;
+  overflow: hidden;
+}
 
 h2{
   color: aqua;
