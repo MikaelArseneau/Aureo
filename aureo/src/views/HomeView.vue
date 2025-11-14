@@ -77,33 +77,33 @@
         *Photo<span class="titre_photo2">graphie*</span>
       </div>
     </swiper-slide>
-  
-    <swiper-slide
-      ><div class="room_title illustration">
-        illustration <span class="art">art numérique</span>
-      </div>
-    </swiper-slide>
-    <swiper-slide
-      ><div class="room_title design">Design graphique</div></swiper-slide
-    >
-    <swiper-slide
-      ><div class="room_title mode">
-        mode <span class="art"> & </span>style
-      </div></swiper-slide
-    >
-    <swiper-slide
-      ><div class="room_title architecture">
-        architecture
-        <div class="ligne"></div>
-        <span class="art">design intérieur</span>
-      </div></swiper-slide
-    >
     <swiper-slide
       ><div class="room_title video">
         vidéo <span class="cinema">&</span>cinéma
       </div></swiper-slide
     >
   </swiper>
+
+  <swiper-slide
+    ><div class="room_title design">Design graphique</div></swiper-slide
+  >
+  <swiper-slide
+    ><div class="room_title illustration">
+      illustration <span class="art">art numérique</span>
+    </div>
+  </swiper-slide>
+  <swiper-slide
+    ><div class="room_title architecture">
+      architecture
+      <div class="ligne"></div>
+      <span class="art">design intérieur</span>
+    </div></swiper-slide
+  >
+  <swiper-slide
+    ><div class="room_title mode">
+      mode <span class="art"> & </span>style
+    </div></swiper-slide
+  >
 </template>
 
 <script>
@@ -409,7 +409,6 @@ function test() {
   transform: scaleX(-1);
 }
 
-
 /* remove native arrows */
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -436,5 +435,4 @@ function test() {
   height: 100%;
   cursor: auto;
 }
-
 </style>
