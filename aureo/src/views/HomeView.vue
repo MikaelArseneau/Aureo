@@ -35,6 +35,10 @@
     </svg>
   </div>
 
+<div>
+  
+</div>
+
   <swiper
     :slidesPerView="1"
     :spaceBetween="30"
@@ -84,7 +88,7 @@
     >
 
     <swiper-slide
-      ><div class="room_title design">Design graphique</div></swiper-slide
+      ><div class="room_title design">Design <span class="graphique">&nbsp;graphique&nbsp;</span></div></swiper-slide
     >
     <swiper-slide
       ><div class="room_title illustration">
@@ -100,7 +104,7 @@
     >
     <swiper-slide
       ><div class="room_title mode">
-        mode <span class="art"> & </span>style
+        mode <span class="et"> & </span> <span class="style">style</span>
       </div></swiper-slide
     >
   </swiper>
@@ -264,8 +268,8 @@ function test() {
 }
 
 .bouton {
-  width: 300px;
-  height: 80px;
+  width: 200px;
+  height: 65px;
   position: absolute;
   bottom: 4%;
   left: 7%;
@@ -279,7 +283,7 @@ function test() {
 }
 .bouton p {
   font-family: "instrument";
-  font-size: 2.5em;
+  font-size: 1.8em;
   letter-spacing: 0.3px;
   color: #1a1a1a;
   transition: all 0.4s ease-out;
@@ -296,9 +300,8 @@ function test() {
   filter: blur(2.5px);
   background-color: aqua;
   position: absolute;
-  z-index: 3;
   transition: filter 0.4s;
-  z-index: 100;
+  z-index: 2;
 }
 
 .image:hover {
@@ -317,6 +320,9 @@ function test() {
   left: 23%;
 }
 .room_title {
+
+  z-index: 3 !important;
+  
 }
 .photo {
   display: block;
@@ -324,9 +330,9 @@ function test() {
   font-family: "switzer";
   letter-spacing: -3px;
   font-weight: 600;
-  color: #e2dd1f;
+ color: #1a1a1a;
   cursor: default;
-  z-index: 1;
+  z-index: 2;
 }
 
 .design {
@@ -338,6 +344,11 @@ function test() {
   background: linear-gradient (135deg, #42d392, #647eff);
   cursor: default;
   text-transform: uppercase;
+}
+
+.graphique {
+  color: #f3f3f3;
+  background-color: #1a1a1a;
 }
 .illustration {
   display: block;
@@ -360,6 +371,15 @@ function test() {
   display: flex;
   flex-direction: row;
   gap: 30px;
+}
+
+.et{
+  font-family: "switzer";
+  font-size: 1.5em;
+}
+
+.style {
+ margin-top: 15%;
 }
 
 .architecture {
@@ -440,7 +460,8 @@ function test() {
   width: 100vw;
   color: black;
   position: relative;
-  z-index: 1;
+ 
+
 }
 
 .swiper-slide {

@@ -1,9 +1,9 @@
 
 <template>
-  <nav class="app-header">
+  <router-link to="/" class="app-header">
     <p class="titre">Aureo</p>
     <p class="digital">Digital</p>
-  </nav>
+  </router-link>
 </template>
 
 <style scoped>

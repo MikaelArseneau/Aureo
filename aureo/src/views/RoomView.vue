@@ -1,14 +1,52 @@
-<!-- RoomView.vue -->
 <script setup>
 import { useRoute } from "vue-router";
-
+import categories from "../data/categories.json";
+ 
 const route = useRoute();
-</script>
+ 
+const cat = categories[route.params.id - 1]; // -1 car array commence à 0
+const catKey = Object.keys(cat)[0]; // récupère "photo", "cinema", ...
+const catName = cat[catKey].name; // nom de la catégorie
 
+</script>
+ 
 <template>
-  <div>
-    <h1>Bienvenue dans la salle !</h1>
-    <p>ID de la salle : {{ route.params.id }}</p>
-    <p>Ici tu peux mettre tout le contenu de ta room : images, boutons, etc.</p>
+  <div class="containerDisplayName">
+    <h1 class="displayName">/ {{ catName }} / <span class="lowercase">images</span></h1>
+    
+    
   </div>
 </template>
+ 
+<style scoped>
+.room-view {
+  padding: 20px;
+}
+ 
+.room-view h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.lowercase {
+  text-transform: lowercase;
+  font-size: 0.6em;
+}
+
+.containerDisplayName {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+  width: 100vw;
+}
+
+.displayName {
+  font-family: "Instrument", serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin: 40px;
+
+}
+</style>
