@@ -17,6 +17,7 @@
 }
 * {
   margin: 0;
+  user-select: none;
 }
 .app-header {
   background-color: none;

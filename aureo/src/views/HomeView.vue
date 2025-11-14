@@ -1,8 +1,8 @@
 <script setup></script>
 <template>
-  <div class="bouton" @click="$emit('click', id_cat)">
+  <router-link :to="{ name: 'room', params : { id: id_cat}}" class="bouton">
     <p>Visiter la salle</p>
-  </div>
+  </router-link>
   <div class="fleche_display">
     <!-- flèche droite (next) -->
     <svg
