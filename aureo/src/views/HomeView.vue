@@ -1,8 +1,7 @@
-<script setup>
-</script>
+<script setup></script>
 <template>
   <AppHeader />
-  <router-link :to="{ name: 'room', params : { id: id_cat}}" class="bouton">
+  <router-link :to="{ name: 'room', params: { id: id_cat } }" class="bouton">
     <p>Visiter la salle</p>
   </router-link>
   <div class="fleche_display">
@@ -37,9 +36,7 @@
     </svg>
   </div>
 
-<div>
-  
-</div>
+  <div></div>
 
   <swiper
     :slidesPerView="1"
@@ -90,7 +87,9 @@
     >
 
     <swiper-slide
-      ><div class="room_title design">Design <span class="graphique">&nbsp;graphique&nbsp;</span></div></swiper-slide
+      ><div class="room_title design">
+        Design <span class="graphique">&nbsp;graphique&nbsp;</span>
+      </div></swiper-slide
     >
     <swiper-slide
       ><div class="room_title illustration">
@@ -141,14 +140,14 @@ export default {
     const onSwiperInit = (swiper) => {
       currentSlide.value = swiper.realIndex;
       currentImage.value = demoImages[swiper.realIndex];
-      id_cat.value = swiper.realIndex + 1;
+      id_cat.value = swiper.realIndex;
     };
 
     const onSlideChange = (swiper) => {
       currentSlide.value = swiper.realIndex;
       currentImage.value = demoImages[swiper.realIndex];
       console.log(swiper.realIndex);
-     id_cat.value = swiper.realIndex + 1;
+      id_cat.value = swiper.realIndex;
     };
 
     onMounted(() => {
@@ -248,7 +247,14 @@ export default {
       });
     });
 
-    return { modules, currentSlide, currentImage, onSwiperInit, onSlideChange, id_cat };
+    return {
+      modules,
+      currentSlide,
+      currentImage,
+      onSwiperInit,
+      onSlideChange,
+      id_cat,
+    };
   },
 };
 function test() {
@@ -304,7 +310,6 @@ function test() {
   position: absolute;
   transition: filter 0.4s;
   z-index: 2;
- 
 }
 
 .image:hover {
@@ -323,9 +328,7 @@ function test() {
   left: 23%;
 }
 .room_title {
-
   z-index: 3 !important;
-  
 }
 .photo {
   display: block;
@@ -333,7 +336,7 @@ function test() {
   font-family: "switzer";
   letter-spacing: -3px;
   font-weight: 600;
- color: #1a1a1a;
+  color: #1a1a1a;
   cursor: default;
   z-index: 2;
 }
@@ -376,13 +379,13 @@ function test() {
   gap: 30px;
 }
 
-.et{
+.et {
   font-family: "switzer";
   font-size: 1.5em;
 }
 
 .style {
- margin-top: 15%;
+  margin-top: 15%;
 }
 
 .architecture {
@@ -463,8 +466,6 @@ function test() {
   width: 100vw;
   color: black;
   position: relative;
- 
-
 }
 
 .swiper-slide {
