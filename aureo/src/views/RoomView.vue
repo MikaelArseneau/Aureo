@@ -43,10 +43,10 @@ console.log(catPhoto)
   color: #1a1a1a;
 }
 .caroussel {
+  margin-top: 500px;
   position: relative;
-  bottom: 0;
-  display: flex;
-  flex-direction: wrap;
+user-select: none;
+  cursor: grab;
   overflow: hidden;
   padding: 20px;
   height: 300px;

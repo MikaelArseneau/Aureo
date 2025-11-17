@@ -15,7 +15,7 @@ const catPhoto = cat[catKey].creations;
 console.log(catPhoto)
 </script>
 <template>
-  <swiper :slidesPerView="8" 
+  <swiper :slidesPerView="8.7" 
   :spaceBetween="30" :freeMode="true" :mousewheel="true" :loop="true" :modules="modules" class="mySwiper" > <swiper-slide v-for="photo in catPhoto" :key="photo.id"> <img :src="photo.url" alt="Cat photo" /> </swiper-slide> </swiper>
   </template>
   <script>
