@@ -15,8 +15,16 @@ const catPhoto = cat[catKey].creations;
 console.log(catPhoto)
 </script>
 <template>
-  <swiper :slidesPerView="8.7" 
-  :spaceBetween="30" :freeMode="true" :mousewheel="true" :loop="true" :modules="modules" class="mySwiper" > <swiper-slide v-for="photo in catPhoto" :key="photo.id"> <img :src="photo.url" alt="Cat photo" /> </swiper-slide> </swiper>
+  <swiper :slides-per-view="8.7"
+  :space-between="8"
+  :breakpoints="{
+    320: { slidesPerView: 2.7 },
+    480: { slidesPerView: 3.7 },
+    640: { slidesPerView: 4.7 },
+    768: { slidesPerView: 5.7 },
+    1024: { slidesPerView: 6.7 },
+    1280: { slidesPerView: 8.7 }
+  }" :freeMode="true" :mousewheel="true" :loop="true" :modules="modules" class="mySwiper" > <swiper-slide v-for="photo in catPhoto" :key="photo.id"> <img :src="photo.url" alt="Cat photo" /> </swiper-slide> </swiper>
   </template>
   <script>
     // Import Swiper Vue.js components
