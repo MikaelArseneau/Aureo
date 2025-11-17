@@ -11,7 +11,7 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/photographie/image1.webp"
+          "url": "../photographie/image1.webp"
         },
         {
           "id": 2,
@@ -19,7 +19,7 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/photographie/image2.webp"
+          "url": "../photographie/image2.webp"
         },
         {
           "id": 1,
@@ -27,7 +27,7 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/photographie/image3.webp"
+          "url": "../photographie/image3.webp"
         },
         {
           "id": 2,
@@ -35,14 +35,14 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/photographie/image4.webp"
+          "url": "../photographie/image4.webp"
         },{
           "id": 1,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/photographie/image5.webp"
+          "url": "../photographie/image5.webp"
         },
         {
           "id": 2,
@@ -50,7 +50,7 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/photographie/image6.webp"
+          "url": "../photographie/image6.webp"
         },
         {
           "id": 1,
@@ -58,7 +58,7 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/photographie/image7.webp"
+          "url": "../photographie/image7.webp"
         },
         {
           "id": 2,
@@ -66,21 +66,21 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/photographie/image8.webp"
+          "url": "../photographie/image8.webp"
         },{
           "id": 1,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/photographie/image9.webp"
+          "url": "../photographie/image9.webp"
         },{
           "id": 1,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/photographie/image10.webp"
+          "url": "../photographie/image10.webp"
         }
         ,{
           "id": 1,
@@ -88,7 +88,7 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/photographie/image11.webp"
+          "url": "../photographie/image11.webp"
         }
         ,{
           "id": 1,
@@ -96,7 +96,7 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/photographie/image12.webp"
+          "url": "../photographie/image12.webp"
         }
       ]
     }
@@ -159,19 +159,19 @@
       "creations": [
         {
           "id": 1,
-          "title": "photo_test",
+          "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "./medias/img/photo/image_01.png"
+          "url": "/src/assets/photo/numerique/image1.webp"
         },
         {
-          "id": 2,
-          "title": "photo_test",
+          "id": 1,
+          "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "./medias/img/photo/image_01.png"
+          "url": "/src/assets/photo/numerique/image2.webp"
         }
       ]
     }
