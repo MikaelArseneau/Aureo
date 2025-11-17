@@ -69,7 +69,9 @@ console.log(catPhoto)
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
+ min-width: 200px;
+ max-width: 300px;
+
 }
 
 .swiper-slide img {
