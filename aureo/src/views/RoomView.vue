@@ -1,6 +1,7 @@
 <script setup>
 import { useRoute } from "vue-router";
 import { useDataStore } from "../stores/useMemoryStore";
+import swiperRoom from "../components/specific/swiperRoom.vue";
 
 const route = useRoute();
 const store = useDataStore();
@@ -10,18 +11,21 @@ const id = Number(route.params.id);
 const cat = store.getCategoryById(id);
 const catKey = Object.keys(cat)[0];
 const catName = cat[catKey].name;
-const catPhoto = cat[catKey].photo;
+const catPhoto = cat[catKey].creations;
 console.log(catPhoto)
 </script>
 
 <template>
   <main>
     <div class="caroussel">
+    <swiper-room></swiper-room>
+  </div>
+    <!-- <div class="caroussel">
       <div class="test" v-for="photo in catPhoto">{{ photo.title }}
 <img :src="photo.url" alt=" fonctionne pas">
 
       </div>
-    </div>
+    </div> -->
   </main>
 
   <footer>
@@ -31,6 +35,7 @@ console.log(catPhoto)
       </h1>
     </div>
   </footer>
+ 
 </template>
 
 <style scoped>
@@ -38,10 +43,13 @@ console.log(catPhoto)
   color: #1a1a1a;
 }
 .caroussel {
+  position: relative;
+  bottom: 0;
   display: flex;
   flex-direction: wrap;
   overflow: hidden;
   padding: 20px;
+  height: 300px;
 }
 
 .lowercase {

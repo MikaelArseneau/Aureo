@@ -4,7 +4,7 @@
       "id": 1,
       "name": "photographie",
       "photodemo": "src/assets/photo/bg_photographie.jpg",
-      "photo": [
+      "creations": [
         {
           "id": 1,
           "title": "alex",
@@ -19,7 +19,85 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "src/assets/photo/bg_photographie.jpg"
+          "url": "/src/assets/photo/bg_architecture.webp"
+        },
+        {
+          "id": 1,
+          "title": "alex",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "/src/assets/photo/bg_architecture.webp"
+        },
+        {
+          "id": 2,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "/src/assets/photo/bg_architecture.webp"
+        },{
+          "id": 1,
+          "title": "alex",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "/src/assets/photo/bg_architecture.webp"
+        },
+        {
+          "id": 2,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "/src/assets/photo/bg_architecture.webp"
+        },
+        {
+          "id": 1,
+          "title": "alex",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "/src/assets/photo/bg_architecture.webp"
+        },
+        {
+          "id": 2,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "/src/assets/photo/bg_architecture.webp"
+        },{
+          "id": 1,
+          "title": "alex",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "/src/assets/photo/bg_architecture.webp"
+        },
+        {
+          "id": 2,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "/src/assets/photo/bg_architecture.webp"
+        },
+        {
+          "id": 1,
+          "title": "alex",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "/src/assets/photo/bg_architecture.webp"
+        },
+        {
+          "id": 2,
+          "title": "photo_test",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "/src/assets/photo/bg_architecture.webp"
         }
       ]
     }
@@ -29,7 +107,7 @@
       "id": 2,
       "name": "cinema",
       "photodemo": "./medias/img/demos/imgdemocinema.png",
-      "photo": [
+      "creations": [
         {
           "id": 1,
           "title": "photo_test",
@@ -54,7 +132,7 @@
       "id": 3,
       "name": "design",
       "photodemo": "src/assets/photo/designBg.webp",
-      "photo": [
+      "creations": [
         {
           "id": 1,
           "title": "photo_test",
@@ -79,7 +157,7 @@
       "id": 4,
       "name": "illustration",
       "photodemo": "src/assets/photo/bg_numerique.webp",
-      "photo": [
+      "creations": [
         {
           "id": 1,
           "title": "photo_test",
@@ -104,7 +182,7 @@
       "id": 5,
       "name": "architecture",
       "photodemo": "src/assets/photo/bg_architecture.webp",
-      "photo ": [
+      "creations ": [
         {
           "id": 1,
           "title": "photo_test",
@@ -129,7 +207,7 @@
       "id": 6,
       "name": "style",
       "photodemo": "./medias/img/demos/imgdemocinema.png",
-      "photo": [
+      "creations": [
         {
           "id": 1,
           "title": "photo_test",
