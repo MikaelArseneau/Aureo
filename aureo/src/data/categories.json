@@ -4,14 +4,14 @@
       "id": 1,
       "name": "photographie",
       "photodemo": "src/assets/photo/bg_photographie.jpg",
-      "photos": [
+      "photo": [
         {
           "id": 1,
-          "title": "photo_test",
+          "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "./medias/img/photo/image_01.png"
+          "url": "/src/assets/photo/bg_architecture.webp"
         },
         {
           "id": 2,
@@ -19,7 +19,7 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "./medias/img/photo/image_01.png"
+          "url": "src/assets/photo/bg_photographie.jpg"
         }
       ]
     }
@@ -29,7 +29,7 @@
       "id": 2,
       "name": "cinema",
       "photodemo": "./medias/img/demos/imgdemocinema.png",
-      "videos": [
+      "photo": [
         {
           "id": 1,
           "title": "photo_test",
@@ -54,7 +54,7 @@
       "id": 3,
       "name": "design",
       "photodemo": "src/assets/photo/designBg.webp",
-      "design": [
+      "photo": [
         {
           "id": 1,
           "title": "photo_test",
@@ -79,7 +79,7 @@
       "id": 4,
       "name": "illustration",
       "photodemo": "src/assets/photo/bg_numerique.webp",
-      "illustration": [
+      "photo": [
         {
           "id": 1,
           "title": "photo_test",
@@ -104,7 +104,7 @@
       "id": 5,
       "name": "architecture",
       "photodemo": "src/assets/photo/bg_architecture.webp",
-      "architecture ": [
+      "photo ": [
         {
           "id": 1,
           "title": "photo_test",
@@ -129,7 +129,7 @@
       "id": 6,
       "name": "style",
       "photodemo": "./medias/img/demos/imgdemocinema.png",
-      "style": [
+      "photo": [
         {
           "id": 1,
           "title": "photo_test",

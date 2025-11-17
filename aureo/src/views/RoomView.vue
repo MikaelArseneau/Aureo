@@ -10,11 +10,18 @@ const id = Number(route.params.id);
 const cat = store.getCategoryById(id);
 const catKey = Object.keys(cat)[0];
 const catName = cat[catKey].name;
+const catPhoto = cat[catKey].photo;
+console.log(catPhoto)
 </script>
 
 <template>
   <main>
-    <div class="caroussel"></div>
+    <div class="caroussel">
+      <div class="test" v-for="photo in catPhoto">{{ photo.title }}
+<img :src="photo.url" alt=" fonctionne pas">
+
+      </div>
+    </div>
   </main>
 
   <footer>
@@ -27,6 +34,9 @@ const catName = cat[catKey].name;
 </template>
 
 <style scoped>
+.test{
+  color: #1a1a1a;
+}
 .caroussel {
   display: flex;
   flex-direction: wrap;
