@@ -8,8 +8,8 @@ const store = useDataStore();
 const id = Number(route.params.id);
 
 const cat = store.getCategoryById(id);
-const catKey = cat ? Object.keys(cat)[0] : null;
-const catName = catKey ? cat[catKey].name : "Catégorie introuvable";
+const catKey = Object.keys(cat)[0];
+const catName = cat[catKey].name;
 </script>
 
 <template>
