@@ -23,7 +23,8 @@ console.log(catPhoto)
     640: { slidesPerView: 4.7 },
     768: { slidesPerView: 5.7 },
     1024: { slidesPerView: 6.7 },
-    1280: { slidesPerView: 8.7 }
+    1280: { slidesPerView: 8.7 },
+    1920: { slidesPerView: 10.7 }
   }" :freeMode="true" :mousewheel="true" :loop="true" :modules="modules" class="mySwiper" > <swiper-slide v-for="photo in catPhoto" :key="photo.id"> <img :src="photo.url" alt="Cat photo" /> </swiper-slide> </swiper>
   </template>
   <script>
@@ -70,7 +71,7 @@ console.log(catPhoto)
   justify-content: center;
   align-items: center;
  min-width: 200px;
- max-width: 300px;
+ max-width: 250px;
 
 }
 
