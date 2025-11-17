@@ -163,7 +163,7 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/numerique/image1.webp"
+          "url": "/../numerique/image1.webp"
         },
         {
           "id": 1,
@@ -171,7 +171,7 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/src/assets/photo/numerique/image2.webp"
+          "url": "/../numerique/image2.webp"
         }
       ]
     }
