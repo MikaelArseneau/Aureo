@@ -1,9 +1,9 @@
 import { defineStore } from "pinia";
-import categories from "../data/categories.json";
+import categoriesJson from "../data/categories.json";
 
 export const useDataStore = defineStore("dataStore", {
   state: () => ({
-    categories,
+    categories:categoriesJson
   }),
 
   getters: {
