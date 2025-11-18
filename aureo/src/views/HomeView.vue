@@ -274,7 +274,9 @@ function test() {
   font-family: "switzer";
   src: url("../assets/font/switzer.ttf") format("truetype");
 }
-
+body {
+  overflow: hidden;
+}
 .bouton {
   width: 200px;
   height: 65px;
