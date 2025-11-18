@@ -12,14 +12,14 @@ const cat = store.getCategoryById(id);
 const catKey = Object.keys(cat)[0];
 const catName = cat[catKey].name;
 const catPhoto = cat[catKey].creations;
-console.log(catPhoto)
+console.log(catPhoto);
 </script>
 
 <template>
   <main>
     <div class="caroussel">
-    <swiper-room></swiper-room>
-  </div>
+      <swiper-room></swiper-room>
+    </div>
     <!-- <div class="caroussel">
       <div class="test" v-for="photo in catPhoto">{{ photo.title }}
 <img :src="photo.url" alt=" fonctionne pas">
@@ -35,18 +35,17 @@ console.log(catPhoto)
       </h1>
     </div>
   </footer>
- 
 </template>
 
 <style scoped>
-.test{
+.test {
   color: #1a1a1a;
 }
 .caroussel {
   margin-top: 600px;
   position: relative;
-user-select: none;
-  cursor: grab;
+  user-select: none;
+  cursor: pointer;
   overflow: hidden;
   padding: 20px;
   height: 300px;

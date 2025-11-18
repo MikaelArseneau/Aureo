@@ -159,22 +159,54 @@
       "id": 5,
       "name": "architecture",
       "photodemo": "src/assets/photo/bg_architecture.webp",
-      "creations ": [
+      "creations": [
         {
           "id": 1,
-          "title": "photo_test",
+          "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "./medias/img/photo/image_01.png"
+          "url": "../architecture/image1.webp"
         },
         {
-          "id": 6,
-          "title": "photo_test",
+          "id": 1,
+          "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "./medias/img/photo/image_01.png"
+          "url": "../architecture/image2.webp"
+        },
+        {
+          "id": 1,
+          "title": "alex",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "../architecture/image3.webp"
+        },
+        {
+          "id": 1,
+          "title": "alex",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "../architecture/image4.webp"
+        },
+        {
+          "id": 1,
+          "title": "alex",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "../architecture/image5.webp"
+        },
+        {
+          "id": 1,
+          "title": "alex",
+          "type": "paysages",
+          "date": "2025-12-02",
+          "desc": "test",
+          "url": "../architecture/image6.webp"
         }
       ]
     }
