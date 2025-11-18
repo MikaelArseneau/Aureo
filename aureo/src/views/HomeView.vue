@@ -80,11 +80,11 @@
         *Photo<span class="titre_photo2">graphie*</span>
       </div>
     </swiper-slide>
-    <swiper-slide
+    <!-- <swiper-slide
       ><div class="room_title video">
         vidéo <span class="cinema">&</span>cinéma
       </div></swiper-slide
-    >
+    > -->
 
     <swiper-slide
       ><div class="room_title design">
@@ -130,11 +130,10 @@ export default {
 
     const demoImages = [
       categories[0].photo.photodemo,
-      categories[1].cinema.photodemo,
-      categories[2].design.photodemo,
-      categories[3].illustration.photodemo,
-      categories[4].architecture.photodemo,
-      categories[5].style.photodemo,
+      categories[1].design.photodemo,
+      categories[2].illustration.photodemo,
+      categories[3].architecture.photodemo,
+      categories[4].style.photodemo,
     ];
 
     const onSwiperInit = (swiper) => {

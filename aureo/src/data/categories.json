@@ -36,7 +36,8 @@
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image4.webp"
-        },{
+        },
+        {
           "id": 1,
           "title": "alex",
           "type": "paysages",
@@ -67,61 +68,38 @@
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image8.webp"
-        },{
+        },
+        {
           "id": 1,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image9.webp"
-        },{
+        },
+        {
           "id": 1,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image10.webp"
-        }
-        ,{
+        },
+        {
           "id": 1,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image11.webp"
-        }
-        ,{
+        },
+        {
           "id": 1,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image12.webp"
-        }
-      ]
-    }
-  },
-  {
-    "cinema": {
-      "id": 2,
-      "name": "cinema",
-      "photodemo": "./medias/img/demos/imgdemocinema.png",
-      "creations": [
-        {
-          "id": 1,
-          "title": "photo_test",
-          "type": "paysages",
-          "date": "2025-12-02",
-          "desc": "test",
-          "url": "./medias/img/photo/image_01.png"
-        },
-        {
-          "id": 2,
-          "title": "photo_test",
-          "type": "paysages",
-          "date": "2025-12-02",
-          "desc": "test",
-          "url": "./medias/img/photo/image_01.png"
         }
       ]
     }

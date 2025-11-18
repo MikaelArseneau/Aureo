@@ -29,7 +29,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #f3f3f3;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 h1 {
@@ -59,4 +59,3 @@ button:focus-visible {
 .card {
   padding: 2em;
 }
-
