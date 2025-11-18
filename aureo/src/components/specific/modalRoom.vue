@@ -13,7 +13,8 @@
           </div>
 
           <div class="modal-body">
-            <slot></slot>
+            <slot> </slot>
+            <div class="date">{{ date }}</div>
           </div>
 
           <div class="modal-footer">
@@ -43,6 +44,10 @@ export default {
       type: String,
       default: "",
     },
+    date: {
+      type: String,
+      default: "",
+    },
   },
   emits: ["update:modelValue"],
   methods: {
@@ -54,9 +59,16 @@ export default {
 </script>
 
 <style scoped>
+.date {
+  color: #1a1a1a;
+  font-family: "instrument";
+  text-align: right;
+  margin-top: 2px;
+}
 h3 {
   color: black;
   margin-top: 0px;
+  font-family: "instrument";
 }
 .button {
   background-color: #111827;
@@ -115,6 +127,9 @@ h3 {
 .modal-header h2 {
   margin: 0;
   color: #111827;
+  font-family: "switzer";
+  font-weight: 600;
+  text-transform: capitalize;
 }
 .modal-header h3 {
   margin: 0;

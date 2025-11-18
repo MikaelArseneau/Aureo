@@ -20,12 +20,6 @@ console.log(catPhoto);
     <div class="caroussel">
       <swiper-room></swiper-room>
     </div>
-    <!-- <div class="caroussel">
-      <div class="test" v-for="photo in catPhoto">{{ photo.title }}
-<img :src="photo.url" alt=" fonctionne pas">
-
-      </div>
-    </div> -->
   </main>
 
   <footer>
