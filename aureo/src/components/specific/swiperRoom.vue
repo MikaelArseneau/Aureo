@@ -1,4 +1,4 @@
-<script setup>
+<script setup>/* toute les choses importer dans la page*/
 import { ref } from "vue";
 import { useRoute } from "vue-router";
 import { useDataStore } from "../../stores/useMemoryStore";
@@ -13,7 +13,7 @@ import { FreeMode, Mousewheel, Pagination } from "swiper/modules";
 // --- Swiper + données ---
 const route = useRoute();
 const store = useDataStore();
-
+/* va chercher les images en détail*/
 const id = Number(route.params.id);
 const cat = store.getCategoryById(id);
 const catKey = Object.keys(cat)[0];
