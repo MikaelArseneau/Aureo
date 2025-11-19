@@ -73,12 +73,27 @@ h3 {
 .button {
   background-color: #111827;
   width: auto;
-  margin: 8px;
-  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 6px;
   cursor: pointer;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f3f3f3;
+  border-width: 1px;
+  border-color: #111827;
+  border-style: solid;
+  transition: all 0.3s ease-in-out;
 }
 .button_supprimer {
-  color: #f3f3f3;
+  font-family: "switzer";
+  margin: auto;
+}
+.button:hover {
+  color: #1a1a1a;
+  background-color: #f3f3f3;
 }
 .modal-overlay {
   position: fixed;
