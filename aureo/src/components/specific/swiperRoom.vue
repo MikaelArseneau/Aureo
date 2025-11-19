@@ -30,20 +30,20 @@ function modalRom(photo) {
 </script>
 
 <template>
+  <div class="defiller">Glisser<span class="etoile">*</span>Choisir</div>
   <swiper
-    :slides-per-view="8.7"
     :space-between="8"
     :breakpoints="{
-      320: { slidesPerView: 2.1 },
-      480: { slidesPerView: 3.1 },
-      640: { slidesPerView: 4.1 },
-      768: { slidesPerView: 5.1 },
-      1024: { slidesPerView: 6.1 },
-      1280: { slidesPerView: 8.1 },
-      1920: { slidesPerView: 10.1 },
+      320: { slidesPerView: 2 },
+      480: { slidesPerView: 3 },
+      640: { slidesPerView: 4 },
+      768: { slidesPerView: 5 },
+      1024: { slidesPerView: 6 },
+      1280: { slidesPerView: 8 },
+      1920: { slidesPerView: 10 },
     }"
     :free-mode="true"
-    :mousewheel="true"
+   :autoplay="true"
     :loop="true"
     :modules="[FreeMode, Pagination, Mousewheel]"
     class="mySwiper"
@@ -68,6 +68,17 @@ function modalRom(photo) {
 </template>
 
 <style scoped>
+.etoile{
+ color: brown;
+ font-size: 1.4em;
+}
+.defiller{
+text-align: right;
+color: #1a1a1a;
+font-family: "switzer";
+font-size: 1.3em;
+}
+
 .swiper {
   width: 100%;
   height: 50%;
@@ -89,5 +100,6 @@ function modalRom(photo) {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 </style>

@@ -19,10 +19,7 @@
 
           <div class="modal-footer">
             <div class="button" @click="supprimer()">
-              <p class="button_supprimer">Modifier</p>
-            </div>
-            <div class="button" @click="supprimer()">
-              <p class="button_supprimer">Supprimer</p>
+              <p class="button_supprimer">Ajouter</p>
             </div>
           </div>
         </div>
@@ -165,10 +162,9 @@ h3 {
 /* Footer */
 .modal-footer {
   padding-right: 32px;
-  padding-left: 32px;
   border-top: 1px solid #e5e7eb;
   display: flex;
-  justify-content:space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 

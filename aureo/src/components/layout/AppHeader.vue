@@ -48,6 +48,7 @@
   letter-spacing: 1px;
   font-family: "switzer";
   cursor: pointer;
+  font-weight: 600;
 }
 </style>
 
