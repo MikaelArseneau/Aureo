@@ -19,16 +19,15 @@ const modalOpen = ref(false);
 const selectedPhoto = ref(null);
 
 function modalRoom() {
-  alert("allo");
   modalOpen.value = true;
 }
 
 </script>
 
 <template>
-  <div class="texte_milieu">
-    <div class="">C'est <span class="instrument">ici</span> que <span class="instrument">vos inspirations</span><br></br> se rencontrent</div>
-   <button class="test"@click="modalRoom()">Ajouter</button>
+  <div class="display_milieu">
+    <div class="texte_milieu">C'est <span class="instrument">ici</span> que <span class="instrument">vos inspirations</span><br></br> se<span class="instrument"> rencontrent</span>*</div>
+   <button class="btn_ajouter"@click="modalRoom()">Ajouter</button>
   </div>
   <main>
     
@@ -37,6 +36,7 @@ function modalRoom() {
     :title="selectedPhoto?.title"
     :type="selectedPhoto?.type"
     :date="selectedPhoto?.date"
+    :iddd="selectedPhoto?.id"
   >
     <img
       v-if="selectedPhoto"
@@ -60,10 +60,10 @@ function modalRoom() {
 
 <style scoped>
 .instrument{
-  font-family: "Instrument", serif;
+  font-family: "Instrument-italic";
   font-style:italic;
 }
-.texte_milieu{
+.display_milieu{
   display: block;
   display: flex;
   justify-content: center;
@@ -72,15 +72,27 @@ function modalRoom() {
   flex-direction: column;
   text-align: center;
 font-family: "switzer";
-font-size: 3em;
 color: #1a1a1a;
+margin-top: -175px;
 }
-.test{
-background-color: aliceblue;
+.texte_milieu{
+  font-size: 4em;
+}
+
+.btn_ajouter{
+background-color: red;
 cursor: pointer;
 z-index: 1000;
-width: 30%;
+width: 25%;
 align-self: center;
+color: #f3f3f3;
+font-family: "switzer";
+font-weight: 600;
+font-size: 1.5em;
+}
+.btn_ajouter:hover{
+cursor: pointer;
+border-color:#1a1a1a;
 }
 .test {
   color: #1a1a1a;

@@ -55,7 +55,8 @@ export default {
       this.$emit("update:modelValue", false);
     },
     supprimer(){
-      alert("Supprimer")
+      this.$emit("delete"); 
+      this.close();          
     }
   },
 };

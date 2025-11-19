@@ -58,6 +58,7 @@ function modalRom(photo) {
     :title="selectedPhoto?.title"
     :type="selectedPhoto?.type"
     :date="selectedPhoto?.date"
+    :id="selectedPhoto?.id"
   >
     <img
       v-if="selectedPhoto"

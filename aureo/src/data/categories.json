@@ -22,7 +22,7 @@
           "url": "../photographie/image2.webp"
         },
         {
-          "id": 1,
+          "id": 3,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -30,7 +30,7 @@
           "url": "../photographie/image3.webp"
         },
         {
-          "id": 2,
+          "id": 4,
           "title": "photo_test",
           "type": "paysages",
           "date": "2025-12-02",
@@ -38,7 +38,7 @@
           "url": "../photographie/image4.webp"
         },
         {
-          "id": 1,
+          "id": 5,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -46,7 +46,7 @@
           "url": "../photographie/image5.webp"
         },
         {
-          "id": 2,
+          "id": 6,
           "title": "photo_test",
           "type": "paysages",
           "date": "2025-12-02",
@@ -54,7 +54,7 @@
           "url": "../photographie/image6.webp"
         },
         {
-          "id": 1,
+          "id": 7,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -62,7 +62,7 @@
           "url": "../photographie/image7.webp"
         },
         {
-          "id": 2,
+          "id": 8,
           "title": "photo_test",
           "type": "paysages",
           "date": "2025-12-02",
@@ -70,7 +70,7 @@
           "url": "../photographie/image8.webp"
         },
         {
-          "id": 1,
+          "id": 9,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -78,7 +78,7 @@
           "url": "../photographie/image9.webp"
         },
         {
-          "id": 1,
+          "id": 10,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -86,7 +86,7 @@
           "url": "../photographie/image10.webp"
         },
         {
-          "id": 1,
+          "id": 11,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -94,7 +94,7 @@
           "url": "../photographie/image11.webp"
         },
         {
-          "id": 1,
+          "id": 12,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -106,7 +106,7 @@
   },
   {
     "design": {
-      "id": 3,
+      "id": 2,
       "name": "design",
       "photodemo": "src/assets/photo/designBg.webp",
       "creations": [
@@ -131,7 +131,7 @@
   },
   {
     "illustration": {
-      "id": 4,
+      "id": 3,
       "name": "illustration",
       "photodemo": "src/assets/photo/bg_numerique.webp",
       "creations": [
@@ -144,7 +144,7 @@
           "url": "/../numerique/image1.webp"
         },
         {
-          "id": 1,
+          "id": 2,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -156,7 +156,7 @@
   },
   {
     "architecture": {
-      "id": 5,
+      "id": 4,
       "name": "architecture",
       "photodemo": "src/assets/photo/bg_architecture.webp",
       "creations": [
@@ -169,7 +169,7 @@
           "url": "../architecture/image1.webp"
         },
         {
-          "id": 1,
+          "id": 2,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -177,7 +177,7 @@
           "url": "../architecture/image2.webp"
         },
         {
-          "id": 1,
+          "id": 3,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -185,7 +185,7 @@
           "url": "../architecture/image3.webp"
         },
         {
-          "id": 1,
+          "id": 4,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -193,7 +193,7 @@
           "url": "../architecture/image4.webp"
         },
         {
-          "id": 1,
+          "id": 5,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -201,7 +201,7 @@
           "url": "../architecture/image5.webp"
         },
         {
-          "id": 1,
+          "id": 6,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
@@ -213,7 +213,7 @@
   },
   {
     "style": {
-      "id": 6,
+      "id": 5,
       "name": "style",
       "photodemo": "./medias/img/demos/imgdemocinema.png",
       "creations": [

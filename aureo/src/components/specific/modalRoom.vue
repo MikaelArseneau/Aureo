@@ -18,10 +18,10 @@
           </div>
 
           <div class="modal-footer">
-            <div class="button" @click="supprimer()">
+            <div class="button" @click="supprimer()" >
               <p class="button_supprimer">Modifier</p>
             </div>
-            <div class="button" @click="supprimer()">
+            <div class="button" @click="supprimer()" @delete="test(id)">
               <p class="button_supprimer">Supprimer</p>
             </div>
           </div>
@@ -51,6 +51,10 @@ export default {
       type: String,
       default: "",
     },
+    id: {
+      type: Number,
+      default: 67,
+    },
   },
   emits: ["update:modelValue"],
   methods: {
@@ -58,7 +62,11 @@ export default {
       this.$emit("update:modelValue", false);
     },
     supprimer(){
-      alert("Supprimer")
+      this.$emit("delete", id); 
+      this.close();    
+    },
+    test(id){
+      alert(id);
     }
   },
 };
