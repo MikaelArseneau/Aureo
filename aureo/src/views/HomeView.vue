@@ -1,10 +1,10 @@
 <script setup></script>
 <template>
   <AppHeader />
-  <router-link :to="{ name: 'room', params: { id: id_cat } }" class="bouton">
+  <router-link :to="{ name: 'room', params: { id: id_cat } }" class="bouton mySwiper">
     <p>Visiter la salle</p>
   </router-link>
-  <div class="fleche_display">
+  <div class="fleche_display mySwiper">
     <!-- flèche droite (next) -->
     <svg
       class="fleche custom-next"
@@ -36,9 +36,17 @@
     </svg>
   </div>
 
-  <div></div>
+  <div class="texte_presentation">
+    
+    <div class="texte_header premier">Vous cherchez <span class="bleu">des </span>inspirations ?</div>
+    <div class="texte_header deuxieme">Vous <span class="vert">êtes </span> au bon endroit</div>
+    <div class="texte_header troisieme">Aureo</div>
 
-  <swiper
+
+
+  </div>
+
+  <swiper 
     :slidesPerView="1"
     :spaceBetween="30"
     :loop="true"
@@ -150,7 +158,68 @@ export default {
     };
 
     onMounted(() => {
-      const swiper = document.getElementsByClassName("swiper");
+      const titre_1 = document.getElementsByClassName("premier");
+      const titre_2 = document.getElementsByClassName("deuxieme");
+      const titre_3 = document.getElementsByClassName("troisieme");
+
+
+      let tl_titre=gsap.timeline();
+      tl_titre.delay(0.7);
+      tl_titre.fromTo(
+        titre_1,
+        { y: 30,opacity:0 },
+        {
+          duration: 1,
+          y: 0,
+          repeat: 0,
+          ease: "power1.Out",
+          opacity:1,
+          stagger:0.3
+          
+        }
+      )
+      .to(titre_1,{
+        opacity:0,
+        duration: 0.3,
+        delay:0.5
+      }
+      ).fromTo(
+        titre_2,
+        { y: 30,opacity:0 },
+        {
+          duration: 1,
+          y: 0,
+          repeat: 0,
+          ease: "power1.Out",
+          opacity:1
+        },
+
+      ).to(titre_2,{
+        opacity:0,
+        duration:  0.3,
+        delay:0.5
+      },
+    ).fromTo(
+        titre_3,
+        { y: 30,opacity:0 },
+        {
+          duration: 1,
+          y: 0,
+          repeat: 0,
+          ease: "power1.Out",
+          opacity:1
+        }
+
+      ).to(titre_3,{
+        opacity:0,
+        duration:  0.3,
+        delay:0.5
+      }
+    )
+    ;
+
+
+      const swiper = document.getElementsByClassName("mySwiper");
       const image1 = document.getElementById("image1");
       const image2 = document.getElementById("image2");
       const image3 = document.getElementById("image3");
@@ -204,7 +273,7 @@ export default {
           ease: "none",
         }
       );
-      tl_swiper.delay(1.5);
+      tl_swiper.delay(6.2);
       tl_swiper.fromTo(
         swiper,
         { opacity: "0", y: 40 },
@@ -262,6 +331,35 @@ function test() {
 </script>
 
 <style scoped>
+.vert{
+  color:#42d392;
+}
+
+.bleu{
+  color: #647eff;
+}
+
+.texte_header{
+position: absolute;
+text-align: center;
+width: 100vw;
+height: 100vh;
+top: 35%;
+transform: translateY(50%);
+}
+
+.texte_presentation{
+position: absolute;
+text-align: center;
+
+width: 100vw;
+height: 100vh;
+color: #1a1a1a;
+flex-direction: column;
+font-family:"Instrument-italic" ;
+font-size: 6em;
+
+}
 * {
   user-select: none;
 }
@@ -288,7 +386,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all 0.4s ease-out;
+  transition: background 0.4s ease-out;
 }
 .bouton p {
   font-family: "instrument";

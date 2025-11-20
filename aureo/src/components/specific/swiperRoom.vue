@@ -33,18 +33,6 @@ function modalRom(photo) {
   <div class="defiller">Glisser<span class="etoile">*</span>Choisir</div>
   <swiper
     :space-between="8"
-    :breakpoints="{
-      320: { slidesPerView: 2 },
-      480: { slidesPerView: 3 },
-      640: { slidesPerView: 4 },
-      768: { slidesPerView: 5 },
-      1024: { slidesPerView: 6 },
-      1280: { slidesPerView: 8 },
-      1920: { slidesPerView: 10 },
-    }"
-    :free-mode="true"
-   :autoplay="true"
-    :loop="true"
     :modules="[FreeMode, Pagination, Mousewheel]"
     class="mySwiper"
   >
