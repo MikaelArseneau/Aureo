@@ -344,7 +344,7 @@ position: absolute;
 text-align: center;
 width: 100vw;
 height: 100vh;
-top: 35%;
+top: 40%;
 transform: translateY(50%);
 }
 

@@ -1,3 +1,6 @@
+
+
+
 <template>
   <Teleport to="body">
     <Transition name="modal">
@@ -32,6 +35,7 @@
 </template>
 
 <script>
+import { useDataStore } from "../../stores/useMemoryStore";
 export default {
   name: "Modal",
   props: {
@@ -62,7 +66,7 @@ export default {
       this.$emit("update:modelValue", false);
     },
     supprimer(){
-      this.$emit("delete", id); 
+      this.$emit(useDataStore.deleate, id); 
       this.close();    
     },
     test(id){

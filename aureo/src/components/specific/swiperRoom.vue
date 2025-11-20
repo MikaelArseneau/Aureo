@@ -33,6 +33,7 @@ function modalRom(photo) {
   <div class="defiller">Glisser<span class="etoile">*</span>Choisir</div>
   <swiper
     :space-between="8"
+    :loop="true"
     :modules="[FreeMode, Pagination, Mousewheel]"
     class="mySwiper"
   >

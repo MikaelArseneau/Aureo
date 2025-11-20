@@ -14,6 +14,11 @@ export const useDataStore = defineStore("dataStore", {
     },
   },
   actions: {
+    delete() {
+
+
+
+    }
 
 
 
