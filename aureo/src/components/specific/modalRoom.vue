@@ -1,6 +1,3 @@
-
-
-
 <template>
   <Teleport to="body">
     <Transition name="modal">
@@ -21,10 +18,10 @@
           </div>
 
           <div class="modal-footer">
-            <div class="button" @click="supprimer()" >
+            <div class="button" @click="supprimer()">
               <p class="button_supprimer">Modifier</p>
             </div>
-            <div class="button" @click="supprimer()" @delete="test(id)">
+            <div class="button" @click="supprimerImage()">
               <p class="button_supprimer">Supprimer</p>
             </div>
           </div>
@@ -59,19 +56,21 @@ export default {
       type: Number,
       default: 67,
     },
+    categoryId: {
+      type: [String, Number],
+    },
   },
   emits: ["update:modelValue"],
   methods: {
     close() {
       this.$emit("update:modelValue", false);
     },
-    supprimer(){
-      this.$emit(useDataStore.deleate, id); 
-      this.close();    
+    supprimerImage() {
+      const store = useDataStore();
+      // Utiliser directement les props
+      store.supprimerImage(this.id, this.categoryId);
+      this.close();
     },
-    test(id){
-      alert(id);
-    }
   },
 };
 </script>
@@ -180,7 +179,7 @@ h3 {
   padding-left: 32px;
   border-top: 1px solid #e5e7eb;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
 

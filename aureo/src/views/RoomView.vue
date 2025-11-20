@@ -13,6 +13,7 @@ const id = Number(route.params.id);
 const cat = store.getCategoryById(id);
 const catKey = Object.keys(cat)[0];
 const catName = cat[catKey].name;
+const catColor = cat[catKey].color;
 const catPhoto = cat[catKey].creations;
 console.log(catPhoto);
 const modalOpen = ref(false);
@@ -26,8 +27,8 @@ function modalRoom() {
 
 <template>
   <div class="display_milieu">
-    <div class="texte_milieu">C'est <span class="instrument">ici</span> que <span class="instrument">vos inspirations</span><br></br> se<span class="instrument"> rencontrent</span>*</div>
-   <button class="btn_ajouter"@click="modalRoom()">Ajouter</button>
+    <div class="texte_milieu">C'est <span class="instrument" :style="{ color: catColor }">ici</span> que <span class="instrument" :style="{ color: catColor }">vos inspirations</span><br></br> se<span class="instrument" :style="{ color: catColor }"> rencontrent</span>*</div>
+   <button class="btn_ajouter"@click="modalRoom()":style="{ backgroundColor: catColor }"> En Ajouter</button>
   </div>
   <main>
     
@@ -36,7 +37,8 @@ function modalRoom() {
     :title="selectedPhoto?.title"
     :type="selectedPhoto?.type"
     :date="selectedPhoto?.date"
-    :iddd="selectedPhoto?.id"
+    :id="selectedPhoto?.id"
+   
   >
     <img
       v-if="selectedPhoto"
@@ -80,13 +82,12 @@ margin-top: -175px;
 }
 
 .btn_ajouter{
-background-color: red;
 cursor: pointer;
 z-index: 1000;
 width: 25%;
 align-self: center;
-color: #f3f3f3;
-font-family: "switzer";
+color: #1a1a1a;
+font-family: "Instrument-italic";
 font-weight: 600;
 font-size: 1.5em;
 }

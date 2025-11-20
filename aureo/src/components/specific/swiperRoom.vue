@@ -1,4 +1,5 @@
-<script setup>/* toute les choses importer dans la page*/
+<script setup>
+/* toute les choses importer dans la page*/
 import { ref } from "vue";
 import { useRoute } from "vue-router";
 import { useDataStore } from "../../stores/useMemoryStore";
@@ -18,6 +19,7 @@ const id = Number(route.params.id);
 const cat = store.getCategoryById(id);
 const catKey = Object.keys(cat)[0];
 const catName = cat[catKey].name;
+const catColor = cat[catKey].color;
 const catPhoto = cat[catKey].creations;
 
 const modalOpen = ref(false);
@@ -30,7 +32,9 @@ function modalRom(photo) {
 </script>
 
 <template>
-  <div class="defiller">Glisser<span class="etoile">*</span>Choisir</div>
+  <div class="defiller">
+    Glisser<span class="etoile" :style="{ color: catColor }">*</span>Choisir
+  </div>
   <swiper
     :space-between="8"
     :loop="true"
@@ -48,6 +52,7 @@ function modalRom(photo) {
     :type="selectedPhoto?.type"
     :date="selectedPhoto?.date"
     :id="selectedPhoto?.id"
+    :categoryId="cat[catKey].id"
   >
     <img
       v-if="selectedPhoto"
@@ -58,15 +63,14 @@ function modalRom(photo) {
 </template>
 
 <style scoped>
-.etoile{
- color: brown;
- font-size: 1.4em;
+.etoile {
+  font-size: 1.4em;
 }
-.defiller{
-text-align: right;
-color: #1a1a1a;
-font-family: "switzer";
-font-size: 1.3em;
+.defiller {
+  text-align: right;
+  color: #1a1a1a;
+  font-family: "switzer";
+  font-size: 1.3em;
 }
 
 .swiper {

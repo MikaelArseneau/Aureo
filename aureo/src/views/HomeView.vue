@@ -1,7 +1,10 @@
 <script setup></script>
 <template>
   <AppHeader />
-  <router-link :to="{ name: 'room', params: { id: id_cat } }" class="bouton mySwiper">
+  <router-link
+    :to="{ name: 'room', params: { id: id_cat } }"
+    class="bouton mySwiper"
+  >
     <p>Visiter la salle</p>
   </router-link>
   <div class="fleche_display mySwiper">
@@ -37,16 +40,16 @@
   </div>
 
   <div class="texte_presentation">
-    
-    <div class="texte_header premier">Vous cherchez <span class="bleu">des </span>inspirations ?</div>
-    <div class="texte_header deuxieme">Vous <span class="vert">êtes </span> au bon endroit</div>
+    <div class="texte_header premier">
+      Vous cherchez <span class="bleu">des </span>inspirations ?
+    </div>
+    <div class="texte_header deuxieme">
+      Vous <span class="vert">êtes </span> au bon endroit
+    </div>
     <div class="texte_header troisieme">Aureo</div>
-
-
-
   </div>
 
-  <swiper 
+  <swiper
     :slidesPerView="1"
     :spaceBetween="30"
     :loop="true"
@@ -162,62 +165,58 @@ export default {
       const titre_2 = document.getElementsByClassName("deuxieme");
       const titre_3 = document.getElementsByClassName("troisieme");
 
-
-      let tl_titre=gsap.timeline();
+      let tl_titre = gsap.timeline();
       tl_titre.delay(0.7);
-      tl_titre.fromTo(
-        titre_1,
-        { y: 30,opacity:0 },
-        {
-          duration: 1,
-          y: 0,
-          repeat: 0,
-          ease: "power1.Out",
-          opacity:1,
-          stagger:0.3
-          
-        }
-      )
-      .to(titre_1,{
-        opacity:0,
-        duration: 0.3,
-        delay:0.5
-      }
-      ).fromTo(
-        titre_2,
-        { y: 30,opacity:0 },
-        {
-          duration: 1,
-          y: 0,
-          repeat: 0,
-          ease: "power1.Out",
-          opacity:1
-        },
-
-      ).to(titre_2,{
-        opacity:0,
-        duration:  0.3,
-        delay:0.5
-      },
-    ).fromTo(
-        titre_3,
-        { y: 30,opacity:0 },
-        {
-          duration: 1,
-          y: 0,
-          repeat: 0,
-          ease: "power1.Out",
-          opacity:1
-        }
-
-      ).to(titre_3,{
-        opacity:0,
-        duration:  0.3,
-        delay:0.5
-      }
-    )
-    ;
-
+      tl_titre
+        .fromTo(
+          titre_1,
+          { y: 30, opacity: 0 },
+          {
+            duration: 1,
+            y: 0,
+            repeat: 0,
+            ease: "power1.Out",
+            opacity: 1,
+            stagger: 0.3,
+          }
+        )
+        .to(titre_1, {
+          opacity: 0,
+          duration: 0.3,
+          delay: 0.5,
+        })
+        .fromTo(
+          titre_2,
+          { y: 30, opacity: 0 },
+          {
+            duration: 1,
+            y: 0,
+            repeat: 0,
+            ease: "power1.Out",
+            opacity: 1,
+          }
+        )
+        .to(titre_2, {
+          opacity: 0,
+          duration: 0.3,
+          delay: 0.5,
+        })
+        .fromTo(
+          titre_3,
+          { y: 30, opacity: 0 },
+          {
+            duration: 1,
+            y: 0,
+            repeat: 0,
+            ease: "power1.Out",
+            opacity: 1,
+          }
+        )
+        .to(titre_3, {
+          opacity: 0,
+          duration: 0.3,
+          delay: 0.5,
+        });
 
       const swiper = document.getElementsByClassName("mySwiper");
       const image1 = document.getElementById("image1");
@@ -331,34 +330,33 @@ function test() {
 </script>
 
 <style scoped>
-.vert{
-  color:#42d392;
+.vert {
+  color: #42d392;
 }
 
-.bleu{
+.bleu {
   color: #647eff;
 }
 
-.texte_header{
-position: absolute;
-text-align: center;
-width: 100vw;
-height: 100vh;
-top: 40%;
-transform: translateY(50%);
+.texte_header {
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  top: 40%;
+  transform: translateY(50%);
 }
 
-.texte_presentation{
-position: absolute;
-text-align: center;
+.texte_presentation {
+  position: absolute;
+  text-align: center;
 
-width: 100vw;
-height: 100vh;
-color: #1a1a1a;
-flex-direction: column;
-font-family:"Instrument-italic" ;
-font-size: 6em;
-
+  width: 100vw;
+  height: 100vh;
+  color: #1a1a1a;
+  flex-direction: column;
+  font-family: "Instrument-italic";
+  font-size: 6em;
 }
 * {
   user-select: none;

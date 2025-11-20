@@ -4,6 +4,7 @@
       "id": 1,
       "name": "photographie",
       "photodemo": "src/assets/photo/bg_photographie.jpg",
+      "color": "#f7dc6f",
       "creations": [
         {
           "id": 1,
@@ -109,6 +110,7 @@
       "id": 2,
       "name": "design",
       "photodemo": "src/assets/photo/designBg.webp",
+      "color": "#FF6B6B",
       "creations": [
         {
           "id": 1,
@@ -134,6 +136,7 @@
       "id": 3,
       "name": "illustration",
       "photodemo": "src/assets/photo/bg_numerique.webp",
+      "color": "#647eff",
       "creations": [
         {
           "id": 1,
@@ -159,6 +162,7 @@
       "id": 4,
       "name": "architecture",
       "photodemo": "src/assets/photo/bg_architecture.webp",
+      "color": "#42d392",
       "creations": [
         {
           "id": 1,
@@ -216,6 +220,7 @@
       "id": 5,
       "name": "style",
       "photodemo": "./medias/img/demos/imgdemocinema.png",
+      "color": "#9B59B6",
       "creations": [
         {
           "id": 1,
