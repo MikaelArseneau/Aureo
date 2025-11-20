@@ -18,7 +18,7 @@
           </div>
 
           <div class="modal-footer">
-            <div class="button" @click="supprimer()">
+            <div class="button" @click="ajouter()">
               <p class="button_supprimer">Ajouter</p>
             </div>
           </div>
@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import { useDataStore } from "../../stores/useMemoryStore";
 export default {
   name: "Modal",
   props: {
@@ -48,16 +49,23 @@ export default {
       type: String,
       default: "",
     },
+    id: {
+      type: String,
+      default: "",
+    },
+    categoryId: {
+      type: [String, Number],
+    },
   },
   emits: ["update:modelValue"],
   methods: {
     close() {
       this.$emit("update:modelValue", false);
     },
-    supprimer(){
-      this.$emit("delete"); 
-      this.close();          
-    }
+    ajouter() {
+      const store = useDataStore();
+      store.supprimerImage(this.id, this.categoryId);
+    },
   },
 };
 </script>

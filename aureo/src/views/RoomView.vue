@@ -3,8 +3,11 @@ import { useRoute } from "vue-router";
 import { useDataStore } from "../stores/useMemoryStore";
 import swiperRoom from "../components/specific/swiperRoom.vue";
 import AjouterModalRoom from "../components/specific/AjouterModalRoom.vue"; 
-import { ref } from "vue";
+import { ref,onMounted } from "vue";
+import gsap from "gsap";
+import SplitText from "gsap/SplitText";
 
+gsap.registerPlugin(SplitText);
 const route = useRoute();
 const store = useDataStore();
 
@@ -18,18 +21,50 @@ const catPhoto = cat[catKey].creations;
 console.log(catPhoto);
 const modalOpen = ref(false);
 const selectedPhoto = ref(null);
-
+const texte = ref(null);
 function modalRoom() {
   modalOpen.value = true;
 }
+onMounted(() => {
+
+  const split = new SplitText(texte.value, { type: "words" });
+  gsap.from(split.words, {
+    y: 50,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 0.8,
+    delay:0.4,
+    ease: "power3.out"
+  });
+  let tl=gsap.timeline();
+  let button=document.getElementsByClassName("btn_ajouter");
+   tl.fromTo(
+        button,
+        { y: 5,opacity:0 },
+        {delay:1.8,
+          duration: 0.2,
+          y:0,
+          ease: "power1.in",
+          opacity:1
+        }
+      );
+});
+
 
 </script>
 
 <template>
+  <!--texte qui s'affiche au milieu-->
   <div class="display_milieu">
-    <div class="texte_milieu">C'est <span class="instrument" :style="{ color: catColor }">ici</span> que <span class="instrument" :style="{ color: catColor }">vos inspirations</span><br></br> se<span class="instrument" :style="{ color: catColor }"> rencontrent</span>*</div>
-   <button class="btn_ajouter"@click="modalRoom()":style="{ backgroundColor: catColor }"> En Ajouter</button>
+    <div class="texte_milieu" ref="texte">C'est <span class="instrument" :style="{ color: catColor }">ici</span> que <span class="instrument" :style="{ color: catColor }">vos inspirations</span><br></br> se<span class="instrument" :style="{ color: catColor }"> rencontrent</span>*</div>
+    
+    <!--Bouton ajouter-->
+   <button class="btn_ajouter"@click="modalRoom()":style="{ backgroundColor: catColor}"> En Ajouter</button>
+
   </div>
+
+
+
   <main>
     
    <AjouterModalRoom
@@ -38,6 +73,7 @@ function modalRoom() {
     :type="selectedPhoto?.type"
     :date="selectedPhoto?.date"
     :id="selectedPhoto?.id"
+   :categoryId="cat[catKey].id"
    
   >
     <img
@@ -82,7 +118,7 @@ margin-top: -175px;
 }
 
 .btn_ajouter{
-cursor: pointer;
+opacity: 0;
 z-index: 1000;
 width: 25%;
 align-self: center;
@@ -90,10 +126,12 @@ color: #1a1a1a;
 font-family: "Instrument-italic";
 font-weight: 600;
 font-size: 1.5em;
+transition: all 0.4s ease-in-out;
 }
 .btn_ajouter:hover{
 cursor: pointer;
 border-color:#1a1a1a;
+color: #f3f3f3;
 }
 .test {
   color: #1a1a1a;
@@ -139,4 +177,18 @@ footer {
   color: #1a1a1a;
   margin: 40px;
 }
+
+@media screen and (max-width: 600px) {
+    .btn_ajouter {
+        width: 50%;
+        font-size: 1.2em; 
+    }
+}
+@media screen and (max-width: 450px) {
+    
+   .texte_milieu{
+  font-size: 3em;
+}
+}
+
 </style>

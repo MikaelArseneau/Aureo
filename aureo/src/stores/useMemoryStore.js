@@ -13,7 +13,10 @@ export const useDataStore = defineStore("dataStore", {
   },
   actions: {
     supprimerImage(imageId, categoryId) {
-      alert("focntionne");
+      alert(`Image ID: ${imageId}, Catégorie ID: ${categoryId}`);
+    },
+    ajouter(imageId, categoryId) {
+      alert(`Image ID: ${imageId}, Catégorie ID: ${categoryId}`);
     },
   },
 });

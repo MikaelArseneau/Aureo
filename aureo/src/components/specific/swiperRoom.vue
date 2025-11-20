@@ -2,6 +2,7 @@
 /* toute les choses importer dans la page*/
 import { ref } from "vue";
 import { useRoute } from "vue-router";
+import { computed } from "vue";
 import { useDataStore } from "../../stores/useMemoryStore";
 import Modal from "../specific/modalRoom.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";

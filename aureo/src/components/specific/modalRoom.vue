@@ -67,7 +67,6 @@ export default {
     },
     supprimerImage() {
       const store = useDataStore();
-      // Utiliser directement les props
       store.supprimerImage(this.id, this.categoryId);
       this.close();
     },
