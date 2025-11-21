@@ -11,6 +11,7 @@
             <h2>{{ title }}</h2>
             <h3>{{ type }}</h3>
           </div>
+          <form></form>
 
           <div class="modal-body">
             <slot> </slot>

@@ -69,18 +69,17 @@ onMounted(() => {
     
    <AjouterModalRoom
     v-model="modalOpen"
-    :title="selectedPhoto?.title"
-    :type="selectedPhoto?.type"
-    :date="selectedPhoto?.date"
-    :id="selectedPhoto?.id"
-   :categoryId="cat[catKey].id"
-   
-  >
-    <img
-      v-if="selectedPhoto"
-      :src="selectedPhoto.url"
-      style="width: 100%; max-height: 60vh"
-    />
+  :title="selectedPhoto?.title || ''"
+  :type="selectedPhoto?.type || ''"
+  :date="selectedPhoto?.date || ''"
+  :id="selectedPhoto?.id || ''"
+  :categoryId="cat[catKey].id"
+>
+  <img
+    v-if="selectedPhoto"
+    :src="selectedPhoto.url"
+    style="width: 100%; max-height: 60vh"
+  />
   </AjouterModalRoom>
     <div class="caroussel">
       <swiper-room></swiper-room>
