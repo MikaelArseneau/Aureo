@@ -8,7 +8,7 @@
     <p>Visiter la salle</p>
   </router-link>
   <div class="fleche_display mySwiper">
-    <!-- flèche droite (next) -->
+    <!-- flèche droite  -->
     <svg
       class="fleche custom-next"
       width="64"
@@ -23,7 +23,7 @@
       />
     </svg>
 
-    <!-- flèche gauche (prev) -->
+    <!-- flèche gauche  -->
     <svg
       class="fleche gauche custom-prev"
       width="64"
@@ -38,7 +38,7 @@
       />
     </svg>
   </div>
-
+ <!-- texte de présentation qui est montré lorsque va a une page de présentation  -->
   <div class="texte_presentation">
     <div class="texte_header premier">
       Vous cherchez <span class="bleu">des </span>inspirations ?
@@ -48,7 +48,7 @@
     </div>
     <div class="texte_header troisieme">Aureo</div>
   </div>
-
+ <!-- swiper des images qui montre un aprecu des images  -->
   <swiper
     :slidesPerView="1"
     :spaceBetween="30"
@@ -85,17 +85,13 @@
       id="image4"
       :src="currentImage"
       alt="category demo"
-    />
+    /> <!-- swiper qui permet d'aller de salle en salle   -->
     <swiper-slide>
       <div class="room_title photo">
         *Photo<span class="titre_photo2">graphie*</span>
       </div>
     </swiper-slide>
-    <!-- <swiper-slide
-      ><div class="room_title video">
-        vidéo <span class="cinema">&</span>cinéma
-      </div></swiper-slide
-    > -->
+   
 
     <swiper-slide
       ><div class="room_title design">
@@ -122,7 +118,7 @@
   </swiper>
 </template>
 
-<script>
+<script>/* toutes les choses importer dans le home view */
 import { ref, onMounted } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
@@ -138,15 +134,15 @@ export default {
     const currentSlide = ref(0);
     const currentImage = ref("");
     const id_cat = ref(1);
-
-    const demoImages = [
+     /* image demo id */
+    const demoImages = [ 
       categories[0].photo.photodemo,
       categories[1].design.photodemo,
       categories[2].illustration.photodemo,
       categories[3].architecture.photodemo,
       categories[4].style.photodemo,
     ];
-
+/* fait les  effet de swiper */
     const onSwiperInit = (swiper) => {
       currentSlide.value = swiper.realIndex;
       currentImage.value = demoImages[swiper.realIndex];
@@ -164,7 +160,7 @@ export default {
       const titre_1 = document.getElementsByClassName("premier");
       const titre_2 = document.getElementsByClassName("deuxieme");
       const titre_3 = document.getElementsByClassName("troisieme");
-
+      /* animation gsap du swiper*/
       let tl_titre = gsap.timeline();
       tl_titre.delay(0.7);
       tl_titre
@@ -217,7 +213,7 @@ export default {
           duration: 0.3,
           delay: 0.5,
         });
-
+    /* animations des images dans les menus gsap  */
       const swiper = document.getElementsByClassName("mySwiper");
       const image1 = document.getElementById("image1");
       const image2 = document.getElementById("image2");
@@ -337,7 +333,7 @@ function test() {
 .bleu {
   color: #647eff;
 }
-
+/* style des textes */
 .texte_header {
   position: absolute;
   text-align: center;
@@ -360,7 +356,7 @@ function test() {
 }
 * {
   user-select: none;
-}
+}    /* font telecharger */
 @font-face {
   font-family: "Instrument";
   src: url("../assets/font/InstrumentSerif-Regular.ttf") format("truetype");
@@ -371,7 +367,7 @@ function test() {
 }
 body {
   overflow: hidden;
-}
+}     /* le bouton pour aller sur la page  */
 .bouton {
   width: 200px;
   height: 65px;
@@ -398,7 +394,7 @@ body {
 }
 .bouton:hover p {
   color: #f3f3f3;
-}
+}    /* les styles des images demo dans les pages */
 .image {
   height: 100px;
   aspect-ratio: 16/9;
@@ -426,7 +422,7 @@ body {
 }
 .room_title {
   z-index: 3 !important;
-}
+}    /* le style du Héro de chaque catégorie  */
 .photo {
   display: block;
   font-size: 10em;
@@ -512,16 +508,15 @@ body {
   flex-direction: row;
   gap: 30px;
 }
-.cinema {
-  font-family: "switzer";
-}
+
+
 .room_title:hover {
   cursor: default;
 }
 .titre_photo2 {
   font-family: "instrument";
 }
-
+    /* style des fleches de la page principal  */
 .fleche_display {
   display: flex;
   gap: 48px;
@@ -552,7 +547,7 @@ body {
 .swiper-button-next::after {
   content: none !important;
 }
-
+    /* styles du swiper de la page principal */
 .swiper {
   margin: 0;
   text-align: center;
