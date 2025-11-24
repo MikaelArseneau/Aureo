@@ -5,6 +5,7 @@
       "name": "photographie",
       "photodemo": "src/assets/photo/bg_photographie.jpg",
       "color": "#f7dc6f",
+      "tags": ["paysage", "portrait"],
       "creations": [
         {
           "id": 1,
@@ -12,7 +13,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../photographie/image1.webp"
+          "url": "../photographie/image1.webp",
+          "tag": ""
         },
         {
           "id": 2,
@@ -154,7 +156,7 @@
           "desc": "test",
           "url": "/../numerique/image2.webp"
         },
-          {
+        {
           "id": 3,
           "title": "alex",
           "type": "paysages",
@@ -162,7 +164,7 @@
           "desc": "test",
           "url": "/../numerique/image3.webp"
         },
-          {
+        {
           "id": 4,
           "title": "alex",
           "type": "paysages",
@@ -170,7 +172,7 @@
           "desc": "test",
           "url": "/../numerique/image4.webp"
         },
-          {
+        {
           "id": 5,
           "title": "alex",
           "type": "paysages",
@@ -178,14 +180,15 @@
           "desc": "test",
           "url": "/../numerique/image5.webp"
         },
-          {
+        {
           "id": 6,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../numerique/image6.webp"
-        } , {
+        },
+        {
           "id": 7,
           "title": "alex",
           "type": "paysages",
@@ -193,7 +196,7 @@
           "desc": "test",
           "url": "/../numerique/image6.webp"
         },
-          {
+        {
           "id": 8,
           "title": "alex",
           "type": "paysages",
@@ -201,7 +204,7 @@
           "desc": "test",
           "url": "/../numerique/image7.webp"
         },
-          {
+        {
           "id": 9,
           "title": "alex",
           "type": "paysages",
@@ -209,7 +212,7 @@
           "desc": "test",
           "url": "/../numerique/image8.webp"
         },
-          {
+        {
           "id": 10,
           "title": "alex",
           "type": "paysages",
@@ -217,7 +220,7 @@
           "desc": "test",
           "url": "/../numerique/image9.webp"
         },
-          {
+        {
           "id": 11,
           "title": "alex",
           "type": "paysages",
@@ -225,7 +228,7 @@
           "desc": "test",
           "url": "/../numerique/image10.webp"
         },
-          {
+        {
           "id": 12,
           "title": "alex",
           "type": "paysages",
@@ -233,7 +236,6 @@
           "desc": "test",
           "url": "/../numerique/image11.webp"
         }
-        
       ]
     }
   },
@@ -292,7 +294,7 @@
           "desc": "test",
           "url": "../architecture/image6.webp"
         },
-         {
+        {
           "id": 7,
           "title": "alex",
           "type": "paysages",
@@ -300,7 +302,7 @@
           "desc": "test",
           "url": "../architecture/image7.webp"
         },
-         {
+        {
           "id": 8,
           "title": "alex",
           "type": "paysages",
@@ -308,7 +310,7 @@
           "desc": "test",
           "url": "../architecture/image8.webp"
         },
-         {
+        {
           "id": 9,
           "title": "alex",
           "type": "paysages",
@@ -316,7 +318,7 @@
           "desc": "test",
           "url": "../architecture/image9.webp"
         },
-         {
+        {
           "id": 10,
           "title": "alex",
           "type": "paysages",
@@ -324,14 +326,15 @@
           "desc": "test",
           "url": "../architecture/image10.webp"
         },
-         {
+        {
           "id": 11,
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image11.webp"
-        }, {
+        },
+        {
           "id": 12,
           "title": "alex",
           "type": "paysages",

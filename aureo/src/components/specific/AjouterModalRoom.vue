@@ -7,11 +7,38 @@
             ✕
           </button>
 
-          <div v-if="title" class="modal-header">
-            <h2>{{ title }}</h2>
-            <h3>{{ type }}</h3>
+          <div class="modal-header">
+            <h2>Formulaire d'ajout</h2>
           </div>
-          <form></form>
+          <form>
+            <div class="form-group">
+              <label for="title">Titre *</label>
+              <input
+                id="title"
+                type="text"
+                required
+                placeholder="Ex: Mon premier vélo"
+              />
+            </div>
+            <div class="form-group">
+              <label for="description">Description *</label>
+              <input
+                id="description"
+                type="text"
+                required
+                placeholder="Ex: Mon premier vélo"
+              />
+            </div>
+            <div class="form-group">
+              <label for="description">Crédit</label>
+              <input
+                id="credit"
+                type="text"
+                required
+                placeholder="Ex: Mon premier vélo"
+              />
+            </div>
+          </form>
 
           <div class="modal-body">
             <slot> </slot>
@@ -108,6 +135,19 @@ h3 {
   color: #1a1a1a;
   background-color: #f3f3f3;
 }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+input {
+  max-width: 80%;
+  font-family: "switzer";
+}
+label {
+  color: #1a1a1a;
+}
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -157,7 +197,6 @@ h3 {
   color: #111827;
   font-family: "switzer";
   font-weight: 600;
-  text-transform: capitalize;
 }
 .modal-header h3 {
   margin: 0;
