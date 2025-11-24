@@ -18,7 +18,7 @@
           </div>
 
           <div class="modal-footer">
-            <div class="button" @click="supprimer()">
+            <div class="button" @click="modalRoom()">
               <p class="button_supprimer">Modifier</p>
             </div>
             <div class="button" @click="supprimerImage()">

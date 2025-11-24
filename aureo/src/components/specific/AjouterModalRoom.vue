@@ -62,7 +62,7 @@
             </div>
             <!-- Upload image -->
             <div class="form-group">
-              <label for="image">Photo <span class="instrument">*</span></label>
+              <label for="image">Image <span class="instrument">*</span></label>
               <input
                 id="image"
                 type="file"
