@@ -18,6 +18,7 @@
                 type="text"
                 required
                 placeholder="Ex: Mon premier vélo"
+                v-model="form.title"
               />
             </div>
             <div class="form-group">
@@ -29,6 +30,7 @@
                 type="text"
                 required
                 placeholder="Ex: Mon premier vélo"
+                v-model="form.description"
               />
             </div>
             <div class="form-group">
@@ -38,6 +40,7 @@
                 type="text"
                 required
                 placeholder="Ex: Mon premier vélo"
+                v-model="form.credit"
               />
             </div>
             <div class="form-group">
@@ -47,7 +50,13 @@
               <div class="radio_display">
                 <div class="radio" v-for="tag in categoryTags">
                   {{ tag
-                  }}<input id="credit" type="radio" name="tags" required />
+                  }}<input
+                    type="radio"
+                    name="tags"
+                    required
+                    :value="tag"
+                    v-model="form.tag"
+                  />
                 </div>
               </div>
             </div>
@@ -107,15 +116,46 @@ export default {
       type: Array,
     },
   },
-  data() {},
+  data() {
+    return {
+      form: {
+        title: "",
+        description: "",
+        credit: "",
+        tag: "",
+        image: null,
+      },
+    };
+  },
   emits: ["update:modelValue"],
   methods: {
     close() {
       this.$emit("update:modelValue", false);
     },
     ajouter() {
-      const store = useDataStore();
-      store.ajouter(this.categoryTags, this.categoryId);
+      if (
+        this.form.title != "" &&
+        this.form.description != "" &&
+        this.form.tag != ""
+      ) {
+        const New_image = {
+          id: Date.now(),
+          title: this.form.title,
+          description: this.form.description,
+          credit: this.form.credit,
+          type: this.form.tag,
+          image: this.form.image,
+          categoryId: this.categoryId,
+          date: this.date,
+        };
+        const store = useDataStore();
+        store.ajouter(New_image, this.categoryId);
+        this.$emit("update:modelValue", false);
+        this.form.title = "";
+        this.form.description = "";
+        this.form.tag = "";
+        this.form.credit = "";
+      }
     },
   },
 };
@@ -132,6 +172,14 @@ h3 {
   color: black;
   margin-top: 0px;
   font-family: "instrument";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6b7280;
 }
 .button {
   background-color: #111827;
@@ -191,6 +239,7 @@ label {
   text-transform: capitalize;
   font-family: "switzer";
 }
+
 .instrument {
   font-family: "Instrument-italic";
 }
