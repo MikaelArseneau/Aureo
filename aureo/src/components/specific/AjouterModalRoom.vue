@@ -63,7 +63,12 @@
             <!-- Upload image -->
             <div class="form-group">
               <label for="image">Photo <span class="instrument">*</span></label>
-              <input id="image" type="file" accept="image/*" />
+              <input
+                id="image"
+                type="file"
+                accept="image/*"
+                @change="form.image = $event.target.files[0]"
+              />
             </div>
           </form>
 
@@ -136,7 +141,8 @@ export default {
       if (
         this.form.title != "" &&
         this.form.description != "" &&
-        this.form.tag != ""
+        this.form.tag != "" &&
+        this.form.image != null
       ) {
         const New_image = {
           id: Date.now(),
@@ -144,7 +150,7 @@ export default {
           description: this.form.description,
           credit: this.form.credit,
           type: this.form.tag,
-          image: this.form.image,
+          url: URL.createObjectURL(this.form.image),
           categoryId: this.categoryId,
           date: this.date,
         };

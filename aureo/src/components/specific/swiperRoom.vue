@@ -38,7 +38,6 @@ function modalRom(photo) {
   </div>
   <swiper
     :space-between="8"
-    :loop="true"
     :modules="[FreeMode, Pagination, Mousewheel]"
     class="mySwiper"
   >
