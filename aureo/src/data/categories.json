@@ -14,7 +14,7 @@
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image1.webp",
-          "tag": ""
+          "tag": "portrait"
         },
         {
           "id": 2,
@@ -22,7 +22,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../photographie/image2.webp"
+          "url": "../photographie/image2.webp",
+          "tag": "portrait"
         },
         {
           "id": 3,
@@ -30,7 +31,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../photographie/image3.webp"
+          "url": "../photographie/image3.webp",
+          "tag": "portrait"
         },
         {
           "id": 4,
@@ -38,7 +40,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../photographie/image4.webp"
+          "url": "../photographie/image4.webp",
+          "tag": "portrait"
         },
         {
           "id": 5,
@@ -46,7 +49,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../photographie/image5.webp"
+          "url": "../photographie/image5.webp",
+          "tag": "portrait"
         },
         {
           "id": 6,
@@ -54,7 +58,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../photographie/image6.webp"
+          "url": "../photographie/image6.webp",
+          "tag": "portrait"
         },
         {
           "id": 7,
@@ -62,7 +67,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../photographie/image7.webp"
+          "url": "../photographie/image7.webp",
+          "tag": "paysage"
         },
         {
           "id": 8,
@@ -70,7 +76,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../photographie/image8.webp"
+          "url": "../photographie/image8.webp",
+          "tag": "paysage"
         },
         {
           "id": 9,
@@ -78,7 +85,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../photographie/image9.webp"
+          "url": "../photographie/image9.webp",
+          "tag": "paysage"
         },
         {
           "id": 10,
@@ -86,7 +94,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../photographie/image10.webp"
+          "url": "../photographie/image10.webp",
+          "tag": "portrait"
         },
         {
           "id": 11,
@@ -94,7 +103,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../photographie/image11.webp"
+          "url": "../photographie/image11.webp",
+          "tag": "paysage"
         },
         {
           "id": 12,
@@ -102,7 +112,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../photographie/image12.webp"
+          "url": "../photographie/image12.webp",
+          "tag": "paysage"
         }
       ]
     }
@@ -113,6 +124,7 @@
       "name": "design",
       "photodemo": "src/assets/photo/designBg.webp",
       "color": "#FF6B6B",
+      "tags": ["font", "affiche"],
       "creations": [
         {
           "id": 1,
@@ -120,7 +132,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../medias/img/photo/image_01.png"
+          "url": "../medias/img/photo/image_01.png",
+          "tag": "affiche"
         },
         {
           "id": 2,
@@ -128,7 +141,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../medias/img/photo/image_01.png"
+          "url": "../medias/img/photo/image_01.png",
+            "tag": "affiche"
         }
       ]
     }
@@ -139,6 +153,7 @@
       "name": "illustration",
       "photodemo": "src/assets/photo/bg_numerique.webp",
       "color": "#647eff",
+      "tags": ["univers", "personne"],
       "creations": [
         {
           "id": 1,
@@ -146,7 +161,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/../numerique/image1.webp"
+          "url": "/../numerique/image1.webp",
+            "tag": "univers"
         },
         {
           "id": 2,
@@ -154,7 +170,9 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/../numerique/image2.webp"
+          "url": "/../numerique/image2.webp",
+            "tag": "personne"
+          
         },
         {
           "id": 3,
@@ -162,7 +180,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/../numerique/image3.webp"
+          "url": "/../numerique/image3.webp",
+          "tag": "personne"
         },
         {
           "id": 4,
@@ -170,7 +189,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/../numerique/image4.webp"
+          "url": "/../numerique/image4.webp",
+           "tag": "univers"
         },
         {
           "id": 5,
@@ -178,7 +198,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/../numerique/image5.webp"
+          "url": "/../numerique/image5.webp",
+            "tag": "personne"
         },
         {
           "id": 6,
@@ -186,7 +207,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/../numerique/image6.webp"
+          "url": "/../numerique/image6.webp",
+            "tag": "univers"
         },
         {
           "id": 7,
@@ -194,7 +216,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/../numerique/image6.webp"
+          "url": "/../numerique/image6.webp",
+            "tag": "univers"
         },
         {
           "id": 8,
@@ -202,7 +225,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/../numerique/image7.webp"
+          "url": "/../numerique/image7.webp",
+            "tag": "univers"
         },
         {
           "id": 9,
@@ -210,7 +234,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/../numerique/image8.webp"
+          "url": "/../numerique/image8.webp",
+            "tag": "univers"
         },
         {
           "id": 10,
@@ -218,7 +243,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/../numerique/image9.webp"
+          "url": "/../numerique/image9.webp",
+            "tag": "univers"
         },
         {
           "id": 11,
@@ -226,7 +252,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/../numerique/image10.webp"
+          "url": "/../numerique/image10.webp",
+            "tag": "univers"
         },
         {
           "id": 12,
@@ -234,7 +261,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "/../numerique/image11.webp"
+          "url": "/../numerique/image11.webp",
+            "tag": "univers"
         }
       ]
     }
@@ -245,6 +273,7 @@
       "name": "architecture",
       "photodemo": "src/assets/photo/bg_architecture.webp",
       "color": "#42d392",
+      "tags": ["maison", "batiment"],
       "creations": [
         {
           "id": 1,
@@ -252,7 +281,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../architecture/image1.webp"
+          "url": "../architecture/image1.webp",
+            "tag": "batiment"
         },
         {
           "id": 2,
@@ -260,7 +290,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../architecture/image2.webp"
+          "url": "../architecture/image2.webp",
+            "tag": "batiment"
         },
         {
           "id": 3,
@@ -268,7 +299,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../architecture/image3.webp"
+          "url": "../architecture/image3.webp",
+          "tag": "batiment"
         },
         {
           "id": 4,
@@ -276,7 +308,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../architecture/image4.webp"
+          "url": "../architecture/image4.webp",
+          "tag": "maison"
         },
         {
           "id": 5,
@@ -284,7 +317,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../architecture/image5.webp"
+          "url": "../architecture/image5.webp",
+          "tag": "batiment"
         },
         {
           "id": 6,
@@ -292,7 +326,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../architecture/image6.webp"
+          "url": "../architecture/image6.webp",
+          "tag": "batiment"
         },
         {
           "id": 7,
@@ -300,7 +335,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../architecture/image7.webp"
+          "url": "../architecture/image7.webp",
+          "tag": "batiment"
         },
         {
           "id": 8,
@@ -308,7 +344,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../architecture/image8.webp"
+          "url": "../architecture/image8.webp",
+          "tag": "batiment"
         },
         {
           "id": 9,
@@ -316,7 +353,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../architecture/image9.webp"
+          "url": "../architecture/image9.webp",
+          "tag": "maison"
         },
         {
           "id": 10,
@@ -324,7 +362,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../architecture/image10.webp"
+          "url": "../architecture/image10.webp",
+          "tag": "batiment"
         },
         {
           "id": 11,
@@ -332,7 +371,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../architecture/image11.webp"
+          "url": "../architecture/image11.webp",
+          "tag": "batiment"
         },
         {
           "id": 12,
@@ -340,7 +380,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../architecture/image12.webp"
+          "url": "../architecture/image12.webp",
+          "tag": "batiment"
         }
       ]
     }
@@ -351,6 +392,7 @@
       "name": "style",
       "photodemo": "./medias/img/demos/imgdemocinema.png",
       "color": "#9B59B6",
+      "tags": ["homme", "femme"],
       "creations": [
         {
           "id": 1,
@@ -358,7 +400,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../mode/image1.webp"
+          "url": "../mode/image1.webp",
+          "tag": "femme"
         },
         {
           "id": 2,
@@ -366,7 +409,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../mode/image2.webp"
+          "url": "../mode/image2.webp",
+          "tag": "homme"
         },
         {
           "id": 3,
@@ -374,7 +418,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../mode/image3.webp"
+          "url": "../mode/image3.webp",
+          "tag": "homme"
         },
         {
           "id": 4,
@@ -382,7 +427,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../mode/image4.webp"
+          "url": "../mode/image4.webp",
+          "tag": "homme"
         },
         {
           "id": 5,
@@ -390,7 +436,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../mode/image5.webp"
+          "url": "../mode/image5.webp",
+          "tag": "homme"
         },
         {
           "id": 6,
@@ -398,7 +445,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../mode/image6.webp"
+          "url": "../mode/image6.webp",
+          "tag": "homme"
         },
         {
           "id": 7,
@@ -406,7 +454,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../mode/image7.webp"
+          "url": "../mode/image7.webp",
+          "tag": "femme"
         },
         {
           "id": 8,
@@ -414,7 +463,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../mode/image8.webp"
+          "url": "../mode/image8.webp",
+          "tag": "femme"
         },
         {
           "id": 9,
@@ -422,7 +472,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../mode/image9.webp"
+          "url": "../mode/image9.webp",
+          "tag": "homme"
         },
         {
           "id": 10,
@@ -430,7 +481,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../mode/image10.webp"
+          "url": "../mode/image10.webp",
+          "tag": "femme"
         },
         {
           "id": 11,
@@ -438,7 +490,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../mode/image11.webp"
+          "url": "../mode/image11.webp",
+          "tag": "femme"
         },
         {
           "id": 12,
@@ -446,7 +499,8 @@
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
-          "url": "../mode/image12.webp"
+          "url": "../mode/image12.webp",
+          "tag": "femme"
         }
       ]
     }
