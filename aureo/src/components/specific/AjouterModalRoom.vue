@@ -38,6 +38,26 @@
                 placeholder="Ex: Mon premier vélo"
               />
             </div>
+            <div class="form-group">
+              <label for="description">Tags *</label>
+              <div class="radio_display">
+                <div class="radio">
+                  gr<input id="credit" type="radio" name="tags" required />
+                </div>
+                <div class="radio">
+                  gr<input id="credit" type="radio" name="tags" required />
+                </div>
+                <div class="radio">
+                  gr<input id="credit" type="radio" name="tags" required />
+                </div>
+              </div>
+            </div>
+            <!-- Upload image -->
+            <div class="form-group">
+              <label for="image">Photo *</label>
+              <input id="image" type="file" accept="image/*" />
+              <img />
+            </div>
           </form>
 
           <div class="modal-body">
@@ -145,8 +165,23 @@ input {
   max-width: 80%;
   font-family: "switzer";
 }
+.radio_display {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  max-width: 80%;
+}
 label {
   color: #1a1a1a;
+}
+#image {
+  width: 40%;
+}
+.radio {
+  display: flex;
+  flex-direction: column;
+  color: #1a1a1a;
+  align-items: center;
 }
 .modal-overlay {
   position: fixed;
