@@ -18,6 +18,7 @@ const catKey = Object.keys(cat)[0];
 const catName = cat[catKey].name;
 const catColor = cat[catKey].color;
 const catPhoto = cat[catKey].creations;
+const catTags = cat[catKey].tags;
 console.log(catPhoto);
 const modalOpen = ref(false);
 const selectedPhoto = ref(null);
@@ -74,6 +75,7 @@ onMounted(() => {
   :date="selectedPhoto?.date || ''"
   :id="selectedPhoto?.id || ''"
   :categoryId="cat[catKey].id"
+  :categoryTags="cat[catKey].tags"
 >
   <img
     v-if="selectedPhoto"

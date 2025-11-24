@@ -12,7 +12,7 @@
           </div>
           <form>
             <div class="form-group">
-              <label for="title">Titre *</label>
+              <label for="title">Titre <span class="instrument">*</span></label>
               <input
                 id="title"
                 type="text"
@@ -21,7 +21,9 @@
               />
             </div>
             <div class="form-group">
-              <label for="description">Description *</label>
+              <label for="description"
+                >Description <span class="instrument">*</span></label
+              >
               <input
                 id="description"
                 type="text"
@@ -39,24 +41,20 @@
               />
             </div>
             <div class="form-group">
-              <label for="description">Tags *</label>
+              <label for="description"
+                >Tags <span class="instrument">*</span></label
+              >
               <div class="radio_display">
-                <div class="radio">
-                  gr<input id="credit" type="radio" name="tags" required />
-                </div>
-                <div class="radio">
-                  gr<input id="credit" type="radio" name="tags" required />
-                </div>
-                <div class="radio">
-                  gr<input id="credit" type="radio" name="tags" required />
+                <div class="radio" v-for="tag in categoryTags">
+                  {{ tag
+                  }}<input id="credit" type="radio" name="tags" required />
                 </div>
               </div>
             </div>
             <!-- Upload image -->
             <div class="form-group">
-              <label for="image">Photo *</label>
+              <label for="image">Photo <span class="instrument">*</span></label>
               <input id="image" type="file" accept="image/*" />
-              <img />
             </div>
           </form>
 
@@ -78,6 +76,7 @@
 
 <script>
 import { useDataStore } from "../../stores/useMemoryStore";
+
 export default {
   name: "Modal",
   props: {
@@ -104,7 +103,11 @@ export default {
     categoryId: {
       type: [String, Number],
     },
+    categoryTags: {
+      type: Array,
+    },
   },
+  data() {},
   emits: ["update:modelValue"],
   methods: {
     close() {
@@ -112,7 +115,7 @@ export default {
     },
     ajouter() {
       const store = useDataStore();
-      store.supprimerImage(this.id, this.categoryId);
+      store.ajouter(this.categoryTags, this.categoryId);
     },
   },
 };
@@ -170,18 +173,26 @@ input {
   width: 100%;
   justify-content: space-around;
   max-width: 80%;
+  flex-direction: row;
 }
 label {
   color: #1a1a1a;
 }
 #image {
   width: 40%;
+  color: #1a1a1a;
+  font-family: "switzer";
 }
 .radio {
   display: flex;
   flex-direction: column;
   color: #1a1a1a;
   align-items: center;
+  text-transform: capitalize;
+  font-family: "switzer";
+}
+.instrument {
+  font-family: "Instrument-italic";
 }
 .modal-overlay {
   position: fixed;
