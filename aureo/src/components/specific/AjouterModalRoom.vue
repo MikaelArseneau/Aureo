@@ -106,10 +106,6 @@ export default {
       type: String,
       default: "",
     },
-    date: {
-      type: String,
-      default: "",
-    },
     id: {
       type: String,
       default: "",
@@ -152,7 +148,12 @@ export default {
           type: this.form.tag,
           url: URL.createObjectURL(this.form.image),
           categoryId: this.categoryId,
-          date: this.date,
+          date:
+            new Date().getFullYear() +
+            "-" +
+            new Date().getMonth() +
+            "-" +
+            new Date().getDay(),
         };
         const store = useDataStore();
         store.ajouter(New_image, this.categoryId);

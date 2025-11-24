@@ -39,6 +39,9 @@ function modalRom(photo) {
   <swiper
     :space-between="8"
     :modules="[FreeMode, Pagination, Mousewheel]"
+    :slides-per-view="'auto'"
+    :free-mode="{ enabled: true, sticky: true, momentumBounce: false }"
+    :mousewheel="{ releaseOnEdges: false }"
     class="mySwiper"
   >
     <swiper-slide v-for="photo in catPhoto" :key="photo.id">
