@@ -11,17 +11,17 @@
             <h2>Formulaire d'ajout</h2>
           </div>
           <form>
-            <div class="form-group">
+            <div class="form-group forms">
               <label for="title">Titre <span class="instrument">*</span></label>
               <input
                 id="title"
                 type="text"
                 required
-                placeholder="Ex: Mon premier vélo"
+                placeholder="Ex: Mon chien Bilou"
                 v-model="form.title"
               />
             </div>
-            <div class="form-group">
+            <div class="form-group forms">
               <label for="description"
                 >Description <span class="instrument">*</span></label
               >
@@ -29,23 +29,23 @@
                 id="description"
                 type="text"
                 required
-                placeholder="Ex: Mon premier vélo"
+                placeholder="Ex: Bilou qui donne la patte"
                 v-model="form.description"
               />
             </div>
-            <div class="form-group">
+            <div class="form-group forms">
               <label for="description">Crédit</label>
               <input
                 id="credit"
                 type="text"
                 required
-                placeholder="Ex: Mon premier vélo"
+                placeholder="Ex: Crédit"
                 v-model="form.credit"
               />
             </div>
             <div class="form-group">
               <label for="description"
-                >Tags <span class="instrument">*</span></label
+                class="forms">Tags <span class="instrument">*</span></label
               >
               <div class="radio_display">
                 <div class="radio" v-for="tag in categoryTags">
@@ -62,7 +62,7 @@
             </div>
             <!-- Upload image -->
             <div class="form-group">
-              <label for="image">Image <span class="instrument">*</span></label>
+              <label for="image forms">Image <span class="instrument">*</span></label>
               <input
                 id="image"
                 type="file"
@@ -169,6 +169,12 @@ export default {
 </script>
 
 <style scoped>
+.forms{
+  color: #1a1a1a;
+  font-family: "switzer";
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
 .date {
   color: #1a1a1a;
   font-family: "instrument";
@@ -229,9 +235,6 @@ input {
   justify-content: space-around;
   max-width: 80%;
   flex-direction: row;
-}
-label {
-  color: #1a1a1a;
 }
 #image {
   width: 40%;
