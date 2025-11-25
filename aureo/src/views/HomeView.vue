@@ -368,7 +368,7 @@ function test() {
   src: url("../assets/font/switzer.ttf") format("truetype");
 }
 body {
-  
+  width: 100vw;
 } /* le bouton pour aller sur la page  */
 .bouton {
   width: 200px;

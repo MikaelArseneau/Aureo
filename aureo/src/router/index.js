@@ -1,25 +1,29 @@
 import HomeView from "../views/HomeView.vue";
 import RoomView from "../views/RoomView.vue";
-import { createRouter, createWebHistory } from 'vue-router';
-
- 
+import ProposView from "../views/ProposView.vue";
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    name: "home",
+    component: HomeView,
   },
   {
-    path: '/room/:id',
-    name: 'room',
+    path: "/room/:id",
+    name: "room",
     component: RoomView,
-  }
+  },
+  {
+    path: "/propos",
+    name: "propos",
+    component: ProposView,
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes
+  routes,
 });
 
 export default router;

@@ -1,11 +1,21 @@
 <template>
-  <router-link to="/" class="app-header">
-    <p class="titre">Aureo</p>
-    <p class="digital">Digital</p>
-  </router-link>
+  <header class="header">
+    <router-link to="/">
+      <div class="app-header">
+        <p class="titre title">Aureo</p>
+        <p class="digital title">Digital</p>
+      </div>
+    </router-link>
+    <router-link to="/propos">
+      <p class="propos title">&nbsp;* À propos *&nbsp;</p>
+    </router-link>
+  </header>
 </template>
 
 <style scoped>
+:root {
+  --propos-hover-color: #647eff;
+}
 @font-face {
   font-family: "Instrument";
   src: url("../../assets/font/InstrumentSerif-Regular.ttf") format("truetype");
@@ -17,13 +27,17 @@
 * {
   margin: 0;
   user-select: none;
+  overflow: hidden;
 }
+.title {
+  color: #1a1a1a;
+}
+
 .app-header {
   background-color: none;
   text-align: center;
   position: absolute;
   top: 0%;
-  width: 100vw;
   left: 0;
   font-family: "Instrument", serif;
   text-transform: uppercase;
@@ -32,8 +46,9 @@
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5px;
-  margin: 16px;
+  gap: 8px;
+  margin-left: 16px;
+  margin-top: 16px;
   z-index: 9999999;
 }
 .titre {
@@ -43,20 +58,78 @@
   cursor: pointer;
 }
 .digital {
-  font-size: clamp(14px, 3.5vw, 18px);
+  font-size: clamp(8px, 2.5vw, 18px);
   letter-spacing: 1px;
   font-family: "switzer";
   cursor: pointer;
   font-weight: 600;
+  text-align: left;
+}
+
+.propos {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 32px;
+  margin-right: 32px;
+  font-family: "switzer";
+  font-size: clamp(18px, 4.5vw, 24px);
+  font-style: italic;
+  color: #1a1a1a;
+  cursor: pointer;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.propos::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 50px;
+  background-color: var(--propos-hover-color);
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 0.35s;
+}
+
+.propos:hover::before {
+  width: 100%;
+}
+
+.propos::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  z-index: -1;
+  transition: background-color 0.3s;
+}
+
+.propos:hover::after {
+  background-color: var(--propos-hover-color);
+}
+
+@media (max-width: 500px) {
+  .digital {
+    margin-top: 6px;
+  }
 }
 </style>
 
 <script setup>
 import { gsap } from "gsap";
 import { onMounted } from "vue";
+import router from "../../router";
+
+const color = ["#f7ce36", "#FF6B6B", "#647eff", "#42d392", "#9B59B6"];
 
 onMounted(() => {
-  const aureo = document.querySelectorAll(".app-header p");
+  const propos = document.querySelector(".propos");
+  const aureo = document.querySelectorAll(".header p");
+
   const tl = gsap.timeline();
   tl.delay(0.5);
   tl.fromTo(
@@ -65,10 +138,18 @@ onMounted(() => {
     {
       opacity: 1,
       y: 0,
-      duration: 1,
+      duration: 0.8,
       ease: "power2.out",
-      stagger: 0.25,
+      stagger: 0.5,
     }
   );
+
+  propos.addEventListener("mouseenter", () => {
+    const randomColor = color[Math.floor(Math.random() * color.length)];
+    document.documentElement.style.setProperty(
+      "--propos-hover-color",
+      randomColor
+    );
+  });
 });
 </script>
