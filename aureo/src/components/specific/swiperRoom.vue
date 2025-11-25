@@ -41,11 +41,10 @@ function modalRom(photo) {
     :modules="[FreeMode, Pagination, Mousewheel]"
     :slides-per-view="'auto'"
     :free-mode="{ enabled: true, sticky: true, momentumBounce: false }"
-    :mousewheel="{ releaseOnEdges: false }"
     class="mySwiper"
   >
     <swiper-slide v-for="photo in catPhoto" :key="photo.id">
-      <img :src="photo.url" alt="photo" @click="modalRom(photo)" />
+      <img :src="photo.url" alt="photo" @click="modalRom(photo)" loading="lazy"/>
     </swiper-slide>
   </swiper>
 

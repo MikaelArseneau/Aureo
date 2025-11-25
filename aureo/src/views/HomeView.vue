@@ -357,6 +357,7 @@ function test() {
 }
 * {
   user-select: none;
+  overflow: hidden;
 } /* font telecharger */
 @font-face {
   font-family: "Instrument";
@@ -367,7 +368,7 @@ function test() {
   src: url("../assets/font/switzer.ttf") format("truetype");
 }
 body {
-  overflow: hidden;
+  
 } /* le bouton pour aller sur la page  */
 .bouton {
   width: 200px;
