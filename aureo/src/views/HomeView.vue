@@ -137,11 +137,11 @@ export default {
     const id_cat = ref(1);
     /* image demo id */
     const demoImages = [
-      categories[0].photo.photodemo,
-      categories[1].design.photodemo,
-      categories[2].illustration.photodemo,
-      categories[3].architecture.photodemo,
-      categories[4].style.photodemo,
+      categories[0].photo.creations[categories[0].photo.creations.length - 1].url,
+      categories[1].design.creations[categories[1].design.creations.length -1].url,
+      categories[2].illustration.creations[categories[2].illustration.creations.length -1].url,
+      categories[3].architecture.creations[categories[3].architecture.creations.length -1].url,
+      categories[4].style.creations[categories[4].style.creations.length - 1].url
     ];
     /* fait les  effet de swiper */
     const onSwiperInit = (swiper) => {
