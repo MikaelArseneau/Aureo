@@ -138,7 +138,7 @@ color: #f3f3f3;
   color: #1a1a1a;
 }
 .caroussel {
-  margin-top: 500px;
+  bottom: -45%;
   position: relative;
   user-select: none;
   overflow: hidden;
@@ -189,6 +189,9 @@ footer {
     
    .texte_milieu{
   font-size: 3em;
+}
+.displayName{
+  margin-bottom: 20px;
 }
 }
 

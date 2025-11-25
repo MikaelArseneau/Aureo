@@ -1,4 +1,3 @@
-
 <template>
   <router-link to="/" class="app-header">
     <p class="titre">Aureo</p>
@@ -33,18 +32,18 @@
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0px;
+  gap: 5px;
   margin: 16px;
   z-index: 9999999;
 }
 .titre {
-  font-size: 3em;
+  font-size: clamp(18px, 4.5vw, 40px);
   letter-spacing: 1px;
   margin-bottom: -22px;
   cursor: pointer;
 }
 .digital {
-  font-size: 1em;
+  font-size: clamp(14px, 3.5vw, 18px);
   letter-spacing: 1px;
   font-family: "switzer";
   cursor: pointer;
@@ -59,8 +58,8 @@ import { onMounted } from "vue";
 onMounted(() => {
   const aureo = document.querySelectorAll(".app-header p");
   const tl = gsap.timeline();
-tl.delay(0.5);
-tl.fromTo(
+  tl.delay(0.5);
+  tl.fromTo(
     aureo,
     { opacity: 0, y: 20 },
     {
@@ -68,7 +67,7 @@ tl.fromTo(
       y: 0,
       duration: 1,
       ease: "power2.out",
-      stagger: 0.25, 
+      stagger: 0.25,
     }
   );
 });

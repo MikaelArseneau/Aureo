@@ -38,7 +38,7 @@
       />
     </svg>
   </div>
- <!-- texte de présentation qui est montré lorsque va a une page de présentation  -->
+  <!-- texte de présentation qui est montré lorsque va a une page de présentation  -->
   <div class="texte_presentation">
     <div class="texte_header premier">
       Vous cherchez <span class="bleu">des </span>inspirations ?
@@ -48,7 +48,7 @@
     </div>
     <div class="texte_header troisieme">Aureo</div>
   </div>
- <!-- swiper des images qui montre un aprecu des images  -->
+  <!-- swiper des images qui montre un aprecu des images  -->
   <swiper
     :slidesPerView="1"
     :spaceBetween="30"
@@ -85,13 +85,13 @@
       id="image4"
       :src="currentImage"
       alt="category demo"
-    /> <!-- swiper qui permet d'aller de salle en salle   -->
+    />
+    <!-- swiper qui permet d'aller de salle en salle   -->
     <swiper-slide>
       <div class="room_title photo">
         *Photo<span class="titre_photo2">graphie*</span>
       </div>
     </swiper-slide>
-   
 
     <swiper-slide
       ><div class="room_title design">
@@ -118,7 +118,8 @@
   </swiper>
 </template>
 
-<script>/* toutes les choses importer dans le home view */
+<script>
+/* toutes les choses importer dans le home view */
 import { ref, onMounted } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
@@ -134,15 +135,15 @@ export default {
     const currentSlide = ref(0);
     const currentImage = ref("");
     const id_cat = ref(1);
-     /* image demo id */
-    const demoImages = [ 
+    /* image demo id */
+    const demoImages = [
       categories[0].photo.photodemo,
       categories[1].design.photodemo,
       categories[2].illustration.photodemo,
       categories[3].architecture.photodemo,
       categories[4].style.photodemo,
     ];
-/* fait les  effet de swiper */
+    /* fait les  effet de swiper */
     const onSwiperInit = (swiper) => {
       currentSlide.value = swiper.realIndex;
       currentImage.value = demoImages[swiper.realIndex];
@@ -213,7 +214,7 @@ export default {
           duration: 0.3,
           delay: 0.5,
         });
-    /* animations des images dans les menus gsap  */
+      /* animations des images dans les menus gsap  */
       const swiper = document.getElementsByClassName("mySwiper");
       const image1 = document.getElementById("image1");
       const image2 = document.getElementById("image2");
@@ -356,7 +357,7 @@ function test() {
 }
 * {
   user-select: none;
-}    /* font telecharger */
+} /* font telecharger */
 @font-face {
   font-family: "Instrument";
   src: url("../assets/font/InstrumentSerif-Regular.ttf") format("truetype");
@@ -367,7 +368,7 @@ function test() {
 }
 body {
   overflow: hidden;
-}     /* le bouton pour aller sur la page  */
+} /* le bouton pour aller sur la page  */
 .bouton {
   width: 200px;
   height: 65px;
@@ -394,7 +395,7 @@ body {
 }
 .bouton:hover p {
   color: #f3f3f3;
-}    /* les styles des images demo dans les pages */
+} /* les styles des images demo dans les pages */
 .image {
   height: 100px;
   aspect-ratio: 16/9;
@@ -422,10 +423,10 @@ body {
 }
 .room_title {
   z-index: 3 !important;
-}    /* le style du Héro de chaque catégorie  */
+} /* le style du Héro de chaque catégorie  */
 .photo {
   display: block;
-  font-size: 10em;
+  font-size: clamp(60px, 8vw, 180px);
   font-family: "switzer";
   letter-spacing: -3px;
   font-weight: 600;
@@ -436,7 +437,7 @@ body {
 
 .design {
   display: block;
-  font-size: 8em;
+  font-size: clamp(60px, 8vw, 160px);
   font-family: "switzer";
   letter-spacing: -3px;
   font-weight: 600;
@@ -451,7 +452,7 @@ body {
 }
 .illustration {
   display: block;
-  font-size: 8em;
+  font-size: clamp(60px, 8vw, 160px);
   font-family: "instrument";
   letter-spacing: -3px;
   font-weight: 600;
@@ -463,13 +464,13 @@ body {
   font-family: "switzer";
 }
 .mode {
-  font-size: 8em;
+  font-size: clamp(60px, 8vw, 200px);
   font-family: "instrument";
   font-weight: 600;
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 20px;
 }
 
 .et {
@@ -483,7 +484,7 @@ body {
 
 .architecture {
   display: block;
-  font-size: 8em;
+  font-size: clamp(60px, 8vw, 160px);
   font-family: "instrument";
   letter-spacing: -3px;
   font-weight: 600;
@@ -509,14 +510,13 @@ body {
   gap: 30px;
 }
 
-
 .room_title:hover {
   cursor: default;
 }
 .titre_photo2 {
   font-family: "instrument";
 }
-    /* style des fleches de la page principal  */
+/* style des fleches de la page principal  */
 .fleche_display {
   display: flex;
   gap: 48px;
@@ -547,7 +547,7 @@ body {
 .swiper-button-next::after {
   content: none !important;
 }
-    /* styles du swiper de la page principal */
+/* styles du swiper de la page principal */
 .swiper {
   margin: 0;
   text-align: center;
@@ -566,5 +566,17 @@ body {
   align-items: center;
   height: 100%;
   cursor: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .texte_presentation {
+    font-size: 3em;
+  }
+  .bouton {
+    width: 150px;
+  }
+  .fleche {
+    width: 30px;
+  }
 }
 </style>
