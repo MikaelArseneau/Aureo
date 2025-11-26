@@ -83,20 +83,23 @@
   opacity: 0;
 }
 
+/* Barre animée */
 .propos::before {
   content: "";
   position: absolute;
-  width: 0;
+  inset: 0 0 0 0;
   height: 50px;
   background-color: var(--propos-hover-color);
-  bottom: 0;
-  left: 0;
   z-index: -1;
-  transition: width 0.35s;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
 }
 
 .propos:hover::before {
-  width: 100%;
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .propos::after {
@@ -105,7 +108,7 @@
   inset: 0;
   background-color: transparent;
   z-index: -1;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .propos:hover::after {

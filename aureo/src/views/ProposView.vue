@@ -8,6 +8,9 @@
       aide à construire une bibliothèque d'inspirations unique, accessible
       partout et à tout moment.
     </div>
+    <router-link to="/">
+      <p class="propos">&nbsp;* À propos *&nbsp;</p>
+    </router-link>
   </div>
 </template>
 
@@ -35,3 +38,6 @@
   color: #1a1a1a;
 }
 </style>
+<script>
+import router from "../router";
+</script>
