@@ -83,18 +83,16 @@
   opacity: 0;
 }
 
-/* Barre animée */
 .propos::before {
   content: "";
   position: absolute;
-  inset: 0 0 0 0;
+  inset: 0;
   height: 50px;
   background-color: var(--propos-hover-color);
   z-index: -1;
-
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .propos:hover::before {
@@ -106,13 +104,15 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: transparent;
-  z-index: -1;
-  transition: background-color 0.3s ease-in-out;
+  z-index: -2;
+  background-color: var(--propos-hover-color);
+  width: 0;
+  transition: width 0s;
 }
 
 .propos:hover::after {
-  background-color: var(--propos-hover-color);
+  width: 100%;
+  transition: width 0.5s ease-in-out;
 }
 
 @media (max-width: 500px) {
