@@ -19,7 +19,7 @@
         },
         {
           "id": 2,
-          "title": "photo_test",
+          "title": "Hideo Kojima",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -28,7 +28,7 @@
         },
         {
           "id": 3,
-          "title": "alex",
+          "title": "Femme Japonaise",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -37,7 +37,7 @@
         },
         {
           "id": 4,
-          "title": "photo_test",
+          "title": "Fred Durst",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -46,7 +46,7 @@
         },
         {
           "id": 5,
-          "title": "alex",
+          "title": "Thom Yorke",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -55,7 +55,7 @@
         },
         {
           "id": 6,
-          "title": "photo_test",
+          "title": "Willem Dafoe",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -64,7 +64,7 @@
         },
         {
           "id": 7,
-          "title": "alex",
+          "title": "skateur",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -73,7 +73,7 @@
         },
         {
           "id": 8,
-          "title": "photo_test",
+          "title": "métro",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -82,7 +82,7 @@
         },
         {
           "id": 9,
-          "title": "alex",
+          "title": "escalier",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -91,7 +91,7 @@
         },
         {
           "id": 10,
-          "title": "alex",
+          "title": "l'homme au casque",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -100,7 +100,7 @@
         },
         {
           "id": 11,
-          "title": "alex",
+          "title": "surfeur",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -109,7 +109,7 @@
         },
         {
           "id": 12,
-          "title": "alex",
+          "title": "fleur",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -252,7 +252,7 @@
           "title": "alex",
           "type": "paysages",
           "date": "2025-12-02",
-          "desc": "test",
+          "desc": "allo cher ami des fleurs",
           "url": "/../numerique/image1.webp",
           "tag": "univers"
         },
@@ -487,34 +487,34 @@
       "creations": [
         {
           "id": 1,
-          "title": "photo_test",
+          "title": "chanel 2019",
           "type": "paysages",
-          "date": "2025-12-02",
+          "date": "2019-12-02",
           "desc": "test",
           "url": "../mode/image1.webp",
           "tag": "femme"
         },
         {
           "id": 2,
-          "title": "photo_test",
+          "title": "Elie Saab Autumn/Winter 2022-2023",
           "type": "paysages",
-          "date": "2025-12-02",
+          "date": "2023-12-02",
           "desc": "test",
           "url": "../mode/image2.webp",
           "tag": "homme"
         },
         {
           "id": 3,
-          "title": "photo_test",
+          "title": "Dries Van Noten Fall 2020 Menswear Fashion Show",
           "type": "paysages",
-          "date": "2025-12-02",
+          "date": "2020-12-02",
           "desc": "test",
           "url": "../mode/image3.webp",
           "tag": "homme"
         },
         {
           "id": 4,
-          "title": "photo_test",
+          "title": "model homme",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -523,7 +523,7 @@
         },
         {
           "id": 5,
-          "title": "photo_test",
+          "title": "Men fashion",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -532,7 +532,7 @@
         },
         {
           "id": 6,
-          "title": "photo_test",
+          "title": "Andrej Lišakov",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -541,7 +541,7 @@
         },
         {
           "id": 7,
-          "title": "photo_test",
+          "title": "Dominik kielbasa",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -550,7 +550,7 @@
         },
         {
           "id": 8,
-          "title": "photo_test",
+          "title": "Darko Mitev",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -559,7 +559,7 @@
         },
         {
           "id": 9,
-          "title": "photo_test",
+          "title": "Leandro Crespi",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -568,7 +568,7 @@
         },
         {
           "id": 10,
-          "title": "photo_test",
+          "title": "behrouz sasani",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
@@ -577,16 +577,16 @@
         },
         {
           "id": 11,
-          "title": "photo_test",
+          "title": "Jean Paul Gaultier Couture Spring 2015",
           "type": "paysages",
-          "date": "2025-12-02",
+          "date": "2015-12-02",
           "desc": "test",
           "url": "../mode/image11.webp",
           "tag": "femme"
         },
         {
           "id": 12,
-          "title": "photo_test",
+          "title": "Balmain Fall 2023 ",
           "type": "paysages",
           "date": "2025-12-02",
           "desc": "test",
