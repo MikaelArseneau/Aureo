@@ -26,7 +26,7 @@ const catTags = cat[catKey].tags;
 
 const modalOpen = ref(false);
 const selectedPhoto = ref(null);
-
+console.log(store);
 function modalRom(photo) {
   selectedPhoto.value = photo;
   modalOpen.value = true;
@@ -114,6 +114,7 @@ const updateSwiper = () => {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  text-transform: capitalize;
 }
 
 .radio_display {
