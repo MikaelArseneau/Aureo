@@ -99,6 +99,9 @@ onMounted(() => {
 
 <style scoped>
 
+*{
+  overflow: hidden;
+}
 .instrument{
   font-family: "Instrument-italic";
   font-style:italic;
@@ -146,6 +149,7 @@ color: #f3f3f3;
   padding: 20px;
   height: 300px;
   pointer-events: all;
+  width: 100vw;
 }
 
 .lowercase {
