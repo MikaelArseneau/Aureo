@@ -1,8 +1,7 @@
 <script setup>
 /* toute les choses importer dans la page*/
-import { onUpdated, ref } from "vue";
+import { ref, watch, nextTick } from "vue";
 import { useRoute } from "vue-router";
-import { computed } from "vue";
 import { useDataStore } from "../../stores/useMemoryStore";
 import Modal from "../specific/modalRoom.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -15,6 +14,7 @@ import { FreeMode, Mousewheel, Pagination } from "swiper/modules";
 // --- Swiper + données ---
 const route = useRoute();
 const store = useDataStore();
+
 /* va chercher les images en détail*/
 const id = Number(route.params.id);
 const cat = store.getCategoryById(id);
@@ -24,19 +24,30 @@ const catColor = cat[catKey].color;
 const catPhoto = cat[catKey].creations;
 const catTags = cat[catKey].tags;
 
+// --- Modal ---
 const modalOpen = ref(false);
 const selectedPhoto = ref(null);
-console.log(store);
+
 function modalRom(photo) {
   selectedPhoto.value = photo;
   modalOpen.value = true;
 }
+
+// --- Filtre Tags ---
 const selectedTag = ref(null);
+
+// --- Swiper instance ---
 let swiperInstance = null;
 
+// Recalcul automatique du slider quand le filtre change
 const updateSwiper = () => {
   if (swiperInstance) swiperInstance.update();
 };
+
+watch(selectedTag, async () => {
+  await nextTick(); // attend que le DOM retire/affiche les images filtrées
+  updateSwiper(); // redimensionne correctement le swiper
+});
 </script>
 
 <template>
@@ -48,28 +59,29 @@ const updateSwiper = () => {
           name="tags"
           :value="tag"
           v-model="selectedTag"
-          onclick="updateSwiper()"
           :style="{ accentColor: catColor }"
         />
         {{ tag }}
       </div>
+
       <div class="radio">
         <input
           checked
           type="radio"
           name="tags"
-          :value="tous"
+          value=""
           v-model="selectedTag"
-          onclick="updateSwiper()"
           :style="{ accentColor: catColor }"
         />
         Tous
       </div>
     </div>
+
     <div class="defiller">
       Glisser<span class="etoile" :style="{ color: catColor }">*</span>Choisir
     </div>
   </div>
+
   <swiper
     :space-between="8"
     :modules="[FreeMode, Pagination, Mousewheel]"
@@ -77,11 +89,13 @@ const updateSwiper = () => {
     :free-mode="{ enabled: true, sticky: true, momentumBounce: false }"
     class="mySwiper"
     id="my-swiper"
+    @swiper="(s) => (swiperInstance = s)"
   >
+    >
     <swiper-slide
       v-for="photo in catPhoto"
       :key="photo.id"
-      v-show="!selectedTag || selectedTag === photo.tag"
+      v-show="!selectedTag || selectedTag === photo.type"
     >
       <img
         :src="photo.url"
@@ -95,7 +109,7 @@ const updateSwiper = () => {
   <Modal
     v-model="modalOpen"
     :title="selectedPhoto?.title"
-    :type="selectedPhoto?.type"
+    :type="selectedPhoto?.tag"
     :date="selectedPhoto?.date"
     :id="selectedPhoto?.id"
     :categoryId="cat[catKey].id"
@@ -126,9 +140,15 @@ const updateSwiper = () => {
   gap: 0.8rem;
   align-self: flex-end;
 }
+
+.radio {
+  cursor: pointer;
+}
+
 .etoile {
   font-size: 1.4em;
 }
+
 .defiller {
   text-align: right;
   color: #1a1a1a;
@@ -138,6 +158,7 @@ const updateSwiper = () => {
   align-self: end;
 }
 
+/* SWIPER */
 .swiper {
   width: 100%;
   height: 50%;

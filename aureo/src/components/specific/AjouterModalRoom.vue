@@ -44,8 +44,8 @@
               />
             </div>
             <div class="form-group">
-              <label for="description"
-                class="forms">Tags <span class="instrument">*</span></label
+              <label for="description" class="forms"
+                >Tags <span class="instrument">*</span></label
               >
               <div class="radio_display">
                 <div class="radio" v-for="tag in categoryTags">
@@ -62,7 +62,9 @@
             </div>
             <!-- Upload image -->
             <div class="form-group">
-              <label for="image forms">Image <span class="instrument">*</span></label>
+              <label for="image forms"
+                >Image <span class="instrument">*</span></label
+              >
               <input
                 id="image"
                 type="file"
@@ -123,7 +125,7 @@ export default {
         title: "",
         description: "",
         credit: "",
-        tag: "",
+        type: "",
         image: null,
       },
     };
@@ -169,7 +171,7 @@ export default {
 </script>
 
 <style scoped>
-.forms{
+.forms {
   color: #1a1a1a;
   font-family: "switzer";
   font-weight: 700;

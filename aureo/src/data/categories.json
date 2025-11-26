@@ -10,17 +10,16 @@
         {
           "id": 1,
           "title": "alex",
-          "type": "paysages",
+          "type": "portrait",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image1.webp",
           "tag": "portrait"
-          
         },
         {
           "id": 2,
           "title": "Hideo Kojima",
-          "type": "paysages",
+          "type": "portrait",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image2.webp",
@@ -29,7 +28,7 @@
         {
           "id": 3,
           "title": "Femme Japonaise",
-          "type": "paysages",
+          "type": "portrait",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image3.webp",
@@ -38,7 +37,7 @@
         {
           "id": 4,
           "title": "Fred Durst",
-          "type": "paysages",
+          "type": "portrait",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image4.webp",
@@ -47,7 +46,7 @@
         {
           "id": 5,
           "title": "Thom Yorke",
-          "type": "paysages",
+          "type": "portrait",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image5.webp",
@@ -56,7 +55,7 @@
         {
           "id": 6,
           "title": "Willem Dafoe",
-          "type": "paysages",
+          "type": "portrait",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image6.webp",
@@ -65,16 +64,16 @@
         {
           "id": 7,
           "title": "skateur",
-          "type": "paysages",
+          "type": "portrait",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image7.webp",
-          "tag": "paysage"
+          "tag": "portrait"
         },
         {
           "id": 8,
           "title": "métro",
-          "type": "paysages",
+          "type": "paysage",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image8.webp",
@@ -83,7 +82,7 @@
         {
           "id": 9,
           "title": "escalier",
-          "type": "paysages",
+          "type": "paysage",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image9.webp",
@@ -92,7 +91,7 @@
         {
           "id": 10,
           "title": "l'homme au casque",
-          "type": "paysages",
+          "type": "portrait",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image10.webp",
@@ -101,7 +100,7 @@
         {
           "id": 11,
           "title": "surfeur",
-          "type": "paysages",
+          "type": "paysage",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image11.webp",
@@ -110,7 +109,7 @@
         {
           "id": 12,
           "title": "fleur",
-          "type": "paysages",
+          "type": "paysage",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../photographie/image12.webp",
@@ -130,7 +129,7 @@
         {
           "id": 1,
           "title": "photo_test",
-          "type": "paysages",
+          "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../design/image1.webp",
@@ -139,7 +138,7 @@
         {
           "id": 2,
           "title": "photo_test",
-          "type": "paysages",
+          "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../design/image2.webp",
@@ -148,7 +147,7 @@
         {
           "id": 3,
           "title": "photo_test",
-          "type": "paysages",
+          "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../design/image3.webp",
@@ -157,7 +156,7 @@
         {
           "id": 4,
           "title": "photo_test",
-          "type": "paysages",
+          "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../design/image4.webp",
@@ -166,7 +165,7 @@
         {
           "id": 5,
           "title": "photo_test",
-          "type": "paysages",
+          "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../design/image5.webp",
@@ -175,7 +174,7 @@
         {
           "id": 6,
           "title": "photo_test",
-          "type": "paysages",
+          "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../design/image6.webp",
@@ -184,7 +183,7 @@
         {
           "id": 7,
           "title": "photo_test",
-          "type": "paysages",
+          "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../design/image7.webp",
@@ -193,7 +192,7 @@
         {
           "id": 8,
           "title": "photo_test",
-          "type": "paysages",
+          "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../design/image8.webp",
@@ -202,7 +201,7 @@
         {
           "id": 9,
           "title": "photo_test",
-          "type": "paysages",
+          "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../design/image9.webp",
@@ -211,7 +210,7 @@
         {
           "id": 10,
           "title": "photo_test",
-          "type": "paysages",
+          "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../design/image10.webp",
@@ -220,7 +219,7 @@
         {
           "id": 11,
           "title": "photo_test",
-          "type": "paysages",
+          "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../design/image11.webp",
@@ -229,13 +228,12 @@
         {
           "id": 12,
           "title": "photo_test",
-          "type": "paysages",
+          "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../design/image12.webp",
           "tag": "affiche"
         }
-        
       ]
     }
   },
@@ -250,7 +248,7 @@
         {
           "id": 1,
           "title": "alex",
-          "type": "paysages",
+          "type": "univers",
           "date": "2025-12-02",
           "desc": "allo cher ami des fleurs",
           "url": "/../numerique/image1.webp",
@@ -259,7 +257,7 @@
         {
           "id": 2,
           "title": "alex",
-          "type": "paysages",
+          "type": "personne",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../numerique/image2.webp",
@@ -268,7 +266,7 @@
         {
           "id": 3,
           "title": "alex",
-          "type": "paysages",
+          "type": "personne",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../numerique/image3.webp",
@@ -277,7 +275,7 @@
         {
           "id": 4,
           "title": "alex",
-          "type": "paysages",
+          "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../numerique/image4.webp",
@@ -286,7 +284,7 @@
         {
           "id": 5,
           "title": "alex",
-          "type": "paysages",
+          "type": "personne",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../numerique/image5.webp",
@@ -295,7 +293,7 @@
         {
           "id": 6,
           "title": "alex",
-          "type": "paysages",
+          "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../numerique/image6.webp",
@@ -304,7 +302,7 @@
         {
           "id": 7,
           "title": "alex",
-          "type": "paysages",
+          "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../numerique/image7.webp",
@@ -313,7 +311,7 @@
         {
           "id": 8,
           "title": "alex",
-          "type": "paysages",
+          "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../numerique/image8.webp",
@@ -322,7 +320,7 @@
         {
           "id": 9,
           "title": "alex",
-          "type": "paysages",
+          "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../numerique/image9.webp",
@@ -331,7 +329,7 @@
         {
           "id": 10,
           "title": "alex",
-          "type": "paysages",
+          "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../numerique/image10.webp",
@@ -340,7 +338,7 @@
         {
           "id": 11,
           "title": "alex",
-          "type": "paysages",
+          "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../numerique/image11.webp",
@@ -349,7 +347,7 @@
         {
           "id": 12,
           "title": "alex",
-          "type": "paysages",
+          "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../numerique/image12.webp",
@@ -369,7 +367,7 @@
         {
           "id": 1,
           "title": "alex",
-          "type": "paysages",
+          "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image1.webp",
@@ -378,7 +376,7 @@
         {
           "id": 2,
           "title": "alex",
-          "type": "paysages",
+          "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image2.webp",
@@ -387,7 +385,7 @@
         {
           "id": 3,
           "title": "alex",
-          "type": "paysages",
+          "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image3.webp",
@@ -396,7 +394,7 @@
         {
           "id": 4,
           "title": "alex",
-          "type": "paysages",
+          "type": "maison",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image4.webp",
@@ -405,7 +403,7 @@
         {
           "id": 5,
           "title": "alex",
-          "type": "paysages",
+          "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image5.webp",
@@ -414,7 +412,7 @@
         {
           "id": 6,
           "title": "alex",
-          "type": "paysages",
+          "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image6.webp",
@@ -423,7 +421,7 @@
         {
           "id": 7,
           "title": "alex",
-          "type": "paysages",
+          "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image7.webp",
@@ -432,7 +430,7 @@
         {
           "id": 8,
           "title": "alex",
-          "type": "paysages",
+          "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image8.webp",
@@ -441,7 +439,7 @@
         {
           "id": 9,
           "title": "alex",
-          "type": "paysages",
+          "type": "maison",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image9.webp",
@@ -450,7 +448,7 @@
         {
           "id": 10,
           "title": "alex",
-          "type": "paysages",
+          "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image10.webp",
@@ -459,7 +457,7 @@
         {
           "id": 11,
           "title": "alex",
-          "type": "paysages",
+          "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image11.webp",
@@ -468,7 +466,7 @@
         {
           "id": 12,
           "title": "alex",
-          "type": "paysages",
+          "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../architecture/image12.webp",
@@ -488,7 +486,7 @@
         {
           "id": 1,
           "title": "chanel 2019",
-          "type": "paysages",
+          "type": "femme",
           "date": "2019-12-02",
           "desc": "test",
           "url": "../mode/image1.webp",
@@ -497,7 +495,7 @@
         {
           "id": 2,
           "title": "Elie Saab Autumn/Winter 2022-2023",
-          "type": "paysages",
+          "type": "homme",
           "date": "2023-12-02",
           "desc": "test",
           "url": "../mode/image2.webp",
@@ -506,7 +504,7 @@
         {
           "id": 3,
           "title": "Dries Van Noten Fall 2020 Menswear Fashion Show",
-          "type": "paysages",
+          "type": "homme",
           "date": "2020-12-02",
           "desc": "test",
           "url": "../mode/image3.webp",
@@ -515,7 +513,7 @@
         {
           "id": 4,
           "title": "model homme",
-          "type": "paysages",
+          "type": "homme",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../mode/image4.webp",
@@ -524,7 +522,7 @@
         {
           "id": 5,
           "title": "Men fashion",
-          "type": "paysages",
+          "type": "homme",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../mode/image5.webp",
@@ -533,7 +531,7 @@
         {
           "id": 6,
           "title": "Andrej Lišakov",
-          "type": "paysages",
+          "type": "homme",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../mode/image6.webp",
@@ -542,7 +540,7 @@
         {
           "id": 7,
           "title": "Dominik kielbasa",
-          "type": "paysages",
+          "type": "femme",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../mode/image7.webp",
@@ -551,7 +549,7 @@
         {
           "id": 8,
           "title": "Darko Mitev",
-          "type": "paysages",
+          "type": "femme",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../mode/image8.webp",
@@ -560,7 +558,7 @@
         {
           "id": 9,
           "title": "Leandro Crespi",
-          "type": "paysages",
+          "type": "homme",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../mode/image9.webp",
@@ -569,7 +567,7 @@
         {
           "id": 10,
           "title": "behrouz sasani",
-          "type": "paysages",
+          "type": "femme",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../mode/image10.webp",
@@ -578,7 +576,7 @@
         {
           "id": 11,
           "title": "Jean Paul Gaultier Couture Spring 2015",
-          "type": "paysages",
+          "type": "femme",
           "date": "2015-12-02",
           "desc": "test",
           "url": "../mode/image11.webp",
@@ -587,7 +585,7 @@
         {
           "id": 12,
           "title": "Balmain Fall 2023 ",
-          "type": "paysages",
+          "type": "femme",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../mode/image12.webp",
