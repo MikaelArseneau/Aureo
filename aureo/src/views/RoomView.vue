@@ -1,4 +1,4 @@
-<script setup>
+<script setup>/* toutes les importation */
 import { useRoute } from "vue-router";
 import { useDataStore } from "../stores/useMemoryStore";
 import swiperRoom from "../components/specific/swiperRoom.vue";
@@ -6,7 +6,7 @@ import AjouterModalRoom from "../components/specific/AjouterModalRoom.vue";
 import { ref,onMounted } from "vue";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
-
+/* aniamtion du texte*/
 gsap.registerPlugin(SplitText);
 const route = useRoute();
 const store = useDataStore();
@@ -36,7 +36,7 @@ onMounted(() => {
     duration: 0.8,
     delay:0.4,
     ease: "power3.out"
-  });
+  });/* aniamtion du bouton ajouter */
   let tl=gsap.timeline();
   let button=document.getElementsByClassName("btn_ajouter");
    tl.fromTo(
@@ -67,7 +67,7 @@ onMounted(() => {
 
 
   <main>
-    
+<!--ajout d'une image avec tous les informations -->
    <AjouterModalRoom
     v-model="modalOpen"
   :title="selectedPhoto?.title || ''"
@@ -76,12 +76,12 @@ onMounted(() => {
   :id="selectedPhoto?.id || ''"
   :categoryId="cat[catKey].id"
   :categoryTags="cat[catKey].tags"
->
+><!--taille image-->
   <img
     v-if="selectedPhoto"
     :src="selectedPhoto.url"
     style="width: 100%; max-height: 60vh"
-  />
+  /><!--ajouter au caroussel-->
   </AjouterModalRoom>
     <div class="caroussel">
       <swiper-room></swiper-room>
@@ -98,6 +98,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
+
 .instrument{
   font-family: "Instrument-italic";
   font-style:italic;
@@ -117,7 +118,7 @@ margin-top: -175px;
 .texte_milieu{
   font-size: 4em;
 }
-
+/* style du bouton */
 .btn_ajouter{
 opacity: 0;
 z-index: 1000;
@@ -178,7 +179,7 @@ footer {
   color: #1a1a1a;
   margin: 40px;
 }
-
+/* changement pour telephone et tablette*/
 @media screen and (max-width: 600px) {
     .btn_ajouter {
         width: 50%;
