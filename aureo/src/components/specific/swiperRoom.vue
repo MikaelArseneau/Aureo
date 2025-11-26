@@ -1,6 +1,6 @@
 <script setup>
 /* toute les choses importer dans la page*/
-import { ref } from "vue";
+import { onUpdated, ref } from "vue";
 import { useRoute } from "vue-router";
 import { computed } from "vue";
 import { useDataStore } from "../../stores/useMemoryStore";
@@ -22,6 +22,7 @@ const catKey = Object.keys(cat)[0];
 const catName = cat[catKey].name;
 const catColor = cat[catKey].color;
 const catPhoto = cat[catKey].creations;
+const catTags = cat[catKey].tags;
 
 const modalOpen = ref(false);
 const selectedPhoto = ref(null);
@@ -30,11 +31,44 @@ function modalRom(photo) {
   selectedPhoto.value = photo;
   modalOpen.value = true;
 }
+const selectedTag = ref(null);
+let swiperInstance = null;
+
+const updateSwiper = () => {
+  if (swiperInstance) swiperInstance.update();
+};
 </script>
 
 <template>
-  <div class="defiller">
-    Glisser<span class="etoile" :style="{ color: catColor }">*</span>Choisir
+  <div class="display_flitre">
+    <div class="radio_display">
+      <div class="radio" v-for="tag in catTags">
+        <input
+          type="radio"
+          name="tags"
+          :value="tag"
+          v-model="selectedTag"
+          onclick="updateSwiper()"
+          :style="{ accentColor: catColor }"
+        />
+        {{ tag }}
+      </div>
+      <div class="radio">
+        <input
+          checked
+          type="radio"
+          name="tags"
+          :value="tous"
+          v-model="selectedTag"
+          onclick="updateSwiper()"
+          :style="{ accentColor: catColor }"
+        />
+        Tous
+      </div>
+    </div>
+    <div class="defiller">
+      Glisser<span class="etoile" :style="{ color: catColor }">*</span>Choisir
+    </div>
   </div>
   <swiper
     :space-between="8"
@@ -42,9 +76,19 @@ function modalRom(photo) {
     :slides-per-view="'auto'"
     :free-mode="{ enabled: true, sticky: true, momentumBounce: false }"
     class="mySwiper"
+    id="my-swiper"
   >
-    <swiper-slide v-for="photo in catPhoto" :key="photo.id">
-      <img :src="photo.url" alt="photo" @click="modalRom(photo)" loading="lazy"/>
+    <swiper-slide
+      v-for="photo in catPhoto"
+      :key="photo.id"
+      v-show="!selectedTag || selectedTag === photo.tag"
+    >
+      <img
+        :src="photo.url"
+        alt="photo"
+        @click="modalRom(photo)"
+        loading="lazy"
+      />
     </swiper-slide>
   </swiper>
 
@@ -65,6 +109,22 @@ function modalRom(photo) {
 </template>
 
 <style scoped>
+.display_flitre {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.radio_display {
+  text-align: left;
+  color: #1a1a1a;
+  font-family: "switzer";
+  font-size: 1.3em;
+  display: flex;
+  gap: 0.8rem;
+  align-self: flex-end;
+}
 .etoile {
   font-size: 1.4em;
 }
@@ -73,6 +133,8 @@ function modalRom(photo) {
   color: #1a1a1a;
   font-family: "switzer";
   font-size: 1.3em;
+  position: relative;
+  align-self: end;
 }
 
 .swiper {
