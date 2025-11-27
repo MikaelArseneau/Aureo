@@ -75,7 +75,7 @@ const filteredPhotos = computed(() => {
 
 <template>
   <div class="display_flitre">
-    <div>
+    <div class="filtres">
       <div class="searchbar">
         <input type="text" placeholder="Search.." v-model="searchQuery" />
       </div>
@@ -152,11 +152,16 @@ const filteredPhotos = computed(() => {
 </template>
 
 <style scoped>
+.filtres {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
 .aucun_resultat {
   background-color: transparent;
   color: #1a1a1a;
   margin-top: auto;
-  margin-bottom: auto;
+  margin-top: auto;
 }
 .display_flitre {
   display: flex;
@@ -164,6 +169,8 @@ const filteredPhotos = computed(() => {
   width: 100%;
   justify-content: space-between;
   text-transform: capitalize;
+  font-size: clamp(10px, 1vw, 16px);
+  margin-bottom: 0.8rem;
 }
 
 .radio_display {

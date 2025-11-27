@@ -119,7 +119,7 @@ color: #1a1a1a;
 margin-top: -175px;
 }
 .texte_milieu{
-  font-size: 4em;
+  font-size: clamp(20px, 8vw, 80px);
 }
 /* style du bouton */
 .btn_ajouter{
@@ -147,7 +147,7 @@ color: #f3f3f3;
   user-select: none;
   overflow: hidden;
   padding: 20px;
-  height: 300px;
+  height: 80%;
   pointer-events: all;
   width: 100vw;
 }
@@ -191,10 +191,6 @@ footer {
     }
 }
 @media screen and (max-width: 450px) {
-    
-   .texte_milieu{
-  font-size: 3em;
-}
 .displayName{
   margin-bottom: 20px;
 }

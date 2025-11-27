@@ -1,11 +1,63 @@
+<script>
+import { ref } from "vue";
+import { useDataStore } from "../../stores/useMemoryStore";
+import AjouterModalRoom from "./AjouterModalRoom.vue";
+
+export default {
+  name: "Modal",
+  components: { AjouterModalRoom },
+  props: {
+    modelValue: Boolean,
+    title: String,
+    type: String,
+    date: String,
+    id: Number,
+    categoryId: [String, Number],
+  },
+  emits: ["update:modelValue"],
+  setup(props, { emit }) {
+    const addModalOpen = ref(false);
+    const imageToEdit = ref(null);
+
+    function close() {
+      emit("update:modelValue", false);
+    }
+
+    function supprimerImage() {
+      const store = useDataStore();
+      store.supprimerImage(props.id, props.categoryId);
+      close();
+    }
+
+    function ModifierImage() {
+      imageToEdit.value = {
+        id: props.id,
+        title: props.title,
+        type: props.type,
+        date: props.date,
+        categoryId: props.categoryId,
+      };
+      addModalOpen.value = true; // ouvre le modal Ajouter/Modifier
+      close(); // ferme ce modal
+    }
+
+    return {
+      close,
+      supprimerImage,
+      ModifierImage,
+      addModalOpen,
+      imageToEdit,
+    };
+  },
+};
+</script>
+
 <template>
   <Teleport to="body">
     <Transition name="modal">
       <div v-if="modelValue" class="modal-overlay" @click.self="close">
-        <div class="modal-content" role="dialog" aria-modal="true">
-          <button class="modal-close" @click="close" aria-label="Close">
-            ✕
-          </button>
+        <div class="modal-content">
+          <button class="modal-close" @click="close">✕</button>
 
           <div v-if="title" class="modal-header">
             <h2>{{ title }}</h2>
@@ -13,66 +65,31 @@
           </div>
 
           <div class="modal-body">
-            <slot> </slot>
+            <slot />
             <div class="date">{{ date }}</div>
           </div>
 
           <div class="modal-footer">
-            <div class="button" @click="modalRoom()">
+            <div class="button" @click="ModifierImage">
               <p class="button_supprimer">Modifier</p>
             </div>
-            <div class="button" @click="supprimerImage()">
+            <div class="button" @click="supprimerImage">
               <p class="button_supprimer">Supprimer</p>
             </div>
           </div>
         </div>
       </div>
     </Transition>
+
+    <!-- Modal Ajouter/Modifier -->
+    <AjouterModalRoom
+      v-model="addModalOpen"
+      :category-id="imageToEdit?.categoryId || null"
+      :image-data="imageToEdit"
+      :category-tags="['Tag1', 'Tag2']"
+    />
   </Teleport>
 </template>
-
-<script>
-import { useDataStore } from "../../stores/useMemoryStore";
-export default {
-  name: "Modal",
-  props: {
-    modelValue: {
-      type: Boolean,
-      required: true,
-    },
-    title: {
-      type: String,
-      default: "",
-    },
-    type: {
-      type: String,
-      default: "",
-    },
-    date: {
-      type: String,
-      default: "",
-    },
-    id: {
-      type: Number,
-      default: 67,
-    },
-    categoryId: {
-      type: [String, Number],
-    },
-  },
-  emits: ["update:modelValue"],
-  methods: {
-    close() {
-      this.$emit("update:modelValue", false);
-    },
-    supprimerImage() {
-      const store = useDataStore();
-      store.supprimerImage(this.id, this.categoryId);
-      this.close();
-    },
-  },
-};
-</script>
 
 <style scoped>
 .date {

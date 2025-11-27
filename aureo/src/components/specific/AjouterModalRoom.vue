@@ -3,87 +3,76 @@
     <Transition name="modal">
       <div v-if="modelValue" class="modal-overlay" @click.self="close">
         <div class="modal-content" role="dialog" aria-modal="true">
-          <button class="modal-close" @click="close" aria-label="Close">
-            ✕
-          </button>
+          <button class="modal-close" @click="close">✕</button>
 
           <div class="modal-header">
-            <h2>Formulaire d'ajout</h2>
+            <h2>{{ form.id ? "Modifier Image" : "Ajouter Image" }}</h2>
           </div>
-          <form>
+
+          <form @submit.prevent="submit">
             <div class="form-group forms">
-              <label for="title">Titre <span class="instrument">*</span></label>
+              <label for="title">Titre *</label>
               <input
                 id="title"
                 type="text"
-                required
-                placeholder="Ex: Mon chien Bilou"
                 v-model="form.title"
+                placeholder="Ex: Mon chien Bilou"
+                required
               />
             </div>
+
             <div class="form-group forms">
-              <label for="description"
-                >Description <span class="instrument">*</span></label
-              >
+              <label for="description">Description *</label>
               <input
                 id="description"
                 type="text"
-                required
-                placeholder="Ex: Bilou qui donne la patte"
                 v-model="form.description"
+                placeholder="Ex: Bilou qui donne la patte"
+                required
               />
             </div>
+
             <div class="form-group forms">
-              <label for="description">Crédit</label>
+              <label for="credit">Crédit</label>
               <input
                 id="credit"
                 type="text"
-                required
-                placeholder="Ex: Crédit"
                 v-model="form.credit"
+                placeholder="Ex: Crédit"
               />
             </div>
-            <div class="form-group">
-              <label for="description" class="forms"
-                >Tags <span class="instrument">*</span></label
-              >
+
+            <div class="form-group forms">
+              <label>Tags *</label>
               <div class="radio_display">
-                <div class="radio" v-for="tag in categoryTags">
-                  {{ tag
-                  }}<input
+                <div class="radio" v-for="tag in categoryTags" :key="tag">
+                  {{ tag }}
+                  <input
                     type="radio"
-                    name="tags"
-                    required
-                    :value="tag"
+                    name="tag"
                     v-model="form.tag"
+                    :value="tag"
+                    required
                   />
                 </div>
               </div>
             </div>
-            <!-- Upload image -->
-            <div class="form-group">
-              <label for="image forms"
-                >Image <span class="instrument">*</span></label
-              >
+
+            <div class="form-group forms">
+              <label>Image *</label>
               <input
-                id="image"
                 type="file"
                 accept="image/*"
                 @change="form.image = $event.target.files[0]"
               />
             </div>
-          </form>
 
-          <div class="modal-body">
-            <slot> </slot>
-            <div class="date">{{ date }}</div>
-          </div>
-
-          <div class="modal-footer">
-            <div class="button" @click="ajouter()">
-              <p class="button_supprimer">Ajouter</p>
+            <div class="modal-footer">
+              <button class="button">
+                {{ form.id ? "Modifier" : "Ajouter" }}
+              </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </Transition>
@@ -96,52 +85,71 @@ import { useDataStore } from "../../stores/useMemoryStore";
 export default {
   name: "Modal",
   props: {
-    modelValue: {
-      type: Boolean,
-      required: true,
-    },
-    title: {
-      type: String,
-      default: "",
-    },
-    type: {
-      type: String,
-      default: "",
-    },
-    id: {
-      type: String,
-      default: "",
-    },
-    categoryId: {
-      type: [String, Number],
-    },
-    categoryTags: {
-      type: Array,
-    },
+    modelValue: { type: Boolean, required: true },
+    categoryId: { type: [String, Number] },
+    categoryTags: { type: Array },
+    imageData: { type: Object, default: null },
   },
   data() {
     return {
       form: {
+        id: null,
         title: "",
         description: "",
         credit: "",
-        type: "",
+        tag: "",
         image: null,
+        url: "",
       },
     };
+  },
+  watch: {
+    imageData: {
+      immediate: true,
+      handler(nouveau) {
+        if (nouveau) {
+          this.form.id = nouveau.id;
+          this.form.title = nouveau.title;
+          this.form.description = nouveau.description;
+          this.form.credit = nouveau.credit;
+          this.form.tag = nouveau.type;
+          this.form.url = nouveau.url;
+          this.form.image = null;
+        } else {
+          this.resetForm();
+        }
+      },
+    },
   },
   emits: ["update:modelValue"],
   methods: {
     close() {
       this.$emit("update:modelValue", false);
+      this.resetForm();
     },
-    ajouter() {
-      if (
-        this.form.title != "" &&
-        this.form.description != "" &&
-        this.form.tag != "" &&
-        this.form.image != null
-      ) {
+    resetForm() {
+      this.form = {
+        id: null,
+        title: "",
+        tag: "",
+        description: "",
+        credit: "",
+        tag: "",
+        image: null,
+        url: "",
+      };
+    },
+    submit() {
+      const store = useDataStore();
+      if (this.form.id) {
+        const updatedImage = {
+          ...this.form,
+          url: this.form.image
+            ? URL.createObjectURL(this.form.image)
+            : this.form.url,
+        };
+        store.modifierImage(updatedImage, this.categoryId);
+      } else {
         const New_image = {
           id: Date.now(),
           title: this.form.title,
@@ -153,18 +161,13 @@ export default {
           date:
             new Date().getFullYear() +
             "-" +
-            new Date().getMonth() +
+            (new Date().getMonth() + 1) +
             "-" +
-            new Date().getDay(),
+            new Date().getDate(),
         };
-        const store = useDataStore();
         store.ajouter(New_image, this.categoryId);
-        this.$emit("update:modelValue", false);
-        this.form.title = "";
-        this.form.description = "";
-        this.form.tag = "";
-        this.form.credit = "";
       }
+      this.close();
     },
   },
 };
@@ -212,6 +215,7 @@ h3 {
   border-color: #111827;
   border-style: solid;
   transition: all 0.3s ease-in-out;
+  border-radius: 0;
 }
 .button_supprimer {
   font-family: "switzer";
