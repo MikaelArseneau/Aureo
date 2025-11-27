@@ -5,6 +5,7 @@ import { useRoute } from "vue-router";
 import { useDataStore } from "../../stores/useMemoryStore";
 import Modal from "../specific/modalRoom.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
+import { computed } from "vue";
 import "swiper/css";
 import "swiper/css/mousewheel";
 import "swiper/css/free-mode";
@@ -35,6 +36,7 @@ function modalRom(photo) {
 
 // --- Filtre Tags ---
 const selectedTag = ref(null);
+const searchQuery = ref("");
 
 // --- Swiper instance ---
 let swiperInstance = null;
@@ -48,35 +50,60 @@ watch(selectedTag, async () => {
   await nextTick(); // attend que le DOM retire/affiche les images filtrées
   updateSwiper(); // redimensionne correctement le swiper
 });
+const filteredPhotos = computed(() => {
+  let result = catPhoto;
+
+  // Si recherche textuelle !
+  if (searchQuery.value.trim()) {
+    const query = searchQuery.value.toLowerCase();
+
+    result = result.filter((photo) => {
+      const title = photo.title?.toLowerCase() || "";
+      const desc = photo.description?.toLowerCase() || "";
+      return title.includes(query) || desc.includes(query);
+    });
+  }
+
+  // Filtre TAG
+  if (selectedTag.value) {
+    result = result.filter((photo) => photo.type === selectedTag.value);
+  }
+
+  return result;
+});
 </script>
 
 <template>
   <div class="display_flitre">
-    <div class="radio_display">
-      <div class="radio" v-for="tag in catTags">
-        <input
-          type="radio"
-          name="tags"
-          :value="tag"
-          v-model="selectedTag"
-          :style="{ accentColor: catColor }"
-        />
-        {{ tag }}
+    <div>
+      <div class="searchbar">
+        <input type="text" placeholder="Search.." v-model="searchQuery" />
       </div>
+      <div class="radio_display">
+        <div class="radio" v-for="tag in catTags">
+          <input
+            type="radio"
+            name="tags"
+            :value="tag"
+            v-model="selectedTag"
+            :style="{ accentColor: catColor }"
+          />
+          {{ tag }}
+        </div>
 
-      <div class="radio">
-        <input
-          checked
-          type="radio"
-          name="tags"
-          value=""
-          v-model="selectedTag"
-          :style="{ accentColor: catColor }"
-        />
-        Tous
+        <div class="radio">
+          <input
+            checked
+            type="radio"
+            name="tags"
+            value=""
+            v-model="selectedTag"
+            :style="{ accentColor: catColor }"
+          />
+          Tous
+        </div>
       </div>
     </div>
-
     <div class="defiller">
       Glisser<span class="etoile" :style="{ color: catColor }">*</span>Choisir
     </div>
@@ -93,7 +120,7 @@ watch(selectedTag, async () => {
   >
     >
     <swiper-slide
-      v-for="photo in catPhoto"
+      v-for="photo in filteredPhotos"
       :key="photo.id"
       v-show="!selectedTag || selectedTag === photo.type"
     >
@@ -104,8 +131,10 @@ watch(selectedTag, async () => {
         loading="lazy"
       />
     </swiper-slide>
+    <swiper-slide v-if="filteredPhotos.length === 0" class="aucun_resultat">
+      Aucun résultat :(
+    </swiper-slide>
   </swiper>
-
   <Modal
     v-model="modalOpen"
     :title="selectedPhoto?.title"
@@ -123,6 +152,12 @@ watch(selectedTag, async () => {
 </template>
 
 <style scoped>
+.aucun_resultat {
+  background-color: transparent;
+  color: #1a1a1a;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .display_flitre {
   display: flex;
   flex-direction: row;
@@ -167,7 +202,7 @@ watch(selectedTag, async () => {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #444;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
