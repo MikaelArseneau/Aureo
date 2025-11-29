@@ -134,7 +134,6 @@ export default {
         tag: "",
         description: "",
         credit: "",
-        tag: "",
         image: null,
         url: "",
       };

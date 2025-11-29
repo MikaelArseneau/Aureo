@@ -137,11 +137,18 @@ export default {
     const id_cat = ref(1);
     /* image demo id */
     const demoImages = [
-      categories[0].photo.creations[categories[0].photo.creations.length - 1].url,
-      categories[1].design.creations[categories[1].design.creations.length -1].url,
-      categories[2].illustration.creations[categories[2].illustration.creations.length -1].url,
-      categories[3].architecture.creations[categories[3].architecture.creations.length -1].url,
-      categories[4].style.creations[categories[4].style.creations.length - 1].url
+      categories[0].photo.creations[categories[0].photo.creations.length - 1]
+        .url,
+      categories[1].design.creations[categories[1].design.creations.length - 1]
+        .url,
+      categories[2].illustration.creations[
+        categories[2].illustration.creations.length - 1
+      ].url,
+      categories[3].architecture.creations[
+        categories[3].architecture.creations.length - 1
+      ].url,
+      categories[4].style.creations[categories[4].style.creations.length - 1]
+        .url,
     ];
     /* fait les  effet de swiper */
     const onSwiperInit = (swiper) => {
@@ -161,154 +168,68 @@ export default {
       const titre_1 = document.getElementsByClassName("premier");
       const titre_2 = document.getElementsByClassName("deuxieme");
       const titre_3 = document.getElementsByClassName("troisieme");
-      /* animation gsap du swiper*/
+
       let tl_titre = gsap.timeline();
       tl_titre.delay(0.7);
+
+      // --- Premier et Deuxième texte : animation seulement à la première visite ---
+      const firstVisit = !sessionStorage.getItem("visited");
+      let DelaySwiper = 2.8;
+      if (firstVisit) {
+        DelaySwiper = 6.2;
+        tl_titre
+          .fromTo(
+            titre_1,
+            { y: 30, opacity: 0 },
+            { duration: 1, y: 0, opacity: 1, ease: "power1.Out", stagger: 0.3 }
+          )
+          .to(titre_1, { opacity: 0, duration: 0.3, delay: 0.5 })
+          .fromTo(
+            titre_2,
+            { y: 30, opacity: 0 },
+            { duration: 1, y: 0, opacity: 1, ease: "power1.Out" }
+          )
+          .to(titre_2, { opacity: 0, duration: 0.3, delay: 0.5 });
+
+        sessionStorage.setItem("visited", "true");
+      } else {
+        gsap.set(titre_1, { opacity: 0 });
+        gsap.set(titre_2, { opacity: 0 });
+      }
+
+      // --- Troisième texte : joue à chaque mounted ---
       tl_titre
-        .fromTo(
-          titre_1,
-          { y: 30, opacity: 0 },
-          {
-            duration: 1,
-            y: 0,
-            repeat: 0,
-            ease: "power1.Out",
-            opacity: 1,
-            stagger: 0.3,
-          }
-        )
-        .to(titre_1, {
-          opacity: 0,
-          duration: 0.3,
-          delay: 0.5,
-        })
-        .fromTo(
-          titre_2,
-          { y: 30, opacity: 0 },
-          {
-            duration: 1,
-            y: 0,
-            repeat: 0,
-            ease: "power1.Out",
-            opacity: 1,
-          }
-        )
-        .to(titre_2, {
-          opacity: 0,
-          duration: 0.3,
-          delay: 0.5,
-        })
         .fromTo(
           titre_3,
           { y: 30, opacity: 0 },
-          {
-            duration: 1,
-            y: 0,
-            repeat: 0,
-            ease: "power1.Out",
-            opacity: 1,
-          }
+          { duration: 1, y: 0, opacity: 1, ease: "power1.Out" }
         )
-        .to(titre_3, {
-          opacity: 0,
-          duration: 0.3,
-          delay: 0.5,
-        });
-      /* animations des images dans les menus gsap  */
-      const swiper = document.getElementsByClassName("mySwiper");
-      const image1 = document.getElementById("image1");
-      const image2 = document.getElementById("image2");
-      const image3 = document.getElementById("image3");
-      const image4 = document.getElementById("image4");
-      let tl_swiper = gsap.timeline();
-      let tl = gsap.timeline();
-      let tl2 = gsap.timeline();
-      let tl3 = gsap.timeline();
-      let tl4 = gsap.timeline();
-      tl.delay(2);
-      tl.fromTo(
-        image1,
-        { bottom: "-15%" },
-        {
-          duration: 20,
-          bottom: "110%",
-          repeat: -1,
-          ease: "none",
-        }
+        .to(titre_3, { opacity: 0, duration: 0.3, delay: 0.5 });
+
+      // --- Animations images ---
+      const images = ["image1", "image2", "image3", "image4"].map((id) =>
+        document.getElementById(id)
       );
-      tl2.delay(6);
-      tl2.fromTo(
-        image2,
-        { bottom: "-15%" },
-        {
-          duration: 25,
-          bottom: "110%",
-          repeat: -1,
-          ease: "none",
-        }
-      );
-      tl3.delay(10);
-      tl3.fromTo(
-        image3,
-        { bottom: "-15%" },
-        {
-          duration: 25,
-          bottom: "110%",
-          repeat: -1,
-          ease: "none",
-        }
-      );
-      tl4.delay(16);
-      tl4.fromTo(
-        image4,
-        { bottom: "-15%" },
-        {
-          duration: 25,
-          bottom: "110%",
-          repeat: -1,
-          ease: "none",
-        }
-      );
-      tl_swiper.delay(6.2);
-      tl_swiper.fromTo(
-        swiper,
-        { opacity: "0", y: 40 },
-        {
-          y: 0,
-          duration: 0.6,
-          opacity: "1",
-          ease: "power1",
-        }
-      );
-      image1.addEventListener("mouseenter", () => {
-        tl.pause();
-      });
-      image1.addEventListener("mouseleave", () => {
-        tl.resume();
+      const durations = [20, 25, 25, 25];
+      const tls = images.map((img, i) => {
+        let tl = gsap.timeline({ repeat: -1 });
+        tl.fromTo(
+          img,
+          { bottom: "-15%" },
+          { duration: durations[i], bottom: "110%", ease: "none", delay: i * 5 }
+        );
+        img.addEventListener("mouseenter", () => tl.pause());
+        img.addEventListener("mouseleave", () => tl.resume());
+        return tl;
       });
 
-      image2.addEventListener("mouseenter", () => {
-        tl2.pause();
-      });
-
-      image2.addEventListener("mouseleave", () => {
-        tl2.resume();
-      });
-
-      image3.addEventListener("mouseenter", () => {
-        tl3.pause();
-      });
-
-      image3.addEventListener("mouseleave", () => {
-        tl3.resume();
-      });
-      image4.addEventListener("mouseenter", () => {
-        tl4.pause();
-      });
-
-      image4.addEventListener("mouseleave", () => {
-        tl4.resume();
-      });
+      // --- Animation swiper ---
+      const swiperEl = document.getElementsByClassName("mySwiper");
+      gsap.fromTo(
+        swiperEl,
+        { opacity: 0, y: 40 },
+        { y: 0, duration: 0.6, opacity: 1, ease: "power1", delay: DelaySwiper }
+      );
     });
 
     return {
@@ -369,6 +290,7 @@ function test() {
 }
 body {
   width: 100vw;
+  height: 100vh;
 } /* le bouton pour aller sur la page  */
 .bouton {
   width: 200px;

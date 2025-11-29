@@ -38,17 +38,15 @@ function modalRom(photo) {
 const selectedTag = ref(null);
 const searchQuery = ref("");
 
-// --- Swiper instance ---
 let swiperInstance = null;
 
-// Recalcul automatique du slider quand le filtre change
 const updateSwiper = () => {
   if (swiperInstance) swiperInstance.update();
 };
 
 watch(selectedTag, async () => {
-  await nextTick(); // attend que le DOM retire/affiche les images filtrées
-  updateSwiper(); // redimensionne correctement le swiper
+  await nextTick();
+  updateSwiper();
 });
 const filteredPhotos = computed(() => {
   let result = catPhoto;
@@ -181,6 +179,7 @@ const filteredPhotos = computed(() => {
   display: flex;
   gap: 0.8rem;
   align-self: flex-end;
+  font-weight: 600;
 }
 
 .radio {
