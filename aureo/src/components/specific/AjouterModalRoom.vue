@@ -154,7 +154,7 @@ export default {
           title: this.form.title,
           description: this.form.description,
           credit: this.form.credit,
-          type: this.form.tag,
+          tag: this.form.tag,
           url: URL.createObjectURL(this.form.image),
           categoryId: this.categoryId,
           date:
