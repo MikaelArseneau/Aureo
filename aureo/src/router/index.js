@@ -2,6 +2,7 @@
 import HomeView from "../views/HomeView.vue";
 import RoomView from "../views/RoomView.vue";
 import ProposView from "../views/ProposView.vue";
+import NotFound from "../views/404View.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 /* toutes les chemins vers les pages du site */
@@ -20,6 +21,11 @@ const routes = [
     path: "/propos",
     name: "propos",
     component: ProposView,
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: "NotFound",
+    component: NotFound,
   },
 ];
 

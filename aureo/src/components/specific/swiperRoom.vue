@@ -120,7 +120,9 @@ const filteredPhotos = computed(() => {
     <swiper-slide
       v-for="photo in filteredPhotos"
       :key="photo.id"
-      v-show="!selectedTag || selectedTag === photo.type"
+      v-show="
+        !selectedTag || selectedTag === photo.type || selectedTag === photo.tag
+      "
     >
       <img
         :src="photo.url"
