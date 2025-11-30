@@ -135,5 +135,6 @@ onMounted(() => {
 
 .bouton:hover p {
   color: #f3f3f3;
+  cursor: pointer;
 }
 </style>

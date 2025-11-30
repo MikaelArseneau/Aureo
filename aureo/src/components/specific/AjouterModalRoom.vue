@@ -64,6 +64,7 @@
                 type="file"
                 accept="image/*"
                 @change="form.image = $event.target.files[0]"
+                required
               />
             </div>
 
