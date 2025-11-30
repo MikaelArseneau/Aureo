@@ -8,7 +8,7 @@
           <div class="modal-header">
             <h2>{{ form.id ? "Modifier Image" : "Ajouter Image" }}</h2>
           </div>
-
+          <!-- input titre -->
           <form @submit.prevent="submit">
             <div class="form-group forms">
               <label for="title">Titre *</label>
@@ -20,7 +20,7 @@
                 required
               />
             </div>
-
+            <!-- input description -->
             <div class="form-group forms">
               <label for="description">Description *</label>
               <input
@@ -31,7 +31,7 @@
                 required
               />
             </div>
-
+            <!-- input credit -->
             <div class="form-group forms">
               <label for="credit">Crédit</label>
               <input
@@ -41,7 +41,7 @@
                 placeholder="Ex: Crédit"
               />
             </div>
-
+            <!-- input tags -->
             <div class="form-group forms">
               <label>Tags *</label>
               <div class="radio_display">
@@ -57,7 +57,7 @@
                 </div>
               </div>
             </div>
-
+            <!-- input image -->
             <div class="form-group forms">
               <label>Image *</label>
               <input
@@ -112,7 +112,7 @@ export default {
           this.form.title = nouveau.title;
           this.form.description = nouveau.description;
           this.form.credit = nouveau.credit;
-          this.form.tag = nouveau.type;
+          this.form.type = nouveau.type;
           this.form.url = nouveau.url;
           this.form.image = null;
         } else {

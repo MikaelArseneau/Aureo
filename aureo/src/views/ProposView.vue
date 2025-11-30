@@ -1,4 +1,5 @@
 <template>
+  <!-- texte a propos -->
   <div class="container_propos">
     <div class="texte" ref="texte">
       <span class="titre">Aureo*</span> est votre
@@ -11,14 +12,14 @@
       <span class="highlight sp5">partout</span> et à tout moment.
     </div>
   </div>
-
+  <!-- titre contributeur -->
   <h2 class="contributeurs">Contributeurs</h2>
-
+  <!-- contributeurs -->
   <div class="container_namecard">
     <div class="namecard" id="test">Alexandre Gendron</div>
     <div class="namecard" id="test2">Mikael Arseneau</div>
     <div class="namecard" id="test3">Rafael Angon Dubé</div>
-
+    <!-- image cachées qui affichent au hover -->
     <img
       src="/equipe/alexandre_gendron.JPG"
       alt="alexandre Image"
@@ -35,7 +36,7 @@
       class="popupraf pop"
     />
   </div>
-
+  <!-- bouton de retour a la page d'accueil -->
   <div id="container_btn">
     <router-link to="/" class="bouton">
       <p class="propos">&nbsp;Retour à l'accueil&nbsp;</p>
@@ -48,7 +49,7 @@ template {
   scroll-behavior: auto;
   overflow-y: scroll !important;
 }
-
+/* couleurs hover aleatoires pour les noms des contributeurs et les mots dans le texte */
 :root {
   --alex-hover-color: #647eff;
   --mik-hover-color: #647eff;
