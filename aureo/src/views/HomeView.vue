@@ -323,7 +323,7 @@ body {
   height: 100px;
   aspect-ratio: 16/9;
   filter: blur(2.5px) drop-shadow(5px 5px 5px gray);
-  background-color: aqua;
+  background-color: transparent;
   position: absolute;
   transition: filter 0.4s;
   z-index: 2;

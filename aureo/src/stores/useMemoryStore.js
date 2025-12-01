@@ -18,15 +18,21 @@ export const useDataStore = defineStore("dataStore", {
       const store = useDataStore();
       const cat = store.getCategoryById(categoryId - 1);
       const catKey = Object.keys(cat)[0];
-      const creation_choisie = cat[catKey].creations.findIndex(
-        (m) => m.id === imageId
-      );
-      if (creation_choisie !== -1) {
-        cat[catKey].creations.splice(creation_choisie, 1);
-        return true;
+      const erreur = cat[catKey].creations.length;
+      if (erreur == 1) {
+        alert("Minimum 1 image par catégorie");
       } else {
-        alert("introuvable");
+        const creation_choisie = cat[catKey].creations.findIndex(
+          (m) => m.id === imageId
+        );
+        if (creation_choisie !== -1) {
+          cat[catKey].creations.splice(creation_choisie, 1);
+          return true;
+        } else {
+          alert("introuvable");
+        }
       }
+
     },
     ajouter(New_image, categoryId) {
       const store = useDataStore();
