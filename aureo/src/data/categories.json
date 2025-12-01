@@ -9,7 +9,7 @@
       "creations": [
         {
           "id": 1,
-          "title": "alex",
+          "title": "femme apparait photo",
           "type": "portrait",
           "date": "2025-12-02",
           "desc": "test",
@@ -218,7 +218,7 @@
         },
         {
           "id": 11,
-          "title": "photo_test",
+          "title": "street power",
           "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
@@ -247,25 +247,25 @@
       "creations": [
         {
           "id": 1,
-          "title": "alex",
+          "title": "ours",
           "type": "univers",
           "date": "2025-12-02",
           "desc": "allo cher ami des fleurs",
           "url": "/../numerique/image1.webp",
-          "tag": "univers"
+          "tag": "personne"
         },
         {
           "id": 2,
-          "title": "alex",
+          "title": "Señor Salme",
           "type": "personne",
           "date": "2025-12-02",
-          "desc": "test",
+          "desc": "art de Señor Salme",
           "url": "/../numerique/image2.webp",
           "tag": "personne"
         },
         {
           "id": 3,
-          "title": "alex",
+          "title": "художник",
           "type": "personne",
           "date": "2025-12-02",
           "desc": "test",
@@ -277,13 +277,13 @@
           "title": "alex",
           "type": "univers",
           "date": "2025-12-02",
-          "desc": "test",
+          "desc": "art de Señor Salme",
           "url": "/../numerique/image4.webp",
           "tag": "univers"
         },
         {
           "id": 5,
-          "title": "alex",
+          "title": "SIMON LEE",
           "type": "personne",
           "date": "2025-12-02",
           "desc": "test",
@@ -292,7 +292,7 @@
         },
         {
           "id": 6,
-          "title": "alex",
+          "title": "spaceman",
           "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
@@ -301,7 +301,7 @@
         },
         {
           "id": 7,
-          "title": "alex",
+          "title": "愚木混株 ",
           "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
@@ -310,7 +310,7 @@
         },
         {
           "id": 8,
-          "title": "alex",
+          "title": "tache spacial",
           "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
@@ -319,7 +319,7 @@
         },
         {
           "id": 9,
-          "title": "alex",
+          "title": "miroir",
           "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
@@ -328,7 +328,7 @@
         },
         {
           "id": 10,
-          "title": "alex",
+          "title": "eau",
           "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
@@ -337,7 +337,7 @@
         },
         {
           "id": 11,
-          "title": "alex",
+          "title": "Lopez-Rincon",
           "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
@@ -346,7 +346,7 @@
         },
         {
           "id": 12,
-          "title": "alex",
+          "title": "statue de la liberté",
           "type": "univers",
           "date": "2025-12-02",
           "desc": "test",
@@ -366,7 +366,7 @@
       "creations": [
         {
           "id": 1,
-          "title": "alex",
+          "title": "balcon",
           "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
@@ -375,7 +375,7 @@
         },
         {
           "id": 2,
-          "title": "alex",
+          "title": "batiment rouge",
           "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
@@ -384,7 +384,7 @@
         },
         {
           "id": 3,
-          "title": "alex",
+          "title": "église",
           "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
@@ -393,7 +393,7 @@
         },
         {
           "id": 4,
-          "title": "alex",
+          "title": "maison jaune",
           "type": "maison",
           "date": "2025-12-02",
           "desc": "test",
@@ -402,7 +402,7 @@
         },
         {
           "id": 5,
-          "title": "alex",
+          "title": "Tours",
           "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
@@ -411,7 +411,7 @@
         },
         {
           "id": 6,
-          "title": "alex",
+          "title": "tours ronde",
           "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
@@ -420,7 +420,7 @@
         },
         {
           "id": 7,
-          "title": "alex",
+          "title": "centre ville",
           "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
@@ -429,7 +429,7 @@
         },
         {
           "id": 8,
-          "title": "alex",
+          "title": "Tour de verre",
           "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
@@ -438,7 +438,7 @@
         },
         {
           "id": 9,
-          "title": "alex",
+          "title": "maison de sable",
           "type": "maison",
           "date": "2025-12-02",
           "desc": "test",
@@ -447,7 +447,7 @@
         },
         {
           "id": 10,
-          "title": "alex",
+          "title": "temple",
           "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
@@ -456,7 +456,7 @@
         },
         {
           "id": 11,
-          "title": "alex",
+          "title": "Tours verdure",
           "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
@@ -465,7 +465,7 @@
         },
         {
           "id": 12,
-          "title": "alex",
+          "title": "brutaliseme",
           "type": "batiment",
           "date": "2025-12-02",
           "desc": "test",
