@@ -128,7 +128,7 @@
       "creations": [
         {
           "id": 1,
-          "title": "photo_test",
+          "title": "homme dansant",
           "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
@@ -137,16 +137,16 @@
         },
         {
           "id": 2,
-          "title": "photo_test",
+          "title": "fondation d'entreprise pernod Ricard",
           "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "../design/image2.webp",
-          "tag": "affiche"
+          "tag": "font"
         },
         {
           "id": 3,
-          "title": "photo_test",
+          "title": "ascii",
           "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
@@ -155,7 +155,7 @@
         },
         {
           "id": 4,
-          "title": "photo_test",
+          "title": "viticime japoanaise",
           "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
@@ -164,7 +164,7 @@
         },
         {
           "id": 5,
-          "title": "photo_test",
+          "title": "piscine",
           "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
@@ -173,7 +173,7 @@
         },
         {
           "id": 6,
-          "title": "photo_test",
+          "title": "yeux",
           "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
@@ -182,7 +182,7 @@
         },
         {
           "id": 7,
-          "title": "photo_test",
+          "title": "oklahoma countrey",
           "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
@@ -191,16 +191,16 @@
         },
         {
           "id": 8,
-          "title": "photo_test",
+          "title": "1927",
           "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../design/image8.webp",
-          "tag": "affiche"
+          "tag": "font"
         },
         {
           "id": 9,
-          "title": "photo_test",
+          "title": "L'homme",
           "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
@@ -209,12 +209,12 @@
         },
         {
           "id": 10,
-          "title": "photo_test",
+          "title": "chaos",
           "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",
           "url": "/../design/image10.webp",
-          "tag": "affiche"
+          "tag": "font"
         },
         {
           "id": 11,
@@ -227,7 +227,7 @@
         },
         {
           "id": 12,
-          "title": "photo_test",
+          "title": "design",
           "type": "affiche",
           "date": "2025-12-02",
           "desc": "test",

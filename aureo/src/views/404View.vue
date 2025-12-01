@@ -1,5 +1,6 @@
 <template>
   <div class="text-block" ref="zone">
+     <!-- texte  -->
     <p ref="texte">
       404 / aureo / 404 / aureo / 404 / aureo / 404 / aureo / 404 / aureo / 404
       / aureo / 404 / aureo / 404 / aureo / 404 / aureo / 404 / aureo / 404 /
@@ -15,7 +16,7 @@
     </div>
   </div>
 </template>
-
+ <!-- importation  -->
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 import gsap from "gsap";
@@ -75,7 +76,7 @@ onMounted(() => {
 :root {
   --btn-hover-color: #647eff;
 }
-
+/* Styles pour la vue 404*/
 .text-block {
   position: fixed;
   inset: 0;
@@ -109,7 +110,7 @@ onMounted(() => {
   align-items: center;
   margin-top: 5rem;
 }
-
+/* Styles pour la vue 404*/
 .bouton {
   width: 200px;
   height: 65px;
@@ -120,7 +121,7 @@ onMounted(() => {
   cursor: pointer;
   transition: all 0.4s ease-out;
 }
-
+/* Styles  du bouton*/
 .bouton p {
   font-family: "instrument";
   font-size: clamp(20px, 3vw, 32px);
