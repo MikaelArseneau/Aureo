@@ -137,7 +137,7 @@ const filteredPhotos = computed(() => {
       />
     </swiper-slide>
     <swiper-slide v-if="filteredPhotos.length === 0" class="aucun_resultat">
-      Aucun résultat :(
+      Oupssi !!!
     </swiper-slide>
   </swiper>
   <Modal
@@ -151,7 +151,7 @@ const filteredPhotos = computed(() => {
     <img
       v-if="selectedPhoto"
       :src="selectedPhoto.url"
-      style="width: 100%; max-height: 60vh"
+      style="width: 100%; max-height: 50vh"
     />
   </Modal>
 </template>

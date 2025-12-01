@@ -1,5 +1,7 @@
 <script setup>/* toutes les importation */
-import { useRoute } from "vue-router";
+
+import { useRoute, useRouter } from "vue-router";
+
 import { useDataStore } from "../stores/useMemoryStore";
 import swiperRoom from "../components/specific/swiperRoom.vue";
 import AjouterModalRoom from "../components/specific/AjouterModalRoom.vue"; 
@@ -8,11 +10,12 @@ import gsap from "gsap";
 import SplitText from "gsap/SplitText";
 /* aniamtion du texte*/
 gsap.registerPlugin(SplitText);
-const route = useRoute();
+
 const store = useDataStore();
+const route = useRoute();   // pour lire params, query, etc.
+const router = useRouter(); // pour naviguer
 
 const id = Number(route.params.id);
-
 const cat = store.getCategoryById(id);
 const catKey = Object.keys(cat)[0];
 const catName = cat[catKey].name;
