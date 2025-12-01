@@ -137,7 +137,8 @@ const filteredPhotos = computed(() => {
       />
     </swiper-slide>
     <swiper-slide v-if="filteredPhotos.length === 0" class="aucun_resultat">
-      Oupssi !!!
+      <div class="erreur">Oupssi !!!</div>
+      Aucun resultat
     </swiper-slide>
   </swiper>
   <Modal
@@ -146,6 +147,7 @@ const filteredPhotos = computed(() => {
     :type="selectedPhoto?.tag"
     :date="selectedPhoto?.date"
     :id="selectedPhoto?.id"
+    :description="selectedPhoto?.description"
     :categoryId="cat[catKey].id"
   >
     <img
@@ -177,6 +179,14 @@ const filteredPhotos = computed(() => {
   color: #1a1a1a;
   margin-top: auto;
   margin-top: auto;
+  font-family: "switzer";
+  letter-spacing: 0.1em;
+
+  display: flex;
+  flex-direction: column;
+}
+.erreur {
+  font-size: 30px;
 }
 .display_flitre {
   display: flex;

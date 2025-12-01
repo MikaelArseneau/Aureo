@@ -12,6 +12,7 @@ export default {
     type: String,
     date: String,
     id: Number,
+    description: String,
     categoryId: [String, Number],
   },
   emits: ["update:modelValue"],
@@ -35,6 +36,7 @@ export default {
         title: props.title,
         type: props.type,
         date: props.date,
+        description: props.description,
         categoryId: props.categoryId,
       };
       addModalOpen.value = true; // ouvre le modal Ajouter/Modifier
@@ -62,6 +64,7 @@ export default {
           <div v-if="title" class="modal-header">
             <h2>{{ title }}</h2>
             <h3>{{ type }}</h3>
+            <h3>{{ description }}</h3>
           </div>
 
           <div class="modal-body">
