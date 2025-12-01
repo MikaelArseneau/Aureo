@@ -86,7 +86,7 @@ export default {
       v-model="addModalOpen"
       :category-id="imageToEdit?.categoryId || null"
       :image-data="imageToEdit"
-      :category-tags="['Tag1', 'Tag2']"
+      :category-tags="[imageToEdit?.type]"
     />
   </Teleport>
 </template>

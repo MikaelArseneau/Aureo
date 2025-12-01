@@ -75,7 +75,12 @@ const filteredPhotos = computed(() => {
   <div class="display_flitre">
     <div class="filtres">
       <div class="searchbar">
-        <input type="text" placeholder="Search.." v-model="searchQuery" />
+        <input
+          type="text"
+          class="barreRecherche"
+          placeholder="Search.."
+          v-model="searchQuery"
+        />
       </div>
       <div class="radio_display">
         <div class="radio" v-for="tag in catTags">
@@ -152,6 +157,16 @@ const filteredPhotos = computed(() => {
 </template>
 
 <style scoped>
+.barreRecherche {
+  background-color: #1a1a1a;
+  padding: 0.5em;
+  color: #f3f3f3;
+  border-radius: 0;
+  border-width: 0;
+}
+.barreRecherche:focus {
+  border-radius: 0;
+}
 .filtres {
   display: flex;
   gap: 1rem;

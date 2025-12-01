@@ -1,6 +1,6 @@
 <template>
   <div class="text-block" ref="zone">
-     <!-- texte  -->
+    <!-- texte  -->
     <p ref="texte">
       404 / aureo / 404 / aureo / 404 / aureo / 404 / aureo / 404 / aureo / 404
       / aureo / 404 / aureo / 404 / aureo / 404 / aureo / 404 / aureo / 404 /
@@ -16,7 +16,7 @@
     </div>
   </div>
 </template>
- <!-- importation  -->
+<!-- importation  -->
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 import gsap from "gsap";
@@ -85,8 +85,8 @@ onMounted(() => {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding: 2rem;
-  width: 90vw;
+  padding: 0.8em;
+  width: 100vw;
   height: 100vh;
   font-family: "Geist Mono", monospace;
   font-size: clamp(20px, 3vw, 40px);
