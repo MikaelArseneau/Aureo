@@ -91,28 +91,32 @@ const filteredPhotos = computed(() => {
 
       <!-- Liste des tags -->
       <div class="radio_display">
-        <div class="radio" v-for="tag in catTags">
-          <input
-            type="radio"
-            name="tags"
-            :value="tag"
-            v-model="selectedTag"
-            :style="{ accentColor: catColor }"
-          />
-          {{ tag }}
+        <div class="radio" v-for="tag in catTags" :key="tag">
+          <label style="cursor: pointer">
+            <input
+              type="radio"
+              name="tags"
+              :value="tag"
+              v-model="selectedTag"
+              :style="{ accentColor: catColor }"
+            />
+            {{ tag }}
+          </label>
         </div>
 
         <!-- Option Tous -->
         <div class="radio">
-          <input
-            checked
-            type="radio"
-            name="tags"
-            value=""
-            v-model="selectedTag"
-            :style="{ accentColor: catColor }"
-          />
-          Tous
+          <label style="cursor: pointer">
+            <input
+              type="radio"
+              name="tags"
+              value=""
+              checked
+              v-model="selectedTag"
+              :style="{ accentColor: catColor }"
+            />
+            Tous
+          </label>
         </div>
       </div>
     </div>
@@ -164,6 +168,7 @@ const filteredPhotos = computed(() => {
     :date="selectedPhoto?.date"
     :id="selectedPhoto?.id"
     :description="selectedPhoto?.description"
+    :image="selectedPhoto?.url"
     :categoryId="cat[catKey].id"
   >
     <img

@@ -15,6 +15,7 @@ export default {
     date: String,
     id: Number,
     description: String,
+    url: String,
     categoryId: [String, Number],
   },
 
@@ -47,6 +48,7 @@ export default {
         type: props.type,
         date: props.date,
         description: props.description,
+        url: props.url,
         categoryId: props.categoryId,
       };
 
