@@ -1,22 +1,23 @@
 <script setup>
-/* toute les choses importer dans la page*/
+/* Imports des outils Vue, routing, store et composants */
 import { ref, watch, nextTick } from "vue";
 import { useRoute } from "vue-router";
 import { useDataStore } from "../../stores/useMemoryStore";
 import Modal from "../specific/modalRoom.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { computed } from "vue";
+
+/* Imports des styles Swiper */
 import "swiper/css";
 import "swiper/css/mousewheel";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode, Mousewheel, Pagination } from "swiper/modules";
 
-// --- Swiper + données ---
+/* Récupération des paramètres et des données depuis le store */
 const route = useRoute();
 const store = useDataStore();
 
-/* va chercher les images en détail*/
 const id = Number(route.params.id);
 const cat = store.getCategoryById(id);
 const catKey = Object.keys(cat)[0];
@@ -25,7 +26,7 @@ const catColor = cat[catKey].color;
 const catPhoto = cat[catKey].creations;
 const catTags = cat[catKey].tags;
 
-// --- Modal ---
+/* Gestion du modal d affichage des images */
 const modalOpen = ref(false);
 const selectedPhoto = ref(null);
 
@@ -34,10 +35,11 @@ function modalRom(photo) {
   modalOpen.value = true;
 }
 
-// --- Filtre Tags ---
+/* Variables liées aux filtres */
 const selectedTag = ref(null);
 const searchQuery = ref("");
 
+/* Mise à jour du swiper après un changement de filtre */
 let swiperInstance = null;
 
 const updateSwiper = () => {
@@ -48,10 +50,12 @@ watch(selectedTag, async () => {
   await nextTick();
   updateSwiper();
 });
+
+/* Filtre combiné : recherche textuelle + filtre par tag */
 const filteredPhotos = computed(() => {
   let result = catPhoto;
 
-  // Si recherche textuelle !
+  // Recherche textuelle
   if (searchQuery.value.trim()) {
     const query = searchQuery.value.toLowerCase();
 
@@ -62,7 +66,7 @@ const filteredPhotos = computed(() => {
     });
   }
 
-  // Filtre TAG
+  // Filtre par tag
   if (selectedTag.value) {
     result = result.filter((photo) => photo.type === selectedTag.value);
   }
@@ -72,8 +76,10 @@ const filteredPhotos = computed(() => {
 </script>
 
 <template>
+  <!-- Barre de recherche + filtres -->
   <div class="display_flitre">
     <div class="filtres">
+      <!-- Recherche textuelle -->
       <div class="searchbar">
         <input
           type="text"
@@ -82,6 +88,8 @@ const filteredPhotos = computed(() => {
           v-model="searchQuery"
         />
       </div>
+
+      <!-- Liste des tags -->
       <div class="radio_display">
         <div class="radio" v-for="tag in catTags">
           <input
@@ -94,6 +102,7 @@ const filteredPhotos = computed(() => {
           {{ tag }}
         </div>
 
+        <!-- Option Tous -->
         <div class="radio">
           <input
             checked
@@ -107,11 +116,14 @@ const filteredPhotos = computed(() => {
         </div>
       </div>
     </div>
+
+    <!-- Indication scroll -->
     <div class="defiller">
       Glisser<span class="etoile" :style="{ color: catColor }">*</span>Choisir
     </div>
   </div>
 
+  <!-- Carrousel des images -->
   <swiper
     :space-between="8"
     :modules="[FreeMode, Pagination, Mousewheel]"
@@ -121,7 +133,7 @@ const filteredPhotos = computed(() => {
     id="my-swiper"
     @swiper="(s) => (swiperInstance = s)"
   >
-    >
+    <!-- Slide des photos -->
     <swiper-slide
       v-for="photo in filteredPhotos"
       :key="photo.id"
@@ -136,11 +148,15 @@ const filteredPhotos = computed(() => {
         loading="lazy"
       />
     </swiper-slide>
+
+    <!-- Affichage si aucun résultat -->
     <swiper-slide v-if="filteredPhotos.length === 0" class="aucun_resultat">
       <div class="erreur">Oupssi !!!</div>
       Aucun resultat
     </swiper-slide>
   </swiper>
+
+  <!-- Modal des détails d une photo -->
   <Modal
     v-model="modalOpen"
     :title="selectedPhoto?.title"
@@ -159,6 +175,7 @@ const filteredPhotos = computed(() => {
 </template>
 
 <style scoped>
+/* Barre de recherche */
 .barreRecherche {
   background-color: #1a1a1a;
   padding: 0.5em;
@@ -166,28 +183,34 @@ const filteredPhotos = computed(() => {
   border-radius: 0;
   border-width: 0;
 }
+
+/* Garde la bordure sans arrondis au focus */
 .barreRecherche:focus {
   border-radius: 0;
 }
+
+/* Zone des filtres */
 .filtres {
   display: flex;
   gap: 1rem;
   flex-direction: column;
 }
+
+/* Slide aucun resultat */
 .aucun_resultat {
   background-color: transparent;
   color: #1a1a1a;
-  margin-top: auto;
-  margin-top: auto;
   font-family: "switzer";
   letter-spacing: 0.1em;
-
   display: flex;
   flex-direction: column;
 }
+
 .erreur {
   font-size: 30px;
 }
+
+/* Conteneur principal des filtres */
 .display_flitre {
   display: flex;
   flex-direction: row;
@@ -198,6 +221,7 @@ const filteredPhotos = computed(() => {
   margin-bottom: 0.8rem;
 }
 
+/* Display radio tags */
 .radio_display {
   text-align: left;
   color: #1a1a1a;
@@ -213,20 +237,21 @@ const filteredPhotos = computed(() => {
   cursor: pointer;
 }
 
+/* Etoile en couleur */
 .etoile {
   font-size: 1.4em;
 }
 
+/* Indication scroll */
 .defiller {
   text-align: right;
   color: #1a1a1a;
   font-family: "switzer";
   font-size: 1.3em;
-  position: relative;
   align-self: end;
 }
 
-/* SWIPER */
+/* Swiper */
 .swiper {
   width: 100%;
   height: 50%;
@@ -243,8 +268,8 @@ const filteredPhotos = computed(() => {
   max-width: 250px;
 }
 
+/* Images du swiper */
 .swiper-slide img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;

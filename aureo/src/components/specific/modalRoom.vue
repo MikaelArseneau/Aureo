@@ -6,6 +6,8 @@ import AjouterModalRoom from "./AjouterModalRoom.vue";
 export default {
   name: "Modal",
   components: { AjouterModalRoom },
+
+  // Props du modal
   props: {
     modelValue: Boolean,
     title: String,
@@ -15,21 +17,29 @@ export default {
     description: String,
     categoryId: [String, Number],
   },
+
   emits: ["update:modelValue"],
+
   setup(props, { emit }) {
+    // Etat local pour ouvrir le modal Ajouter/Modifier
     const addModalOpen = ref(false);
+
+    // Donnee envoyee au modal de modification
     const imageToEdit = ref(null);
 
+    // Ferme le modal principal
     function close() {
       emit("update:modelValue", false);
     }
 
+    // Supprime l image via le store
     function supprimerImage() {
       const store = useDataStore();
       store.supprimerImage(props.id, props.categoryId);
       close();
     }
 
+    // Prepare les donnees pour modification
     function ModifierImage() {
       imageToEdit.value = {
         id: props.id,
@@ -39,8 +49,10 @@ export default {
         description: props.description,
         categoryId: props.categoryId,
       };
-      addModalOpen.value = true; // ouvre le modal Ajouter/Modifier
-      close(); // ferme ce modal
+
+      // Ouvre le modal Ajouter/Modifier et ferme le modal actuel
+      addModalOpen.value = true;
+      close();
     }
 
     return {
@@ -55,23 +67,30 @@ export default {
 </script>
 
 <template>
+  <!-- Teleport pour sortir le modal du flux -->
   <Teleport to="body">
     <Transition name="modal">
+      <!-- Overlay du modal -->
       <div v-if="modelValue" class="modal-overlay" @click.self="close">
         <div class="modal-content">
           <button class="modal-close" @click="close">✕</button>
 
+          <!-- Entete du modal -->
           <div v-if="title" class="modal-header">
             <h2>{{ title }}</h2>
-            <h3>{{ type }}</h3>
-            <h3>{{ description }}</h3>
+            <h3><span class="switzer">Type : </span>{{ type }}</h3>
+            <h3>
+              <span class="switzer">Description : </span>{{ description }}
+            </h3>
           </div>
 
+          <!-- Contenu -->
           <div class="modal-body">
             <slot />
             <div class="date">{{ date }}</div>
           </div>
 
+          <!-- Pied du modal -->
           <div class="modal-footer">
             <div class="button" @click="ModifierImage">
               <p class="button_supprimer">Modifier</p>
@@ -84,7 +103,7 @@ export default {
       </div>
     </Transition>
 
-    <!-- Modal Ajouter/Modifier -->
+    <!-- Deuxieme modal pour Ajouter/Modifier -->
     <AjouterModalRoom
       v-model="addModalOpen"
       :category-id="imageToEdit?.categoryId || null"
@@ -95,17 +114,26 @@ export default {
 </template>
 
 <style scoped>
+/* Styles generaux */
+.switzer {
+  font-family: "Switzer";
+  font-weight: 400;
+}
+
 .date {
   color: #1a1a1a;
   font-family: "instrument";
   text-align: right;
   margin-top: 2px;
 }
+
 h3 {
   color: black;
   margin-top: 0px;
   font-family: "instrument";
 }
+
+/* Boutons */
 .button {
   background-color: #111827;
   width: auto;
@@ -123,14 +151,18 @@ h3 {
   border-style: solid;
   transition: all 0.3s ease-in-out;
 }
+
 .button_supprimer {
   font-family: "switzer";
   margin: auto;
 }
+
 .button:hover {
   color: #1a1a1a;
   background-color: #f3f3f3;
 }
+
+/* Overlay */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -144,6 +176,7 @@ h3 {
   z-index: 1000;
 }
 
+/* Contenu du modal */
 .modal-content {
   background: white;
   max-width: 500px;
@@ -154,6 +187,7 @@ h3 {
   position: relative;
 }
 
+/* Bouton fermer */
 .modal-close {
   position: absolute;
   top: 16px;
@@ -182,6 +216,7 @@ h3 {
   font-weight: 600;
   text-transform: capitalize;
 }
+
 .modal-header h3 {
   margin: 0;
   color: #111827;
@@ -202,6 +237,7 @@ h3 {
   align-items: center;
 }
 
+/* Transitions */
 .modal-enter-active,
 .modal-leave-active {
   transition: opacity 0.3s ease;

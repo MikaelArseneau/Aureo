@@ -360,7 +360,7 @@ onMounted(() => {
   });
 
   let tl = gsap.timeline();
- /* aniamation sur nos noms */
+  /* aniamation sur nos noms */
   tl.fromTo(
     ".contributeurs",
     { y: -65, opacity: 0 },
