@@ -320,8 +320,8 @@ body {
   color: #f3f3f3;
 } /* les styles des images demo dans les pages */
 .image {
-  height: 100px;
-  aspect-ratio: 16/9;
+  height: max(100px, 125px);
+  width: auto;
   filter: blur(2.5px) drop-shadow(5px 5px 5px gray);
   background-color: transparent;
   position: absolute;
