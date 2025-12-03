@@ -12,7 +12,7 @@
           "title": "femme apparait photo",
           "type": "portrait",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "une femme avec une apparait photo dans les mains",
           "url": "../photographie/image1.webp",
           "tag": "portrait"
         },
@@ -21,7 +21,7 @@
           "title": "Hideo Kojima",
           "type": "portrait",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "Hideo Kojima devant un miroir avec un chandail big boss",
           "url": "../photographie/image2.webp",
           "tag": "portrait"
         },
@@ -30,7 +30,7 @@
           "title": "Femme Japonaise",
           "type": "portrait",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "une femme japonaise qui ouvre son frigo",
           "url": "../photographie/image3.webp",
           "tag": "portrait"
         },
@@ -39,7 +39,7 @@
           "title": "Fred Durst",
           "type": "portrait",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "Fred Durst de Limp Bizkit qui fait la pose des mains",
           "url": "../photographie/image4.webp",
           "tag": "portrait"
         },
@@ -48,7 +48,7 @@
           "title": "Thom Yorke",
           "type": "portrait",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "Thom yorke avec une fleur dans la bouche",
           "url": "../photographie/image5.webp",
           "tag": "portrait"
         },
@@ -57,7 +57,7 @@
           "title": "Willem Dafoe",
           "type": "portrait",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "Willem Dafoe en noir et blanc lors d'une séance photo",
           "url": "../photographie/image6.webp",
           "tag": "portrait"
         },
@@ -66,7 +66,7 @@
           "title": "skateur",
           "type": "portrait",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "personne pris en photo en train de skater",
           "url": "../photographie/image7.webp",
           "tag": "portrait"
         },
@@ -75,7 +75,7 @@
           "title": "métro",
           "type": "paysage",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "gare de métro prise en photo",
           "url": "../photographie/image8.webp",
           "tag": "paysage"
         },
@@ -84,7 +84,7 @@
           "title": "escalier",
           "type": "paysage",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "escalier en colimaçon pris en photo",
           "url": "../photographie/image9.webp",
           "tag": "paysage"
         },
@@ -93,7 +93,7 @@
           "title": "l'homme au casque",
           "type": "portrait",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "hommme avec une tuque et un chandail de basket",
           "url": "../photographie/image10.webp",
           "tag": "portrait"
         },
@@ -102,7 +102,7 @@
           "title": "surfeur",
           "type": "paysage",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "surfeur qui regard un lac",
           "url": "../photographie/image11.webp",
           "tag": "paysage"
         },
@@ -111,7 +111,7 @@
           "title": "fleur",
           "type": "paysage",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "une fleur rose prise en gros plan",
           "url": "../photographie/image12.webp",
           "tag": "paysage"
         }
@@ -131,7 +131,7 @@
           "title": "homme dansant",
           "type": "affiche",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "affique d'un homme en train de danser style dessin",
           "url": "../design/image1.webp",
           "tag": "affiche"
         },
@@ -140,7 +140,7 @@
           "title": "fondation d'entreprise pernod Ricard",
           "type": "affiche",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "affiche de la fondation pernod Ricard avec un style de grille",
           "url": "../design/image2.webp",
           "tag": "font"
         },
@@ -158,7 +158,7 @@
           "title": "viticime japoanaise",
           "type": "affiche",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "deux perds de yeux derrière un fond rouge avec du texte japonais",
           "url": "/../design/image4.webp",
           "tag": "affiche"
         },
@@ -167,7 +167,7 @@
           "title": "piscine",
           "type": "affiche",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "une perd de yeux avec des lunette de piscine",
           "url": "/../design/image5.webp",
           "tag": "affiche"
         },
@@ -176,7 +176,7 @@
           "title": "yeux",
           "type": "affiche",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "une perd de yeux avec le chiffre 87",
           "url": "/../design/image6.webp",
           "tag": "affiche"
         },
@@ -185,7 +185,7 @@
           "title": "oklahoma countrey",
           "type": "affiche",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "le mot oklahomaa avec un chapeau de cowboy et un guitare",
           "url": "/../design/image7.webp",
           "tag": "affiche"
         },
@@ -194,7 +194,7 @@
           "title": "1927",
           "type": "affiche",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "une affiche qui ets ecrit futura 1927",
           "url": "/../design/image8.webp",
           "tag": "font"
         },
@@ -203,7 +203,7 @@
           "title": "L'homme",
           "type": "affiche",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "un homme avec un chapeau melon fait avec des lettres",
           "url": "/../design/image9.webp",
           "tag": "affiche"
         },
@@ -212,7 +212,7 @@
           "title": "chaos",
           "type": "affiche",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "une affiche dans la quelle le texte est een noir et en gars",
           "url": "/../design/image10.webp",
           "tag": "font"
         },
@@ -221,7 +221,7 @@
           "title": "street power",
           "type": "affiche",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "une image qui montre la font graffiti",
           "url": "/../design/image11.webp",
           "tag": "affiche"
         },
@@ -230,7 +230,7 @@
           "title": "design",
           "type": "affiche",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "une affiche qui dit de faire les bonne decisions",
           "url": "/../design/image12.webp",
           "tag": "affiche"
         }
@@ -250,7 +250,7 @@
           "title": "ours",
           "type": "univers",
           "date": "2025-12-02",
-          "description": "allo cher ami des fleurs",
+          "description": "une image d'un ours",
           "url": "/../numerique/image1.webp",
           "tag": "personne"
         },
@@ -268,13 +268,13 @@
           "title": "художник",
           "type": "personne",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "visage d'une personne avec des lunette en jaune dans un font rose",
           "url": "/../numerique/image3.webp",
-          "tag": "personne"
+          "tag": "personne" 
         },
         {
           "id": 4,
-          "title": "alex",
+          "title": "visage negatif",
           "type": "univers",
           "date": "2025-12-02",
           "description": "art de Señor Salme",
@@ -286,7 +286,7 @@
           "title": "SIMON LEE",
           "type": "personne",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "image style néon d'une statut grecque",
           "url": "/../numerique/image5.webp",
           "tag": "personne"
         },
@@ -295,7 +295,7 @@
           "title": "spaceman",
           "type": "univers",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "homme dans une combinaison d'astronautesur le board d'une piscines",
           "url": "/../numerique/image6.webp",
           "tag": "univers"
         },
@@ -304,7 +304,7 @@
           "title": "愚木混株 ",
           "type": "univers",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "mirroir cassé en mille morceau dans dans un desert",
           "url": "/../numerique/image7.webp",
           "tag": "univers"
         },
@@ -313,7 +313,7 @@
           "title": "tache spacial",
           "type": "univers",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "pluie de tache",
           "url": "/../numerique/image8.webp",
           "tag": "univers"
         },
@@ -322,7 +322,7 @@
           "title": "miroir",
           "type": "univers",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "un mirroir dans une salle",
           "url": "/../numerique/image9.webp",
           "tag": "univers"
         },
@@ -331,7 +331,7 @@
           "title": "eau",
           "type": "univers",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "effet de vague style peinture",
           "url": "/../numerique/image10.webp",
           "tag": "univers"
         },
@@ -340,7 +340,7 @@
           "title": "Lopez-Rincon",
           "type": "univers",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "boule rouge avec des cubes bleu dans un fond bleu",
           "url": "/../numerique/image11.webp",
           "tag": "univers"
         },
@@ -349,7 +349,7 @@
           "title": "statue de la liberté",
           "type": "univers",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "statue de la liberté en pixel art",
           "url": "/../numerique/image12.webp",
           "tag": "univers"
         }
@@ -369,7 +369,7 @@
           "title": "balcon",
           "type": "batiment",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "un batiment avec un balcon carré",
           "url": "../architecture/image1.webp",
           "tag": "batiment"
         },
@@ -378,16 +378,16 @@
           "title": "batiment rouge",
           "type": "batiment",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "trois batiment un rouge et deux brun ",
           "url": "../architecture/image2.webp",
           "tag": "batiment"
         },
         {
           "id": 3,
-          "title": "église",
+          "title": "gare",
           "type": "batiment",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "une gare europenne avec un dome.",
           "url": "../architecture/image3.webp",
           "tag": "batiment"
         },
@@ -396,7 +396,7 @@
           "title": "maison jaune",
           "type": "maison",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "maison dans le style d'une maison dans les caraibes",
           "url": "../architecture/image4.webp",
           "tag": "maison"
         },
@@ -405,7 +405,7 @@
           "title": "Tours",
           "type": "batiment",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "deux tours coller une à coter de l'autre de différente couleurs",
           "url": "../architecture/image5.webp",
           "tag": "batiment"
         },
@@ -414,7 +414,7 @@
           "title": "tours ronde",
           "type": "batiment",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "tour ronde vue de bas avec un ciel bleu",
           "url": "../architecture/image6.webp",
           "tag": "batiment"
         },
@@ -423,7 +423,7 @@
           "title": "centre ville",
           "type": "batiment",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "photo pris de loin d'un centre ville avec des batiment moderne",
           "url": "../architecture/image7.webp",
           "tag": "batiment"
         },
@@ -432,7 +432,7 @@
           "title": "Tour de verre",
           "type": "batiment",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "tour en verre vue de bas avec un ciel bleu",
           "url": "../architecture/image8.webp",
           "tag": "batiment"
         },
@@ -441,7 +441,7 @@
           "title": "maison de sable",
           "type": "maison",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "maison dans le style du desset",
           "url": "../architecture/image9.webp",
           "tag": "maison"
         },
@@ -450,7 +450,7 @@
           "title": "temple",
           "type": "batiment",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "temple style asiatique",
           "url": "../architecture/image10.webp",
           "tag": "batiment"
         },
@@ -459,7 +459,7 @@
           "title": "Tours verdure",
           "type": "batiment",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "tours carré avec plein de végétation",
           "url": "../architecture/image11.webp",
           "tag": "batiment"
         },
@@ -468,7 +468,7 @@
           "title": "brutaliseme",
           "type": "batiment",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "batiment dans le style brutaliseme",
           "url": "../architecture/image12.webp",
           "tag": "batiment"
         }
@@ -488,7 +488,7 @@
           "title": "chanel 2019",
           "type": "femme",
           "date": "2019-12-02",
-          "description": "test",
+          "description": "femme qui défile pour chanel 2019",
           "url": "../mode/image1.webp",
           "tag": "femme"
         },
@@ -497,7 +497,7 @@
           "title": "Elie Saab Autumn/Winter 2022-2023",
           "type": "homme",
           "date": "2023-12-02",
-          "description": "test",
+          "description": "homme qui défile pour Elie Saab ",
           "url": "../mode/image2.webp",
           "tag": "homme"
         },
@@ -506,7 +506,7 @@
           "title": "Dries Van Noten Fall 2020 Menswear Fashion Show",
           "type": "homme",
           "date": "2020-12-02",
-          "description": "test",
+          "description": " homme qui défile pour Dries Van Noten ",
           "url": "../mode/image3.webp",
           "tag": "homme"
         },
@@ -515,7 +515,7 @@
           "title": "model homme",
           "type": "homme",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "homme habillé en noir et blanc",
           "url": "../mode/image4.webp",
           "tag": "homme"
         },
@@ -524,7 +524,7 @@
           "title": "Men fashion",
           "type": "homme",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "homme vétu d'un manteau rouge",
           "url": "../mode/image5.webp",
           "tag": "homme"
         },
@@ -542,7 +542,7 @@
           "title": "Dominik kielbasa",
           "type": "femme",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "homme vétu de d'un manteau noir",
           "url": "../mode/image7.webp",
           "tag": "femme"
         },
@@ -560,7 +560,7 @@
           "title": "Leandro Crespi",
           "type": "homme",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "femme qui pose avec les bras",
           "url": "../mode/image9.webp",
           "tag": "homme"
         },
@@ -578,7 +578,7 @@
           "title": "Jean Paul Gaultier Couture Spring 2015",
           "type": "femme",
           "date": "2015-12-02",
-          "description": "test",
+          "description": "femme qui défile pour Jean Paul Gaultier ",
           "url": "../mode/image11.webp",
           "tag": "femme"
         },
@@ -587,7 +587,7 @@
           "title": "Balmain Fall 2023 ",
           "type": "femme",
           "date": "2025-12-02",
-          "description": "test",
+          "description": "femme qui defile pour Balmain ",
           "url": "../mode/image12.webp",
           "tag": "femme"
         }
