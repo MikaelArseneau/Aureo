@@ -89,7 +89,9 @@
     <!-- swiper qui permet d'aller de salle en salle   -->
     <swiper-slide>
       <div class="room_title photo">
-        *Photo<span class="titre_photo2">graphie*</span>
+        <span class="jaune">*</span>Photo<span class="titre_photo2"
+          >graphie<span class="jaune">*</span></span
+        >
       </div>
     </swiper-slide>
 
@@ -100,7 +102,7 @@
     >
     <swiper-slide
       ><div class="room_title illustration">
-        illustration <span class="art">art numérique</span>
+        illustration /<span class="art num">/ art numérique </span>
       </div>
     </swiper-slide>
     <swiper-slide
@@ -255,6 +257,10 @@ function test() {
 .bleu {
   color: #647eff;
 }
+.jaune {
+  color: #f7ce36;
+}
+
 /* style des textes */
 .texte_header {
   position: absolute;
@@ -370,8 +376,8 @@ body {
 }
 
 .graphique {
-  color: #f3f3f3;
-  background-color: #1a1a1a;
+  color: #1a1a1a;
+  background-color: #ff6b6b;
 }
 .illustration {
   display: block;
@@ -386,6 +392,10 @@ body {
 .art {
   font-family: "switzer";
 }
+.art.num {
+  font-family: "switzer";
+  color: #647eff;
+}
 .mode {
   font-size: clamp(60px, 8vw, 200px);
   font-family: "instrument";
@@ -399,6 +409,7 @@ body {
 .et {
   font-family: "switzer";
   font-size: 1.5em;
+  color: #9b59b6;
 }
 
 .style {
@@ -420,7 +431,7 @@ body {
 .ligne {
   height: 2px;
   width: 80%;
-  background-color: #1a1a1a;
+  background-color: #42d392;
 }
 
 .video {
