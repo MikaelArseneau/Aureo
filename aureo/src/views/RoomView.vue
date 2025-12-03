@@ -119,7 +119,7 @@ onMounted(() => {
   text-align: center;
 font-family: "switzer";
 color: #1a1a1a;
-margin-top: -175px;
+margin-top: -200px;
 }
 .texte_milieu{
   font-size: clamp(20px, 8vw, 80px);
@@ -145,7 +145,7 @@ color: #f3f3f3;
   color: #1a1a1a;
 }
 .caroussel {
-  bottom: -45%;
+  bottom: -35%;
   position: relative;
   user-select: none;
   overflow: hidden;

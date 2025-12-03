@@ -150,7 +150,7 @@
           "type": "affiche",
           "date": "2025-12-02",
           "description": "test",
-          "url": "/../design/image3.webp",
+          "url": "../design/image3.webp",
           "tag": "affiche"
         },
         {
@@ -159,7 +159,7 @@
           "type": "affiche",
           "date": "2025-12-02",
           "description": "deux perds de yeux derrière un fond rouge avec du texte japonais",
-          "url": "/../design/image4.webp",
+          "url": "../design/image4.webp",
           "tag": "affiche"
         },
         {
@@ -168,7 +168,7 @@
           "type": "affiche",
           "date": "2025-12-02",
           "description": "une perd de yeux avec des lunette de piscine",
-          "url": "/../design/image5.webp",
+          "url": "../design/image5.webp",
           "tag": "affiche"
         },
         {
@@ -177,7 +177,7 @@
           "type": "affiche",
           "date": "2025-12-02",
           "description": "une perd de yeux avec le chiffre 87",
-          "url": "/../design/image6.webp",
+          "url": "../design/image6.webp",
           "tag": "affiche"
         },
         {
@@ -186,7 +186,7 @@
           "type": "affiche",
           "date": "2025-12-02",
           "description": "le mot oklahomaa avec un chapeau de cowboy et un guitare",
-          "url": "/../design/image7.webp",
+          "url": "../design/image7.webp",
           "tag": "affiche"
         },
         {
@@ -195,7 +195,7 @@
           "type": "affiche",
           "date": "2025-12-02",
           "description": "une affiche qui ets ecrit futura 1927",
-          "url": "/../design/image8.webp",
+          "url": "../design/image8.webp",
           "tag": "font"
         },
         {
@@ -204,7 +204,7 @@
           "type": "affiche",
           "date": "2025-12-02",
           "description": "un homme avec un chapeau melon fait avec des lettres",
-          "url": "/../design/image9.webp",
+          "url": "../design/image9.webp",
           "tag": "affiche"
         },
         {
@@ -213,7 +213,7 @@
           "type": "affiche",
           "date": "2025-12-02",
           "description": "une affiche dans la quelle le texte est een noir et en gars",
-          "url": "/../design/image10.webp",
+          "url": "../design/image10.webp",
           "tag": "font"
         },
         {
@@ -222,7 +222,7 @@
           "type": "affiche",
           "date": "2025-12-02",
           "description": "une image qui montre la font graffiti",
-          "url": "/../design/image11.webp",
+          "url": "../design/image11.webp",
           "tag": "affiche"
         },
         {
@@ -231,7 +231,7 @@
           "type": "affiche",
           "date": "2025-12-02",
           "description": "une affiche qui dit de faire les bonne decisions",
-          "url": "/../design/image12.webp",
+          "url": "../design/image12.webp",
           "tag": "affiche"
         }
       ]
@@ -251,7 +251,7 @@
           "type": "univers",
           "date": "2025-12-02",
           "description": "une image d'un ours",
-          "url": "/../numerique/image1.webp",
+          "url": "../numerique/image1.webp",
           "tag": "personne"
         },
         {
@@ -260,7 +260,7 @@
           "type": "personne",
           "date": "2025-12-02",
           "description": "art de Señor Salme",
-          "url": "/../numerique/image2.webp",
+          "url": "../numerique/image2.webp",
           "tag": "personne"
         },
         {
@@ -269,8 +269,8 @@
           "type": "personne",
           "date": "2025-12-02",
           "description": "visage d'une personne avec des lunette en jaune dans un font rose",
-          "url": "/../numerique/image3.webp",
-          "tag": "personne" 
+          "url": "../numerique/image3.webp",
+          "tag": "personne"
         },
         {
           "id": 4,
@@ -278,7 +278,7 @@
           "type": "univers",
           "date": "2025-12-02",
           "description": "art de Señor Salme",
-          "url": "/../numerique/image4.webp",
+          "url": "../numerique/image4.webp",
           "tag": "univers"
         },
         {
@@ -287,7 +287,7 @@
           "type": "personne",
           "date": "2025-12-02",
           "description": "image style néon d'une statut grecque",
-          "url": "/../numerique/image5.webp",
+          "url": "../numerique/image5.webp",
           "tag": "personne"
         },
         {
@@ -296,7 +296,7 @@
           "type": "univers",
           "date": "2025-12-02",
           "description": "homme dans une combinaison d'astronautesur le board d'une piscines",
-          "url": "/../numerique/image6.webp",
+          "url": "../numerique/image6.webp",
           "tag": "univers"
         },
         {
@@ -305,7 +305,7 @@
           "type": "univers",
           "date": "2025-12-02",
           "description": "mirroir cassé en mille morceau dans dans un desert",
-          "url": "/../numerique/image7.webp",
+          "url": "../numerique/image7.webp",
           "tag": "univers"
         },
         {
@@ -314,7 +314,7 @@
           "type": "univers",
           "date": "2025-12-02",
           "description": "pluie de tache",
-          "url": "/../numerique/image8.webp",
+          "url": "../numerique/image8.webp",
           "tag": "univers"
         },
         {
@@ -323,7 +323,7 @@
           "type": "univers",
           "date": "2025-12-02",
           "description": "un mirroir dans une salle",
-          "url": "/../numerique/image9.webp",
+          "url": "../numerique/image9.webp",
           "tag": "univers"
         },
         {
@@ -332,7 +332,7 @@
           "type": "univers",
           "date": "2025-12-02",
           "description": "effet de vague style peinture",
-          "url": "/../numerique/image10.webp",
+          "url": "../numerique/image10.webp",
           "tag": "univers"
         },
         {
@@ -341,7 +341,7 @@
           "type": "univers",
           "date": "2025-12-02",
           "description": "boule rouge avec des cubes bleu dans un fond bleu",
-          "url": "/../numerique/image11.webp",
+          "url": "../numerique/image11.webp",
           "tag": "univers"
         },
         {
@@ -350,7 +350,7 @@
           "type": "univers",
           "date": "2025-12-02",
           "description": "statue de la liberté en pixel art",
-          "url": "/../numerique/image12.webp",
+          "url": "../numerique/image12.webp",
           "tag": "univers"
         }
       ]
