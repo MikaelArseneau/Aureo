@@ -1,6 +1,4 @@
-import {
-  defineStore
-} from "pinia";
+import { defineStore } from "pinia";
 import categoriesJson from "../data/categories.json";
 
 export const useDataStore = defineStore("dataStore", {
@@ -32,7 +30,6 @@ export const useDataStore = defineStore("dataStore", {
           alert("introuvable");
         }
       }
-
     },
     ajouter(New_image, categoryId) {
       const store = useDataStore();

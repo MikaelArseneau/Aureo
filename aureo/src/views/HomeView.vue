@@ -9,34 +9,37 @@
   </router-link>
   <div class="fleche_display mySwiper">
     <!-- flèche droite  -->
-    <svg
-      class="fleche custom-next"
-      width="64"
-      height="30"
-      viewBox="0 0 64 30"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M44.6654 0C45.9921 3.98601 48.5775 7.4597 52.0507 9.92319C55.524 12.3867 59.7069 13.7137 64 13.7137V16.2863C59.7069 16.2863 55.524 17.6133 52.0507 20.0768C48.5775 22.5403 45.9921 26.014 44.6654 30L42.1592 29.205C43.6578 24.7023 46.5784 20.7783 50.5018 17.9955C51.402 17.357 52.3449 16.7871 53.3213 16.2863H0V13.7137H53.3213C52.3449 13.2129 51.402 12.643 50.5018 12.0045C46.5784 9.22169 43.6578 5.29771 42.1592 0.79499L44.6654 0Z"
-        fill="black"
-      />
-    </svg>
-
+    <button class="custom-next btn_fleche">
+      <svg
+        class="fleche"
+        width="64"
+        height="30"
+        viewBox="0 0 64 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M44.6654 0C45.9921 3.98601 48.5775 7.4597 52.0507 9.92319C55.524 12.3867 59.7069 13.7137 64 13.7137V16.2863C59.7069 16.2863 55.524 17.6133 52.0507 20.0768C48.5775 22.5403 45.9921 26.014 44.6654 30L42.1592 29.205C43.6578 24.7023 46.5784 20.7783 50.5018 17.9955C51.402 17.357 52.3449 16.7871 53.3213 16.2863H0V13.7137H53.3213C52.3449 13.2129 51.402 12.643 50.5018 12.0045C46.5784 9.22169 43.6578 5.29771 42.1592 0.79499L44.6654 0Z"
+          fill="black"
+        />
+      </svg>
+    </button>
     <!-- flèche gauche  -->
-    <svg
-      class="fleche gauche custom-prev"
-      width="64"
-      height="30"
-      viewBox="0 0 64 30"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M44.6654 0C45.9921 3.98601 48.5775 7.4597 52.0507 9.92319C55.524 12.3867 59.7069 13.7137 64 13.7137V16.2863C59.7069 16.2863 55.524 17.6133 52.0507 20.0768C48.5775 22.5403 45.9921 26.014 44.6654 30L42.1592 29.205C43.6578 24.7023 46.5784 20.7783 50.5018 17.9955C51.402 17.357 52.3449 16.7871 53.3213 16.2863H0V13.7137H53.3213C52.3449 13.2129 51.402 12.643 50.5018 12.0045C46.5784 9.22169 43.6578 5.29771 42.1592 0.79499L44.6654 0Z"
-        fill="black"
-      />
-    </svg>
+    <button class="custom-prev btn_fleche">
+      <svg
+        class="fleche gauche custom-prev"
+        width="64"
+        height="30"
+        viewBox="0 0 64 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M44.6654 0C45.9921 3.98601 48.5775 7.4597 52.0507 9.92319C55.524 12.3867 59.7069 13.7137 64 13.7137V16.2863C59.7069 16.2863 55.524 17.6133 52.0507 20.0768C48.5775 22.5403 45.9921 26.014 44.6654 30L42.1592 29.205C43.6578 24.7023 46.5784 20.7783 50.5018 17.9955C51.402 17.357 52.3449 16.7871 53.3213 16.2863H0V13.7137H53.3213C52.3449 13.2129 51.402 12.643 50.5018 12.0045C46.5784 9.22169 43.6578 5.29771 42.1592 0.79499L44.6654 0Z"
+          fill="black"
+        />
+      </svg>
+    </button>
   </div>
   <!-- texte de présentation qui est montré lorsque va a une page de présentation  -->
   <div class="texte_presentation">
@@ -250,6 +253,13 @@ function test() {
 </script>
 
 <style scoped>
+.btn_fleche {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
 .vert {
   color: #42d392;
 }
@@ -319,12 +329,18 @@ body {
   color: #1a1a1a;
   transition: all 0.4s ease-out;
 }
-.bouton:hover {
+/* Hover ET focus du bouton */
+.bouton:hover,
+.bouton:focus,
+.bouton:focus-visible {
   background-color: #1a1a1a;
 }
-.bouton:hover p {
+
+.bouton:hover p,
+.bouton:focus p,
+.bouton:focus-visible p {
   color: #f3f3f3;
-} /* les styles des images demo dans les pages */
+}
 .image {
   height: max(100px, 125px);
   width: auto;

@@ -24,6 +24,7 @@
                 id="title"
                 type="text"
                 v-model="form.title"
+                maxlength="30"
                 placeholder="Ex: Mon chien Bilou"
                 required
               />
@@ -36,6 +37,7 @@
                 id="description"
                 type="text"
                 v-model="form.description"
+                maxlength="50"
                 placeholder="Ex: Bilou qui donne la patte"
                 required
               />
@@ -49,6 +51,7 @@
                 type="text"
                 v-model="form.credit"
                 placeholder="Ex: Crédit"
+                maxlength="30"
               />
             </div>
 
@@ -277,7 +280,9 @@ h3 {
 }
 
 /* Hover du bouton */
-.button:hover {
+.button:hover,
+.button:focus,
+.button:focus-visible {
   color: #1a1a1a;
   background-color: #f3f3f3;
 }

@@ -82,6 +82,26 @@
   text-transform: uppercase;
   opacity: 0;
 }
+.propos:hover,
+.propos:focus,
+.propos:focus-visible {
+  opacity: 1;
+}
+
+/* Avant (hover / focus) */
+.propos:hover::before,
+.propos:focus::before,
+.propos:focus-visible::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.propos:hover::after,
+.propos:focus::after,
+.propos:focus-visible::after {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
 
 .propos::before {
   content: "";
@@ -95,11 +115,6 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.propos:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
 .propos::after {
   content: "";
   position: absolute;
@@ -108,11 +123,6 @@
   background-color: var(--propos-hover-color);
   width: 0;
   transition: width 0s;
-}
-
-.propos:hover::after {
-  width: 100%;
-  transition: width 0.5s ease-in-out;
 }
 
 @media (max-width: 500px) {
