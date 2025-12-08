@@ -77,7 +77,7 @@ Etc.
 
 Installation en local pour développement
 # Cloner le projet
-git clone [https://mikaelarseneau.github.io/Aureo/#/]
+ https://mikaelarseneau.github.io/Aureo/#/
 
 # Installer les dépendances
 npm install
@@ -102,11 +102,10 @@ Trello / Board de projet
 
 Remerciements et autres crédits
 
-Images : préciser la source
+Images :https://ca.pinterest.com/,https://unsplash.com/fr
 
-Sons : préciser la source
 
-Polices : préciser la source
+Polices : préciser la source: https://www.dafont.com/
 
 IAG utilisée (ChatGPT, version, ce qui a été généré)
 
