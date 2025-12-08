@@ -1,45 +1,47 @@
 <script setup></script>
 <template>
   <AppHeader />
-  <router-link
-    :to="{ name: 'room', params: { id: id_cat } }"
-    class="bouton mySwiper"
-  >
-    <p>Visiter la salle</p>
-  </router-link>
-  <div class="fleche_display mySwiper">
-    <!-- flèche droite  -->
-    <button class="custom-next btn_fleche">
-      <svg
-        class="fleche"
-        width="64"
-        height="30"
-        viewBox="0 0 64 30"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M44.6654 0C45.9921 3.98601 48.5775 7.4597 52.0507 9.92319C55.524 12.3867 59.7069 13.7137 64 13.7137V16.2863C59.7069 16.2863 55.524 17.6133 52.0507 20.0768C48.5775 22.5403 45.9921 26.014 44.6654 30L42.1592 29.205C43.6578 24.7023 46.5784 20.7783 50.5018 17.9955C51.402 17.357 52.3449 16.7871 53.3213 16.2863H0V13.7137H53.3213C52.3449 13.2129 51.402 12.643 50.5018 12.0045C46.5784 9.22169 43.6578 5.29771 42.1592 0.79499L44.6654 0Z"
-          fill="black"
-        />
-      </svg>
-    </button>
-    <!-- flèche gauche  -->
-    <button class="custom-prev btn_fleche">
-      <svg
-        class="fleche gauche custom-prev"
-        width="64"
-        height="30"
-        viewBox="0 0 64 30"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M44.6654 0C45.9921 3.98601 48.5775 7.4597 52.0507 9.92319C55.524 12.3867 59.7069 13.7137 64 13.7137V16.2863C59.7069 16.2863 55.524 17.6133 52.0507 20.0768C48.5775 22.5403 45.9921 26.014 44.6654 30L42.1592 29.205C43.6578 24.7023 46.5784 20.7783 50.5018 17.9955C51.402 17.357 52.3449 16.7871 53.3213 16.2863H0V13.7137H53.3213C52.3449 13.2129 51.402 12.643 50.5018 12.0045C46.5784 9.22169 43.6578 5.29771 42.1592 0.79499L44.6654 0Z"
-          fill="black"
-        />
-      </svg>
-    </button>
+  <div class="ui">
+    <router-link
+      :to="{ name: 'room', params: { id: id_cat } }"
+      class="bouton mySwiper"
+    >
+      <p>Visiter la salle</p>
+    </router-link>
+    <div class="fleche_display mySwiper">
+      <!-- flèche droite  -->
+      <button class="custom-next btn_fleche">
+        <svg
+          class="fleche"
+          width="64"
+          height="30"
+          viewBox="0 0 64 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M44.6654 0C45.9921 3.98601 48.5775 7.4597 52.0507 9.92319C55.524 12.3867 59.7069 13.7137 64 13.7137V16.2863C59.7069 16.2863 55.524 17.6133 52.0507 20.0768C48.5775 22.5403 45.9921 26.014 44.6654 30L42.1592 29.205C43.6578 24.7023 46.5784 20.7783 50.5018 17.9955C51.402 17.357 52.3449 16.7871 53.3213 16.2863H0V13.7137H53.3213C52.3449 13.2129 51.402 12.643 50.5018 12.0045C46.5784 9.22169 43.6578 5.29771 42.1592 0.79499L44.6654 0Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+      <!-- flèche gauche  -->
+      <button class="custom-prev btn_fleche">
+        <svg
+          class="fleche gauche custom-prev"
+          width="64"
+          height="30"
+          viewBox="0 0 64 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M44.6654 0C45.9921 3.98601 48.5775 7.4597 52.0507 9.92319C55.524 12.3867 59.7069 13.7137 64 13.7137V16.2863C59.7069 16.2863 55.524 17.6133 52.0507 20.0768C48.5775 22.5403 45.9921 26.014 44.6654 30L42.1592 29.205C43.6578 24.7023 46.5784 20.7783 50.5018 17.9955C51.402 17.357 52.3449 16.7871 53.3213 16.2863H0V13.7137H53.3213C52.3449 13.2129 51.402 12.643 50.5018 12.0045C46.5784 9.22169 43.6578 5.29771 42.1592 0.79499L44.6654 0Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+    </div>
   </div>
   <!-- texte de présentation qui est montré lorsque va a une page de présentation  -->
   <div class="texte_presentation">
@@ -253,9 +255,6 @@ function test() {
 </script>
 
 <style scoped>
-body {
-  overflow: hidden;
-}
 .btn_fleche {
   background: none;
   border: none;
@@ -308,16 +307,20 @@ body {
   font-family: "switzer";
   src: url("../assets/font/switzer.ttf") format("truetype");
 }
-body {
+.ui {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 5%;
+  position: absolute;
   width: 100vw;
-  height: 100vh;
+  max-height: 100vh;
 } /* le bouton pour aller sur la page  */
 .bouton {
   width: 200px;
   height: 65px;
-  position: absolute;
-  bottom: 4%;
-  left: 7%;
+  position: relative;
+  margin-left: 1.2em;
   border: solid 3px #1a1a1a;
   z-index: 999999;
   display: flex;
@@ -475,11 +478,11 @@ body {
   display: flex;
   gap: 48px;
   flex-direction: row-reverse;
-  bottom: 5%;
-  position: absolute;
+  margin-right: 1.2em;
+  position: relative;
   justify-content: space-around;
   align-items: flex-end;
-  right: 10%;
+
   z-index: 9999;
 }
 

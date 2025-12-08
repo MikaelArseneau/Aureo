@@ -49,8 +49,8 @@
 
 <style scoped>
 .scroll {
-  height: 100vh;
-  scroll-behavior: auto;
+  min-height: 100vh;
+  scroll-behavior: smooth;
   overflow-y: scroll !important;
   overflow-x: hidden;
 }
