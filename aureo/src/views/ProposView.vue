@@ -1,53 +1,58 @@
 <template>
-  <!-- texte a propos -->
-  <div class="container_propos">
-    <div class="texte" ref="texte">
-      <span class="titre">Aureo*</span> est votre
-      <span class="highlight sp1">espace personnel</span> dédié aux images qui
-      <span class="highlight sp2">vous</span> inspirent. Déposez, classez et
-      retrouvez facilement vos illustrations favorites. Pensé pour les
-      <span class="highlight sp3">créatifs</span>, Aureo simplifie la sauvegarde
-      visuelle et vous aide à <span class="highlight sp4">construire</span> une
-      bibliothèque d'inspirations unique, accessible
-      <span class="highlight sp5">partout</span> et à tout moment.
+  <div class="scroll">
+    <!-- texte a propos -->
+    <div class="container_propos">
+      <div class="texte" ref="texte">
+        <span class="titre">Aureo*</span> est votre
+        <span class="highlight sp1">espace personnel</span> dédié aux images qui
+        <span class="highlight sp2">vous</span> inspirent. Déposez, classez et
+        retrouvez facilement vos illustrations favorites. Pensé pour les
+        <span class="highlight sp3">créatifs</span>, Aureo simplifie la
+        sauvegarde visuelle et vous aide à
+        <span class="highlight sp4">construire</span> une bibliothèque
+        d'inspirations unique, accessible
+        <span class="highlight sp5">partout</span> et à tout moment.
+      </div>
     </div>
-  </div>
-  <!-- titre contributeur -->
-  <h2 class="contributeurs">Contributeurs</h2>
-  <!-- contributeurs -->
-  <div class="container_namecard">
-    <div class="namecard" id="test">Alexandre Gendron</div>
-    <div class="namecard" id="test2">Mikael Arseneau</div>
-    <div class="namecard" id="test3">Rafael Angon Dubé</div>
-    <!-- image cachées qui affichent au hover -->
-    <img
-      src="/equipe/alexandre_gendron.JPG"
-      alt="alexandre Image"
-      class="popupalex pop"
-    />
-    <img
-      src="/equipe/mikael_arseneau.JPG"
-      alt="Architecture Image"
-      class="popupmik pop"
-    />
-    <img
-      src="/equipe/Rafael_Angon Dubé.JPG"
-      alt="Architecture Image"
-      class="popupraf pop"
-    />
-  </div>
-  <!-- bouton de retour a la page d'accueil -->
-  <div id="container_btn">
-    <router-link to="/" class="bouton">
-      <p class="propos">&nbsp;Retour à l'accueil&nbsp;</p>
-    </router-link>
+    <!-- titre contributeur -->
+    <h2 class="contributeurs">Contributeurs</h2>
+    <!-- contributeurs -->
+    <div class="container_namecard">
+      <div class="namecard" id="test">Alexandre Gendron</div>
+      <div class="namecard" id="test2">Mikael Arseneau</div>
+      <div class="namecard" id="test3">Rafael Angon Dubé</div>
+      <!-- image cachées qui affichent au hover -->
+      <img
+        src="/equipe/alexandre_gendron.JPG"
+        alt="alexandre Image"
+        class="popupalex pop"
+      />
+      <img
+        src="/equipe/mikael_arseneau.JPG"
+        alt="Architecture Image"
+        class="popupmik pop"
+      />
+      <img
+        src="/equipe/Rafael_Angon Dubé.JPG"
+        alt="Architecture Image"
+        class="popupraf pop"
+      />
+    </div>
+    <!-- bouton de retour a la page d'accueil -->
+    <div id="container_btn">
+      <router-link to="/" class="bouton">
+        <p class="propos">&nbsp;Retour à l'accueil&nbsp;</p>
+      </router-link>
+    </div>
   </div>
 </template>
 
 <style scoped>
-template {
+.scroll {
+  height: 100vh;
   scroll-behavior: auto;
   overflow-y: scroll !important;
+  overflow-x: hidden;
 }
 /* couleurs hover aleatoires pour les noms des contributeurs et les mots dans le texte */
 :root {
@@ -243,6 +248,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 .bouton {

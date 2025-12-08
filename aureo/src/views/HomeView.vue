@@ -253,6 +253,9 @@ function test() {
 </script>
 
 <style scoped>
+body {
+  overflow: hidden;
+}
 .btn_fleche {
   background: none;
   border: none;
@@ -284,13 +287,14 @@ function test() {
 .texte_presentation {
   position: absolute;
   text-align: center;
-
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
   color: #1a1a1a;
   flex-direction: column;
   font-family: "Instrument-italic";
   font-size: 6em;
+  scroll-behavior: none;
 }
 * {
   user-select: none;
@@ -508,6 +512,7 @@ body {
   width: 100vw;
   color: black;
   position: relative;
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -516,6 +521,7 @@ body {
   align-items: center;
   height: 100%;
   cursor: auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 650px) {

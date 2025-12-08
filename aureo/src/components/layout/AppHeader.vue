@@ -32,13 +32,25 @@
 .title {
   color: #1a1a1a;
 }
+.header {
+  position: absolute;
+  background-color: transparent;
+  z-index: 9999999;
+  top: 0%;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-between;
+  margin: 1em;
+}
 
 .app-header {
-  background-color: none;
+  /* background-color: none;
   text-align: center;
   position: absolute;
   top: 0%;
-  left: 0;
+  left: 0; */
   font-family: "Instrument", serif;
   text-transform: uppercase;
   color: #1a1a1a;
@@ -47,18 +59,15 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  margin-left: 16px;
-  margin-top: 16px;
-  z-index: 9999999;
 }
 .titre {
-  font-size: clamp(18px, 4.5vw, 40px);
+  font-size: clamp(32px, 4.5vw, 40px);
   letter-spacing: 1px;
   margin-bottom: -22px;
   cursor: pointer;
 }
 .digital {
-  font-size: clamp(8px, 2.5vw, 18px);
+  font-size: clamp(18px, 2.5vw, 18px);
   letter-spacing: 1px;
   font-family: "switzer";
   cursor: pointer;
@@ -67,11 +76,11 @@
 }
 
 .propos {
-  position: absolute;
+  /* position: absolute;
   right: 0;
   top: 0;
-  margin-top: 32px;
-  margin-right: 32px;
+  margin-top: 32px;*/
+  padding-right: 32px;
   font-family: "switzer";
   font-size: clamp(18px, 4.5vw, 24px);
   font-style: italic;
