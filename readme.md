@@ -79,14 +79,7 @@ Installation en local pour développement
 # Cloner le projet
  https://mikaelarseneau.github.io/Aureo/#/
 
-# Installer les dépendances
-npm install
 
-# Lancer le serveur de développement
-npm run dev
-
-# Builder pour la production
-npm run build
 
 Documentation additionnelle
 
