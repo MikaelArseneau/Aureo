@@ -2,19 +2,17 @@
 
 ## 📌 Informations du Projet
 
-*Nom du projet:* Aureo
-*Nom de l'équipe:* équipe de métrage 
-*Membres:* Mikael Arseneau Alexandre Gendron Rafael Angon Dubé
+_Nom du projet:_ Aureo
+_Nom de l'équipe:_ équipe de métrage
+_Membres:_ Mikael Arseneau Alexandre Gendron Rafael Angon Dubé
 
 - Mikael Arseneau - Chef de projet / Architecture
 - Alexandre Gendron - Responsable du Design + Animations
 - Rafael Angon Dubé - Données + Systèmes
 
-
-*Date de début:* 9-10-2025  
-*Date de livraison finale:* 10-12-2025
-*Version du document:* 1.0
-
+_Date de début:_ 9-10-2025  
+_Date de livraison finale:_ 10-12-2025
+_Version du document:_ 1.0
 
 ## 🎯 1. Présentation du Projet
 
@@ -22,28 +20,19 @@
 
 ### 1.1 Concept général
 
-
-
 Notre site interactif est un espace en ligne où chacun peut partager et découvrir des créations visuelles. Inspiré de Pinterest, il met l’accent sur l’art et la créativité sous toutes leurs formes. Les visiteurs peuvent y publier des images, des vidéos ou des projets personnels, mais aussi explorer ceux des autres pour trouver de nouvelles idées. Le but est de créer un lieu d’échange simple, humain et inspirant, où la curiosité et la passion guident chaque visite.
 
 Le site est organisé en plusieurs pages thématiques : Design Graphique, Photographie, Illustration & Art Numérique, Architecture & Intérieur, Mode & Style Personnel, Vidéo & Motion Design. Chacune de ces pages agit comme une galerie dédiée à un type de création, où les utilisateurs peuvent déposer leurs œuvres, consulter celles des autres et se construire une collection d’inspirations personnelles.
 
 Ce site interactif veut avant tout rassembler une communauté créative. C’est un endroit où tout le monde peut participer, s’exprimer et s’enrichir du regard des autres. Ensemble, les utilisateurs donnent vie à un grand espace collaboratif, où chaque contribution, petite ou grande, fait partie d’une même œuvre collective : celle du partage et de la créativité.
 
-
-
-
-
-
-
-
-
 - Quelle est la thématique principale?: L'art
 - Quel est l'objectif émotionnel/narratif?: inspiré les gens
 - Quelle expérience voulez-vous créer pour l'utilisateur?
   un envie de recherche
-*Exemple (interdit de prendre l'exemple comme histoire pour votre projet)*
-#  Aureo
+  _Exemple (interdit de prendre l'exemple comme histoire pour votre projet)_
+
+# Aureo
 
 **Aureo** est une plateforme dédiée à la **créativité** et à **l’inspiration**.  
 Elle permet à chacun de **découvrir**, **partager** et **admirer** des œuvres artistiques variées — qu’il s’agisse de **peinture**, de **photographie**, de **design**, de **musique** ou de **projets multimédias**.
@@ -53,14 +42,11 @@ C’est un espace d’échange où la passion pour l’art et l’expression vis
 
 L’objectif d’Aureo est de **favoriser la découverte et la mise en valeur du talent**, en créant un lieu où **artistes**, **amateurs** et **curieux** peuvent s’inspirer mutuellement et contribuer à un **univers artistique riche et collaboratif**.
 
-
-
-
 ### 1.2 Public cible
 
-- *Âge:*  18-30 ans
-- *Profil:* personnes artistique
-- *Niveau technique:* aucune connaissance requise
+- _Âge:_ 18-30 ans
+- _Profil:_ personnes artistique
+- _Niveau technique:_ aucune connaissance requise
 
 ### 1.3 Objectifs du projet
 
@@ -70,35 +56,33 @@ L’objectif d’Aureo est de **favoriser la découverte et la mise en valeur du
 - [ ] Créer une interface accessible et responsive
 - [ ] [Autre objectif spécifique]
 
-
-
 ## 🏛️ 2. Architecture du Musée
 
 ### 2.1 Structure des salles
 
 Listez toutes les salles de votre musée (minimum 4, idéal 6-8):
 
-| # | Nom de la salle | Thème/Concept 
-|---|----------------|---------------|
-| 1 | Design Graphique | [logo, affiches, typos] 
-| 2 | Photographie  | [paysage, portrait, macro] 
-| 3 | Illustration & Art Numérique|[digital painting, concept art, BD] | | |
-| 4 | Architecture & Intérieur|[bâtiments, espaces, design d’intérieur] | | |
-| 5 |Mode & Style Personnel |[tenues, accessoires, street style] | | |
+| #   | Nom de la salle              | Thème/Concept                            |
+| --- | ---------------------------- | ---------------------------------------- | --- | --- |
+| 1   | Design Graphique             | [logo, affiches, typos]                  |
+| 2   | Photographie                 | [paysage, portrait, macro]               |
+| 3   | Illustration & Art Numérique | [digital painting, concept art, BD]      |     |     |
+| 4   | Architecture & Intérieur     | [bâtiments, espaces, design d’intérieur] |     |     |
+| 5   | Mode & Style Personnel       | [tenues, accessoires, street style]      |     |     |
 
 ### 2.2 Types de mémoires
 
 Décrivez les types de mémoires que les utilisateurs peuvent créer:
 
-- *Mémoire texte:* Titre + description + date + tags
-- *Mémoire photo:* Image + légende + date + tags
-- *Mémoire vidéo:* vidéo + date + audio + tags
+- _Mémoire texte:_ Titre + description + date + tags
+- _Mémoire photo:_ Image + légende + date + tags
+- _Mémoire vidéo:_ vidéo + date + audio + tags
 
 ### 2.3 Système de tags/catégories
 
 Listez les tags prédéfinis et permettez les tags personnalisés:
 
-*Tags prédéfinis:*
+_Tags prédéfinis:_
 
 - Logo
 - Affiches
@@ -117,9 +101,7 @@ Listez les tags prédéfinis et permettez les tags personnalisés:
 - clips
 - [Ajoutez vos tags]
 
-*Tags personnalisés:* Oui ☐ / Non x
-
-
+_Tags personnalisés:_ Oui ☐ / Non x
 
 ## 🎨 3. Design et Identité Visuelle
 
@@ -139,23 +121,24 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 
 - [Image 4: Animations de référence]
   https://www.youtube.com/watch?v=F8YITQVOvuM
+
 ### 3.2 Palette de couleurs
 
-*Couleurs principales:*
+_Couleurs principales:_
 
 - Primaire: [#D33F49,FF8CC6,F8F32B,A675A1,4B88A2,5FBB97] - Utilisée pour: [navigation, boutons principaux]
 - Secondaire: [#D33F49,FF8CC6,F8F32B,A675A1,4B88A2,5FBB97] - Utilisée pour: [accents, hover states]
 - Tertiaire: [#1E1E1E] - Utilisée pour: [backgrounds, cartes]
 
-*Couleurs par salle:*
+_Couleurs par salle:_
 
 - Salle 1: [#D33F49]
 - Salle 2: [#B783A9]
 - Salle 3: [#F8F32B]
 - Salle 4: [#A675A1]
 - Salle 5: [#4B88A2]
-- Salle 6: [#5FBB97]
-*Couleurs système:*
+
+_Couleurs système:_
 
 - Succès: [#10B981]
 - Erreur: [#EF4444]
@@ -164,14 +147,15 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 
 ### 3.3 Typographie
 
-- *Titres (H1-H2):* [Instrument Serif] - [https://fonts.google.com/specimen/Instrument+Serif]
-- *Sous-titres (H3-H4):* [Switzer ] [https://www.fontshare.com/fonts/switzer]
-- *Corps de texte:* [Switzer]  [https://www.fontshare.com/fonts/switzer]
-- *Poids utilisés:* Regular (400), Medium (500), Bold (700)
+- _Titres (H1-H2):_ [Instrument Serif] - [https://fonts.google.com/specimen/Instrument+Serif]
+- _Sous-titres (H3-H4):_ [Switzer ] [https://www.fontshare.com/fonts/switzer]
+- _Corps de texte:_ [Switzer] [https://www.fontshare.com/fonts/switzer]
+- _Poids utilisés:_ Regular (400), Medium (500), Bold (700)
 
 ### 3.4 Style visuel
 
 Choisissez un ou plusieurs styles:
+
 - [x] Minimaliste
 - [ ] Vintage/Rétro
 - [ ] Moderne/Futuriste
@@ -179,13 +163,11 @@ Choisissez un ou plusieurs styles:
 - [ ] Ludique/Coloré
 - [ ] Élégant/Sobre
 
-
-
 ## 💻 4. Spécifications Techniques
 
 ### 4.1 Stack technologique
 
-*Frontend obligatoire:*
+_Frontend obligatoire:_
 
 - ✅ Vue.js 3 (Composition API ☐ / Options API ☐)
 - ✅ Vite
@@ -194,7 +176,7 @@ Choisissez un ou plusieurs styles:
 - ✅ CSS
 - ✅ GSAP + ScrollTrigger
 
-*Librairies additionnelles envisagées:*
+_Librairies additionnelles envisagées:_
 
 - [ ] VueUse (composables utilitaires)
 - [ ] Vuelidate (validation de formulaires)
@@ -205,20 +187,20 @@ Choisissez un ou plusieurs styles:
 
 Listez vos composants Vue principaux:
 
-*Composants de layout:*
+_Composants de layout:_
 
 - `AppHeader.vue` - Navigation principale
 - `AppFooter.vue` - Informations, crédits
 - `Sidebar.vue` - Menu latéral des salles
 
-*Composants de contenu:*
+_Composants de contenu:_
 
 - `RoomView.vue` - Vue d'une salle individuelle
 - `MemoryCard.vue` - Carte d'une mémoire
 - `MemoryList.vue` - Liste/grille de mémoires
 - `MemoryForm.vue` - Formulaire d'ajout/édition
 
-*Composants UI:*
+_Composants UI:_
 
 - `ButtonPrimary.vue` - Bouton principal
 - `Modal.vue` - Fenêtre modale
@@ -228,41 +210,43 @@ Listez vos composants Vue principaux:
 
 ### 4.3 Routes (Vue Router)
 
-| Route | Composant | Description | Authentification requise? |
-|-------|-----------|-------------|---------------------------|
-| `/acceuil/:id` | `HomeView.vue` | Page d'accueil/intro | Non |
-| `/siteweb` | `SiteView.vue` | Vue d'ensemble du site | non |
-| `/salle/:id` | `RoomView.vue` | Vue détaillée d'une salle | Oui |
-| `/memoire/:id` | `MemoryDetailView.vue` | Détail d'une mémoire | Oui |
-| `/recherche` | `rechercheView.vue` | Recherche de mémoires | Oui |
-| `/profil` | `ProfileView.vue` | Profil utilisateur | non |
-| `/Connexion` | `LoginView.vue` | Connexion | Non |
+| Route          | Composant              | Description               | Authentification requise? |
+| -------------- | ---------------------- | ------------------------- | ------------------------- |
+| `/acceuil/:id` | `HomeView.vue`         | Page d'accueil/intro      | Non                       |
+| `/siteweb`     | `SiteView.vue`         | Vue d'ensemble du site    | non                       |
+| `/salle/:id`   | `RoomView.vue`         | Vue détaillée d'une salle | Oui                       |
+| `/memoire/:id` | `MemoryDetailView.vue` | Détail d'une mémoire      | Oui                       |
+| `/recherche`   | `rechercheView.vue`    | Recherche de mémoires     | Oui                       |
+| `/profil`      | `ProfileView.vue`      | Profil utilisateur        | non                       |
+| `/Connexion`   | `LoginView.vue`        | Connexion                 | Non                       |
 
 ### 4.4 Gestion de l'état (Pinia)
 
-*Stores prévus:*
+_Stores prévus:_
 
-1. *`useMuseumStore`*
+1. _`useMuseumStore`_
+
    - State: `rooms`, `currentRoomId`, `museumName`, `theme`
    - Actions: `addRoom()`, `updateRoom()`, `deleteRoom()`, `setCurrentRoom()`
 
-2. *`useMemoryStore`*
+2. _`useMemoryStore`_
+
    - State: `memories`, `filters`, `searchQuery`
    - Actions: `addMemory()`, `updateMemory()`, `deleteMemory()`, `searchMemories()`
    - Getters: `filteredMemories`, `memoriesByRoom`, `memoriesByTag`
 
-3. *`useAuthStore`* (optionnel)
+3. _`useAuthStore`_ (optionnel)
    - State: `user`, `isAuthenticated`
    - Actions: `login()`, `logout()`, `register()`
 
 ### 4.5 Persistance des données
 
-*Méthode choisie:*
+_Méthode choisie:_
 
 - [x] LocalStorage (obligatoire pour MVP)
 - [ ] Firebase Firestore: pour galerie publique et collaborative (optionnel pour équipes plus avancées)
 
-*Structure de données LocalStorage:*
+_Structure de données LocalStorage:_
 
 ```json
 {
@@ -291,98 +275,110 @@ Listez vos composants Vue principaux:
 }
 ```
 
-
-
 ## 🎬 5. Fonctionnalités et User Stories
 
 ### 5.1 Fonctionnalités MVP (Minimum Viable Product)
 
-*Obligatoires pour la livraison:*
+_Obligatoires pour la livraison:_
 
-- [x] *F1 - Navigation entre salles*
+- [x] _F1 - Navigation entre salles_
+
   - L'utilisateur peut naviguer entre 4-6 salles différentes
   - Transitions animées avec GSAP
   - Menu de navigation visible
 
-- [ ] *F2 - Affichage des mémoires*
+- [x] _F2 - Affichage des mémoires_
+
   - Les mémoires s'affichent sous forme de cartes
   - Grille responsive (mobile + desktop)
   - Animation au scroll (ScrollTrigger)
 
-- [X] *F3 - Ajout de mémoire*
+- [x] _F3 - Ajout de mémoire_
+
   - Formulaire avec titre, description, date, tags
   - Upload d'image (base64 ou URL)
   - Validation des champs obligatoires
 
-- [X] *F4 - Édition de mémoire*
+- [x] _F4 - Édition de mémoire_
+
   - Modifier les informations d'une mémoire existante
   - Sauvegarde instantanée
 
-- [x] *F5 - Suppression de mémoire*
+- [x] _F5 - Suppression de mémoire_
+
   - Confirmation avant suppression
   - Suppression permanente
 
-- [x] *F6 - Filtres et recherche*
+- [x] _F6 - Filtres et recherche_
+
   - Recherche par mot-clé (titre/description)
   - Filtrage par tags
   - Filtrage par salle
 
-- [ ] *F7 - Sauvegarde locale*
+- [ ] _F7 - Sauvegarde locale_
+
   - Auto-save dans LocalStorage après chaque action
   - Chargement automatique au démarrage
   - Export en fichier JSON
 
-- [x] *F8 - Import de données*
+- [x] _F8 - Import de données_
+
   - Importer un fichier JSON de musée
   - Validation du format
 
-- [x] *F9 - Responsive*
+- [x] _F9 - Responsive_
+
   - Mobile (320px+)
   - Tablette (768px+)
   - Desktop (1024px+)
 
-- [ ] *F10 - Accessibilité*
+- [x] _F10 - Accessibilité_
   - Navigation au clavier
   - ARIA labels
   - Contraste WCAG AA
 
 ### 5.2 Fonctionnalités bonus (optionnelles)
 
-- [ ] *B1 - Authentification simple*
+- [ ] _B1 - Authentification simple_
+
   - Login avec email/password
   - Multi-utilisateurs (localStorage séparé par user)
 
-- [ ] *B2 - Sons d'ambiance*
+- [ ] _B2 - Sons d'ambiance_
+
   - Son différent par salle
   - Contrôle volume
   - Mute toggle
 
-- [x] *B3 - Timeline chronologique*
+- [x] _B3 - Timeline chronologique_
+
   - Vue chronologique des mémoires
   - Tri par date
 
-- [ ] *B4 - Mode sombre*
+- [ ] _B4 - Mode sombre_
+
   - Toggle dark/light mode
   - Sauvegarde de la préférence
 
-- [x] *B5 - Partage social* question
+- [x] _B5 - Partage social_ question
+
   - Génération de lien de partage
   - Aperçu Open Graph
 
-- [ ] *B6 - Firebase (équipes avancées)*
+- [ ] _B6 - Firebase (équipes avancées)_
   - Synchronisation cloud
   - Galerie publique
   - Multi-device
 
 ### 5.3 User Stories
 
-*Format:* En tant que [rôle], je veux [action] afin de [bénéfice]
+_Format:_ En tant que [rôle], je veux [action] afin de [bénéfice]
 
 1 .US-01: En tant qu’utilisateur, je veux créer un profil personnel afin de partager mes inspirations et créations artistiques sur la plateforme.
 
 2.US-02: En tant qu’utilisateur, je veux publier des images et vidéos afin de partager mon travail ou mes inspirations visuelles.
 
- 3.US-03: En tant qu’utilisateur, je veux organiser mes publications en tableaux thématiques afin de classer mes inspirations par sujet.
+3.US-03: En tant qu’utilisateur, je veux organiser mes publications en tableaux thématiques afin de classer mes inspirations par sujet.
 
 4.US-04: En tant qu’utilisateur, je veux ajouter des tags à mes publications afin de les catégoriser et les filtrer facilement.
 
@@ -396,24 +392,22 @@ Listez vos composants Vue principaux:
 
 9. [Ajoutez vos user stories]
 
-
-
 ## 🎨 6. Maquettes et Wireframes
 
 ### 6.1 Lien vers les maquettes Figma
 
-*Lien:* [https://www.figma.com/design/BHqRt2kwqxnABE3SfXrv0y/projet-final-web5?node-id=0-1&t=0gPd6Xn6m55bQeTN-1]
+_Lien:_ [https://www.figma.com/design/BHqRt2kwqxnABE3SfXrv0y/projet-final-web5?node-id=0-1&t=0gPd6Xn6m55bQeTN-1]
 
 ### 6.2 Écrans principaux à maquetter
 
-- [X] Page d'accueil / Landing
-- [X] Vue d'ensemble du musée (toutes les salles)
-- [X] Vue détaillée d'une salle (grille de mémoires)
-- [X] Détail d'une mémoire (modal ou page dédiée)
-- [X] Formulaire d'ajout/édition de mémoire
-- [X] Page de recherche/filtres
+- [x] Page d'accueil / Landing
+- [x] Vue d'ensemble du musée (toutes les salles)
+- [x] Vue détaillée d'une salle (grille de mémoires)
+- [x] Détail d'une mémoire (modal ou page dédiée)
+- [x] Formulaire d'ajout/édition de mémoire
+- [x] Page de recherche/filtres
 - [ ] Page profil utilisateur (optionnel)
-- [X] Version mobile de 2-3 écrans clés
+- [x] Version mobile de 2-3 écrans clés
 
 ### 6.3 Interactions clés à maquetter
 
@@ -422,24 +416,22 @@ Listez vos composants Vue principaux:
 - Survol sur les éléments interactifs
 - États des formulaires (vide, rempli, erreur, succès)
 
-
-
 ## 📊 7. Plan de Réalisation
 
 ### 7.1 Répartition des rôles
 
-| Membre | Rôle principal | Responsabilités |
-|--------|----------------|-----------------|
-| [Mikael Arseneau] | Chef de projet + Architecture Vue | Coordination, Vue Router, stores Pinia, structure des composants |
-| [Alexandre Gendron] | Design + Animations | CSS, design visuel, animations GSAP, transitions |
-| [Rafael Angon Dubé] | Données + Validation | LocalStorage/Firebase, validation formulaires, gestion erreurs |
-| [Nom] | UX + Accessibilité | Tests utilisateurs, accessibilité, responsive, contenus |
+| Membre              | Rôle principal                    | Responsabilités                                                  |
+| ------------------- | --------------------------------- | ---------------------------------------------------------------- |
+| [Mikael Arseneau]   | Chef de projet + Architecture Vue | Coordination, Vue Router, stores Pinia, structure des composants |
+| [Alexandre Gendron] | Design + Animations               | CSS, design visuel, animations GSAP, transitions                 |
+| [Rafael Angon Dubé] | Données + Validation              | LocalStorage/Firebase, validation formulaires, gestion erreurs   |
+| [Nom]               | UX + Accessibilité                | Tests utilisateurs, accessibilité, responsive, contenus          |
 
-*Note:* Tous participent au développement, mais chacun a sa spécialité.
+_Note:_ Tous participent au développement, mais chacun a sa spécialité.
 
 ### 7.2 Tâches transversales
 
-*À répartir entre tous:*
+_À répartir entre tous:_
 
 - Développement des composants
 - Tests et debugging
@@ -448,24 +440,22 @@ Listez vos composants Vue principaux:
 
 ### 7.3 Outils de collaboration
 
-- *Git/GitHub:* [Lien du repo]
-- *Gestion de projet:* [Trello]
-- *Communication:* [Teams]
-- *Design:* [Figma]
-- *Documentation:* [ README.md]
-
-
+- _Git/GitHub:_ [Lien du repo]
+- _Gestion de projet:_ [Trello]
+- _Communication:_ [Teams]
+- _Design:_ [Figma]
+- _Documentation:_ [ README.md]
 
 ## 🚀 8. Critères de Succès
 
 ### 8.1 Critères techniques
 
-- [ ] Application Vue.js fonctionnelle sans erreurs console
-- [ ] Minimum 8 composants Vue bien structurés
-- [ ] Vue Router avec 5+ routes
-- [ ] Pinia implémenté avec state management cohérent
-- [ ] CSS organisé avec variables et mixins
-- [ ] Animations GSAP fluides (60 FPS)
+- [x] Application Vue.js fonctionnelle sans erreurs console
+- [x] Minimum 8 composants Vue bien structurés
+- [x] Vue Router avec 5+ routes
+- [x] Pinia implémenté avec state management cohérent
+- [x] CSS organisé avec variables et mixins
+- [x] Animations GSAP fluides (60 FPS)
 - [ ] Données persistantes (LocalStorage)
 - [ ] Code validé (ESLint)
 - [ ] Responsive sur 3 breakpoints
@@ -473,111 +463,113 @@ Listez vos composants Vue principaux:
 
 ### 8.2 Critères de qualité
 
-- [ ] Interface intuitive et facile à utiliser
-- [X] Design cohérent et esthétique
-- [X] Animations pertinentes (pas excessives)
-- [X] Temps de chargement < 2 secondes
-- [X] Aucun bug bloquant
-- [X] Messages d'erreur clairs
-- [ ] Documentation complète (README)
+- [x] Interface intuitive et facile à utiliser
+- [x] Design cohérent et esthétique
+- [x] Animations pertinentes (pas excessives)
+- [x] Temps de chargement < 2 secondes
+- [x] Aucun bug bloquant
+- [x] Messages d'erreur clairs
+- [x] Documentation complète (README)
 
 ### 8.3 Critères créatifs
 
-- [X] Concept original et personnel
-- [X] Expérience utilisateur émotionnelle
-- [X] Attention aux détails visuels
-- [ ] Cohérence thématique
-
-
+- [x] Concept original et personnel
+- [x] Expérience utilisateur émotionnelle
+- [x] Attention aux détails visuels
+- [x] Cohérence thématique
 
 ## 📅 9. Calendrier du projet: Planning prévisionnel
 
-### 9.1 *PHASE 1: PLANIFICATION ET DESIGN*
+### 9.1 _PHASE 1: PLANIFICATION ET DESIGN_
+
 <!--Semaine 1-2 (la 2 étant la semaine de rattrapage)-->
 
 **Du 8 au 22 octobre**
 
-*Remise 22 octobre | 15%*
+_Remise 22 octobre | 15%_
 
 - Rédaction du cahier de charges
 - Création des maquettes Figma
 - Définition de l'architecture technique
 - Setup du projet (Vite + Vue + dépendances)
 
-### 9.2 *PHASE 2: FONDATION*
+### 9.2 _PHASE 2: FONDATION_
+
 <!--Semaine 3-4-->
 
 **Du 22 octobre au 2 novembre environ**
 
-*Remise Phases 2 FONDATION et 3 INTERACTIVITÉ : vendredi 14 novembre | 15%*
+_Remise Phases 2 FONDATION et 3 INTERACTIVITÉ : vendredi 14 novembre | 15%_
 
 !!! tip "Le projet portfolio en parallèle"
-    Notez que mercredi le 29 octobre c'est la remise et présentation de votre portfolio donc nous laissons un peu plus qu'une semaine pour cette phase car vous allez probablement finaliser votre portfolio en même temps.
+Notez que mercredi le 29 octobre c'est la remise et présentation de votre portfolio donc nous laissons un peu plus qu'une semaine pour cette phase car vous allez probablement finaliser votre portfolio en même temps.
 
 - Structure des composants de base
 - Vue Router configuré
 - Pinia stores créés
 - Premiers composants (Header, RoomCard, etc.)
 
+### 9.3 _PHASE 3: INTERACTIVITÉ_
 
-### 9.3 *PHASE 3: INTERACTIVITÉ*
 <!-- Semaine 4-5-->
 
 **Environ du 2 novembre au 12 novembre**
 
-*Remise Phases 2 FONDATION et 3 INTERACTIVITÉ : vendredi 14 novembre | 15%*
+_Remise Phases 2 FONDATION et 3 INTERACTIVITÉ : vendredi 14 novembre | 15%_
 
 - Formulaires d'ajout/édition
 - CRUD des mémoires (CRUD: Create, Read, Update, Delete)
 - Filtres et recherche
 - Validation des données
 
-### 9.4 *PHASE 4: ANIMATIONS ET MÉDIAS*
+### 9.4 _PHASE 4: ANIMATIONS ET MÉDIAS_
+
 <!-- Semaine 6 -->
 
 **Du 12 au 19 novembre**
 
-*Remise Phases 4 ANIMATIONS+MÉDIAS et 5 PERSISTANCE : 26 novembre | Formatif*
+_Remise Phases 4 ANIMATIONS+MÉDIAS et 5 PERSISTANCE : 26 novembre | Formatif_
 
 - Intégration GSAP
 - Transitions entre pages
 - Upload et gestion d'images
 - Sons d'ambiance (optionnel)
 
-
-### 9.x *ÉVALUATION PAR LES PAIRS ET AUTO-ÉVALUATION DE MI PARCOURS*
+### 9.x _ÉVALUATION PAR LES PAIRS ET AUTO-ÉVALUATION DE MI PARCOURS_
 
 **Sera fait en classe le 19 novembre**
 
-*Remise de l'évaluation par les pairs et auto-évaluation de mi parcours: 19 novembre | 5%*
+_Remise de l'évaluation par les pairs et auto-évaluation de mi parcours: 19 novembre | 5%_
 
+### 9.5 _PHASE 5: PERSISTANCE ET SAUVEGARDE DES DONNÉES_
 
-### 9.5 *PHASE 5: PERSISTANCE ET SAUVEGARDE DES DONNÉES*
 <!-- Semaine 7 -->
 
 **Du 19 au 26 novembre**
 
-*Remise Phases 4 ANIMATIONS+MÉDIAS et 5 PERSISTANCE : 26 novembre | Formatif*
+_Remise Phases 4 ANIMATIONS+MÉDIAS et 5 PERSISTANCE : 26 novembre | Formatif_
 
 - LocalStorage complet
 - Import/Export JSON
 - Gestion des erreurs
 - Firebase (optionnel)
 
-### 9.6 *PHASE 6: AFFINAGE ET ACCESSIBLITÉ* pour la version *BETA*
+### 9.6 _PHASE 6: AFFINAGE ET ACCESSIBLITÉ_ pour la version _BETA_
 
-*Du 26 novembre au 3 décembre*
+_Du 26 novembre au 3 décembre_
 
-> Remise version *BETA* le 3 décembre | Formatif
+> Remise version _BETA_ le 3 décembre | Formatif
 
 - Responsive final
 - Accessibilité (ARIA, keyboard)
 
-### 9.7 *PHASE 7:  CONTRÔLE QUALITÉ ET CORRECTIONS*
+### 9.7 _PHASE 7: CONTRÔLE QUALITÉ ET CORRECTIONS_
+
 <!-- Semaine 8 -->
+
 **Du 3 au 8 décembre**
 
-*Remise Phase 7 RAPPORT DU CONTRÔLE DE LA QUALITÉ : 8 décembre | 10%*
+_Remise Phase 7 RAPPORT DU CONTRÔLE DE LA QUALITÉ : 8 décembre | 10%_
 
 - Tests de toutes les branches de l'histoire
 - Tests fonctionnels
@@ -586,42 +578,41 @@ Listez vos composants Vue principaux:
 - Optimisation de la performance
 - Gestion des bogues
 
-### 9.8 *PHASE 8:  FINALISATION*
+### 9.8 _PHASE 8: FINALISATION_
+
 <!-- Semaine 8 + 2 jours-->
 
 **Du 3 au 10 décembre** (peut-être fait en parallèle avec la phase 7)
 
-*Remise et présentation finale : 10 décembre | 50%*
+_Remise et présentation finale : 10 décembre | 50%_
 
 - Documentation (README complet)
 - Déploiement - Mise en ligne (GitHub/Netlify/Vercel)
 - Vidéo de présentation
 - Préparation de la démo en classe
 
-### 9.9 *PHASE 9: POST-MORTEM*
+### 9.9 _PHASE 9: POST-MORTEM_
 
 **Du 10 au 12 décembre**
 
-*Remise de l'analyse réflexive et suivi de l'évaluation de mi-parcours: 12 décembre | 5%*
+_Remise de l'analyse réflexive et suivi de l'évaluation de mi-parcours: 12 décembre | 5%_
 
 ## 🎯 10. Risques et Solutions
 
-| Risque | Probabilité | Impact | Solution préventive |
-|--------|-------------|--------|---------------------|
-| Manque de temps pour toutes les features | Élevée | Moyen | Prioriser le MVP, features bonus séparées |
-| Problèmes de merge Git | Moyenne | Élevé | Branches claires, pull requests, communication |
-| Upload d'images trop lourdes | Moyenne | Moyen | Validation taille, compression, limite 2MB |
-| Animations qui lag | Faible | Moyen | Tests de performance réguliers, optimisation GSAP |
-| Perte de données LocalStorage | Faible | Élevé | Export JSON régulier, backups manuels |
-| Désaccord sur le design | Moyenne | Faible | Vote d'équipe, décision du chef de projet |
-
-
+| Risque                                   | Probabilité | Impact | Solution préventive                               |
+| ---------------------------------------- | ----------- | ------ | ------------------------------------------------- |
+| Manque de temps pour toutes les features | Élevée      | Moyen  | Prioriser le MVP, features bonus séparées         |
+| Problèmes de merge Git                   | Moyenne     | Élevé  | Branches claires, pull requests, communication    |
+| Upload d'images trop lourdes             | Moyenne     | Moyen  | Validation taille, compression, limite 2MB        |
+| Animations qui lag                       | Faible      | Moyen  | Tests de performance réguliers, optimisation GSAP |
+| Perte de données LocalStorage            | Faible      | Élevé  | Export JSON régulier, backups manuels             |
+| Désaccord sur le design                  | Moyenne     | Faible | Vote d'équipe, décision du chef de projet         |
 
 ## 📝 11. Annexes
 
 ### 11.1 Ressources et références
 
-*Documentation officielle:*
+_Documentation officielle:_
 
 - Contenu du cours Web 5 https://tim-montmorency.com/compendium/582-511-web5/
 - Guide étudiant du projet appli web créative: https://tim-montmorency.com/compendium/582-511-web5/projets/appweb-creative/syllabus_guide_etudiant.html
@@ -630,42 +621,40 @@ Listez vos composants Vue principaux:
 - GSAP: https://greensock.com/docs/
 - SASS: https://sass-lang.com/documentation
 
-*Tutoriels utiles:*
+_Tutoriels utiles:_
 
 - [Lien vers tuto 1]
 - [Lien vers tuto 2]
 
-*Inspirations:*
+_Inspirations:_
 
 - [https://www.cosmos.so/]
 - [https://ca.pinterest.com/]
 
 ### 11.2 Glossaire
 
-- *Composant:* Élément Vue.js réutilisable
-- *Store:* Gestion d'état centralisée avec Pinia
-- *Route:* URL de navigation dans l'application
-- *Props:* Données passées d'un composant parent à enfant
-- *Emit:* Événement émis d'un composant enfant vers parent
-
-
+- _Composant:_ Élément Vue.js réutilisable
+- _Store:_ Gestion d'état centralisée avec Pinia
+- _Route:_ URL de navigation dans l'application
+- _Props:_ Données passées d'un composant parent à enfant
+- _Emit:_ Événement émis d'un composant enfant vers parent
 
 ## ✅ Validation du Cahier de Charges
 
-*Date de validation:* [21-10-25]
+_Date de validation:_ [21-10-25]
 
-*Signatures:*
+_Signatures:_
 
-- Chef de projet: ___mikael Arseneau____________
-- Membre 2: ________Alexandre Gendron_______
-- Membre 3: _________Rafael Angon Dube______
-- Membre 4: _______________ (si applicable)
+- Chef de projet: **\_mikael Arseneau\*\***\_\_**\*\***
+- Membre 2: **\_\_\_\_**Alexandre Gendron**\_\_\_**
+- Membre 3: \***\*\_\*\***Rafael Angon Dube**\_\_**
+- Membre 4: **\*\***\_\_\_**\*\*** (si applicable)
 
-*Validation enseignant:* _______________  
-*Date:* _______________  
-*Commentaires:*
+_Validation enseignant:_ **\*\***\_\_\_**\*\***  
+_Date:_ **\*\***\_\_\_**\*\***  
+_Commentaires:_
 
 ---
 
-*Version du document cahier de charge:* 1.0  
-*Dernière mise à jour:* [Écrire ici la date]
+_Version du document cahier de charge:_ 1.0  
+_Dernière mise à jour:_ [Écrire ici la date]

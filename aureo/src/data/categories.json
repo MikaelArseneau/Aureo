@@ -1,0 +1,597 @@
+[
+  {
+    "photo": {
+      "id": 1,
+      "name": "photographie",
+      "photodemo": "src/assets/photo/bg_photographie.jpg",
+      "color": "#f7ce36",
+      "tags": ["paysage", "portrait"],
+      "creations": [
+        {
+          "id": 1,
+          "title": "femme apparait photo",
+          "type": "portrait",
+          "date": "2025-12-02",
+          "description": "une femme avec une apparait photo dans les mains",
+          "url": "/Aureo/photographie/image1.webp",
+          "tag": "portrait"
+        },
+        {
+          "id": 2,
+          "title": "Hideo Kojima",
+          "type": "portrait",
+          "date": "2025-12-02",
+          "description": "Hideo Kojima devant un miroir avec un chandail big boss",
+          "url": "/Aureo/photographie/image2.webp",
+          "tag": "portrait"
+        },
+        {
+          "id": 3,
+          "title": "Femme Japonaise",
+          "type": "portrait",
+          "date": "2025-12-02",
+          "description": "une femme japonaise qui ouvre son frigo",
+          "url": "/Aureo/photographie/image3.webp",
+          "tag": "portrait"
+        },
+        {
+          "id": 4,
+          "title": "Fred Durst",
+          "type": "portrait",
+          "date": "2025-12-02",
+          "description": "Fred Durst de Limp Bizkit qui fait la pose des mains",
+          "url": "/Aureo/photographie/image4.webp",
+          "tag": "portrait"
+        },
+        {
+          "id": 5,
+          "title": "Thom Yorke",
+          "type": "portrait",
+          "date": "2025-12-02",
+          "description": "Thom yorke avec une fleur dans la bouche",
+          "url": "/Aureo/photographie/image5.webp",
+          "tag": "portrait"
+        },
+        {
+          "id": 6,
+          "title": "Willem Dafoe",
+          "type": "portrait",
+          "date": "2025-12-02",
+          "description": "Willem Dafoe en noir et blanc lors d'une séance photo",
+          "url": "/Aureo/photographie/image6.webp",
+          "tag": "portrait"
+        },
+        {
+          "id": 7,
+          "title": "skateur",
+          "type": "portrait",
+          "date": "2025-12-02",
+          "description": "personne pris en photo en train de skater",
+          "url": "/Aureo/photographie/image7.webp",
+          "tag": "portrait"
+        },
+        {
+          "id": 8,
+          "title": "métro",
+          "type": "paysage",
+          "date": "2025-12-02",
+          "description": "gare de métro prise en photo",
+          "url": "/Aureo/photographie/image8.webp",
+          "tag": "paysage"
+        },
+        {
+          "id": 9,
+          "title": "escalier",
+          "type": "paysage",
+          "date": "2025-12-02",
+          "description": "escalier en colimaçon pris en photo",
+          "url": "/Aureo/photographie/image9.webp",
+          "tag": "paysage"
+        },
+        {
+          "id": 10,
+          "title": "l'homme au casque",
+          "type": "portrait",
+          "date": "2025-12-02",
+          "description": "hommme avec une tuque et un chandail de basket",
+          "url": "/Aureo/photographie/image10.webp",
+          "tag": "portrait"
+        },
+        {
+          "id": 11,
+          "title": "surfeur",
+          "type": "paysage",
+          "date": "2025-12-02",
+          "description": "surfeur qui regard un lac",
+          "url": "/Aureo/photographie/image11.webp",
+          "tag": "paysage"
+        },
+        {
+          "id": 12,
+          "title": "fleur",
+          "type": "paysage",
+          "date": "2025-12-02",
+          "description": "une fleur rose prise en gros plan",
+          "url": "/Aureo/photographie/image12.webp",
+          "tag": "paysage"
+        }
+      ]
+    }
+  },
+  {
+    "design": {
+      "id": 2,
+      "name": "design",
+      "photodemo": "/Aureo/design/image1.webp",
+      "color": "#FF6B6B",
+      "tags": ["font", "affiche"],
+      "creations": [
+        {
+          "id": 1,
+          "title": "homme dansant",
+          "type": "affiche",
+          "date": "2025-12-02",
+          "description": "affique d'un homme en train de danser style dessin",
+          "url": "/Aureo/design/image1.webp",
+          "tag": "affiche"
+        },
+        {
+          "id": 2,
+          "title": "fondation d'entreprise pernod Ricard",
+          "type": "affiche",
+          "date": "2025-12-02",
+          "description": "affiche de la fondation pernod Ricard avec un style de grille",
+          "url": "/Aureo/design/image2.webp",
+          "tag": "font"
+        },
+        {
+          "id": 3,
+          "title": "ascii",
+          "type": "affiche",
+          "date": "2025-12-02",
+          "description": "test",
+          "url": "/Aureo/design/image3.webp",
+          "tag": "affiche"
+        },
+        {
+          "id": 4,
+          "title": "viticime japoanaise",
+          "type": "affiche",
+          "date": "2025-12-02",
+          "description": "deux perds de yeux derrière un fond rouge avec du texte japonais",
+          "url": "/Aureo/design/image4.webp",
+          "tag": "affiche"
+        },
+        {
+          "id": 5,
+          "title": "piscine",
+          "type": "affiche",
+          "date": "2025-12-02",
+          "description": "une perd de yeux avec des lunette de piscine",
+          "url": "/Aureo/design/image5.webp",
+          "tag": "affiche"
+        },
+        {
+          "id": 6,
+          "title": "yeux",
+          "type": "affiche",
+          "date": "2025-12-02",
+          "description": "une perd de yeux avec le chiffre 87",
+          "url": "/Aureo/design/image6.webp",
+          "tag": "affiche"
+        },
+        {
+          "id": 7,
+          "title": "oklahoma countrey",
+          "type": "affiche",
+          "date": "2025-12-02",
+          "description": "le mot oklahomaa avec un chapeau de cowboy et un guitare",
+          "url": "/Aureo/design/image7.webp",
+          "tag": "affiche"
+        },
+        {
+          "id": 8,
+          "title": "1927",
+          "type": "affiche",
+          "date": "2025-12-02",
+          "description": "une affiche qui ets ecrit futura 1927",
+          "url": "/Aureo/design/image8.webp",
+          "tag": "font"
+        },
+        {
+          "id": 9,
+          "title": "L'homme",
+          "type": "affiche",
+          "date": "2025-12-02",
+          "description": "un homme avec un chapeau melon fait avec des lettres",
+          "url": "/Aureo/design/image9.webp",
+          "tag": "affiche"
+        },
+        {
+          "id": 10,
+          "title": "chaos",
+          "type": "affiche",
+          "date": "2025-12-02",
+          "description": "une affiche dans la quelle le texte est een noir et en gars",
+          "url": "/Aureo/design/image10.webp",
+          "tag": "font"
+        },
+        {
+          "id": 11,
+          "title": "street power",
+          "type": "affiche",
+          "date": "2025-12-02",
+          "description": "une image qui montre la font graffiti",
+          "url": "/Aureo/design/image11.webp",
+          "tag": "affiche"
+        },
+        {
+          "id": 12,
+          "title": "design",
+          "type": "affiche",
+          "date": "2025-12-02",
+          "description": "une affiche qui dit de faire les bonne decisions",
+          "url": "/Aureo/design/image12.webp",
+          "tag": "affiche"
+        }
+      ]
+    }
+  },
+  {
+    "illustration": {
+      "id": 3,
+      "name": "illustration",
+      "photodemo": "src/assets/photo/bg_numerique.webp",
+      "color": "#647eff",
+      "tags": ["univers", "personne"],
+      "creations": [
+        {
+          "id": 1,
+          "title": "ours",
+          "type": "univers",
+          "date": "2025-12-02",
+          "description": "une image d'un ours",
+          "url": "/Aureo/numerique/image1.webp",
+          "tag": "personne"
+        },
+        {
+          "id": 2,
+          "title": "Señor Salme",
+          "type": "personne",
+          "date": "2025-12-02",
+          "description": "art de Señor Salme",
+          "url": "/Aureo/numerique/image2.webp",
+          "tag": "personne"
+        },
+        {
+          "id": 3,
+          "title": "художник",
+          "type": "personne",
+          "date": "2025-12-02",
+          "description": "visage d'une personne avec des lunette en jaune dans un font rose",
+          "url": "/Aureo/numerique/image3.webp",
+          "tag": "personne"
+        },
+        {
+          "id": 4,
+          "title": "visage negatif",
+          "type": "univers",
+          "date": "2025-12-02",
+          "description": "art de Señor Salme",
+          "url": "/Aureo/numerique/image4.webp",
+          "tag": "univers"
+        },
+        {
+          "id": 5,
+          "title": "SIMON LEE",
+          "type": "personne",
+          "date": "2025-12-02",
+          "description": "image style néon d'une statut grecque",
+          "url": "/Aureo/numerique/image5.webp",
+          "tag": "personne"
+        },
+        {
+          "id": 6,
+          "title": "spaceman",
+          "type": "univers",
+          "date": "2025-12-02",
+          "description": "homme dans une combinaison d'astronautesur le board d'une piscines",
+          "url": "/Aureo/numerique/image6.webp",
+          "tag": "univers"
+        },
+        {
+          "id": 7,
+          "title": "愚木混株 ",
+          "type": "univers",
+          "date": "2025-12-02",
+          "description": "mirroir cassé en mille morceau dans dans un desert",
+          "url": "/Aureo/numerique/image7.webp",
+          "tag": "univers"
+        },
+        {
+          "id": 8,
+          "title": "tache spacial",
+          "type": "univers",
+          "date": "2025-12-02",
+          "description": "pluie de tache",
+          "url": "/Aureo/numerique/image8.webp",
+          "tag": "univers"
+        },
+        {
+          "id": 9,
+          "title": "miroir",
+          "type": "univers",
+          "date": "2025-12-02",
+          "description": "un mirroir dans une salle",
+          "url": "/Aureo/numerique/image9.webp",
+          "tag": "univers"
+        },
+        {
+          "id": 10,
+          "title": "eau",
+          "type": "univers",
+          "date": "2025-12-02",
+          "description": "effet de vague style peinture",
+          "url": "/Aureo/numerique/image10.webp",
+          "tag": "univers"
+        },
+        {
+          "id": 11,
+          "title": "Lopez-Rincon",
+          "type": "univers",
+          "date": "2025-12-02",
+          "description": "boule rouge avec des cubes bleu dans un fond bleu",
+          "url": "/Aureo/numerique/image11.webp",
+          "tag": "univers"
+        },
+        {
+          "id": 12,
+          "title": "statue de la liberté",
+          "type": "univers",
+          "date": "2025-12-02",
+          "description": "statue de la liberté en pixel art",
+          "url": "/Aureo/numerique/image12.webp",
+          "tag": "univers"
+        }
+      ]
+    }
+  },
+  {
+    "architecture": {
+      "id": 4,
+      "name": "architecture",
+      "photodemo": "src/assets/photo/bg_architecture.webp",
+      "color": "#42d392",
+      "tags": ["maison", "batiment"],
+      "creations": [
+        {
+          "id": 1,
+          "title": "balcon",
+          "type": "batiment",
+          "date": "2025-12-02",
+          "description": "un batiment avec un balcon carré",
+          "url": "/Aureo/architecture/image1.webp",
+          "tag": "batiment"
+        },
+        {
+          "id": 2,
+          "title": "batiment rouge",
+          "type": "batiment",
+          "date": "2025-12-02",
+          "description": "trois batiment un rouge et deux brun ",
+          "url": "/Aureo/architecture/image2.webp",
+          "tag": "batiment"
+        },
+        {
+          "id": 3,
+          "title": "gare",
+          "type": "batiment",
+          "date": "2025-12-02",
+          "description": "une gare europenne avec un dome.",
+          "url": "/Aureo/architecture/image3.webp",
+          "tag": "batiment"
+        },
+        {
+          "id": 4,
+          "title": "maison jaune",
+          "type": "maison",
+          "date": "2025-12-02",
+          "description": "maison dans le style d'une maison dans les caraibes",
+          "url": "/Aureo/architecture/image4.webp",
+          "tag": "maison"
+        },
+        {
+          "id": 5,
+          "title": "Tours",
+          "type": "batiment",
+          "date": "2025-12-02",
+          "description": "deux tours coller une à coter de l'autre de différente couleurs",
+          "url": "/Aureo/architecture/image5.webp",
+          "tag": "batiment"
+        },
+        {
+          "id": 6,
+          "title": "tours ronde",
+          "type": "batiment",
+          "date": "2025-12-02",
+          "description": "tour ronde vue de bas avec un ciel bleu",
+          "url": "/Aureo/architecture/image6.webp",
+          "tag": "batiment"
+        },
+        {
+          "id": 7,
+          "title": "centre ville",
+          "type": "batiment",
+          "date": "2025-12-02",
+          "description": "photo pris de loin d'un centre ville avec des batiment moderne",
+          "url": "/Aureo/architecture/image7.webp",
+          "tag": "batiment"
+        },
+        {
+          "id": 8,
+          "title": "Tour de verre",
+          "type": "batiment",
+          "date": "2025-12-02",
+          "description": "tour en verre vue de bas avec un ciel bleu",
+          "url": "/Aureo/architecture/image8.webp",
+          "tag": "batiment"
+        },
+        {
+          "id": 9,
+          "title": "maison de sable",
+          "type": "maison",
+          "date": "2025-12-02",
+          "description": "maison dans le style du desset",
+          "url": "/Aureo/architecture/image9.webp",
+          "tag": "maison"
+        },
+        {
+          "id": 10,
+          "title": "temple",
+          "type": "batiment",
+          "date": "2025-12-02",
+          "description": "temple style asiatique",
+          "url": "/Aureo/architecture/image10.webp",
+          "tag": "batiment"
+        },
+        {
+          "id": 11,
+          "title": "Tours verdure",
+          "type": "batiment",
+          "date": "2025-12-02",
+          "description": "tours carré avec plein de végétation",
+          "url": "/Aureo/architecture/image11.webp",
+          "tag": "batiment"
+        },
+        {
+          "id": 12,
+          "title": "brutaliseme",
+          "type": "batiment",
+          "date": "2025-12-02",
+          "description": "batiment dans le style brutaliseme",
+          "url": "/Aureo/architecture/image12.webp",
+          "tag": "batiment"
+        }
+      ]
+    }
+  },
+  {
+    "style": {
+      "id": 5,
+      "name": "style",
+      "photodemo": "./medias/img/demos/imgdemocinema.png",
+      "color": "#9B59B6",
+      "tags": ["homme", "femme"],
+      "creations": [
+        {
+          "id": 1,
+          "title": "chanel 2019",
+          "type": "femme",
+          "date": "2019-12-02",
+          "description": "femme qui défile pour chanel 2019",
+          "url": "/Aureo/mode/image1.webp",
+          "tag": "femme"
+        },
+        {
+          "id": 2,
+          "title": "Elie Saab Autumn/Winter 2022-2023",
+          "type": "homme",
+          "date": "2023-12-02",
+          "description": "homme qui défile pour Elie Saab ",
+          "url": "/Aureo/mode/image2.webp",
+          "tag": "homme"
+        },
+        {
+          "id": 3,
+          "title": "Dries Van Noten Fall 2020 Menswear Fashion Show",
+          "type": "homme",
+          "date": "2020-12-02",
+          "description": " homme qui défile pour Dries Van Noten ",
+          "url": "/Aureo/mode/image3.webp",
+          "tag": "homme"
+        },
+        {
+          "id": 4,
+          "title": "model homme",
+          "type": "homme",
+          "date": "2025-12-02",
+          "description": "homme habillé en noir et blanc",
+          "url": "/Aureo/mode/image4.webp",
+          "tag": "homme"
+        },
+        {
+          "id": 5,
+          "title": "Men fashion",
+          "type": "homme",
+          "date": "2025-12-02",
+          "description": "homme vétu d'un manteau rouge",
+          "url": "/Aureo/mode/image5.webp",
+          "tag": "homme"
+        },
+        {
+          "id": 6,
+          "title": "Andrej Lišakov",
+          "type": "homme",
+          "date": "2025-12-02",
+          "description": "test",
+          "url": "/Aureo/mode/image6.webp",
+          "tag": "homme"
+        },
+        {
+          "id": 7,
+          "title": "Dominik kielbasa",
+          "type": "femme",
+          "date": "2025-12-02",
+          "description": "homme vétu de d'un manteau noir",
+          "url": "/Aureo/mode/image7.webp",
+          "tag": "femme"
+        },
+        {
+          "id": 8,
+          "title": "Darko Mitev",
+          "type": "femme",
+          "date": "2025-12-02",
+          "description": "test",
+          "url": "/Aureo/mode/image8.webp",
+          "tag": "femme"
+        },
+        {
+          "id": 9,
+          "title": "Leandro Crespi",
+          "type": "homme",
+          "date": "2025-12-02",
+          "description": "femme qui pose avec les bras",
+          "url": "/Aureo/mode/image9.webp",
+          "tag": "homme"
+        },
+        {
+          "id": 10,
+          "title": "behrouz sasani",
+          "type": "femme",
+          "date": "2025-12-02",
+          "description": "test",
+          "url": "/Aureo/mode/image10.webp",
+          "tag": "femme"
+        },
+        {
+          "id": 11,
+          "title": "Jean Paul Gaultier Couture Spring 2015",
+          "type": "femme",
+          "date": "2015-12-02",
+          "description": "femme qui défile pour Jean Paul Gaultier ",
+          "url": "/Aureo/mode/image11.webp",
+          "tag": "femme"
+        },
+        {
+          "id": 12,
+          "title": "Balmain Fall 2023 ",
+          "type": "femme",
+          "date": "2025-12-02",
+          "description": "femme qui defile pour Balmain ",
+          "url": "/Aureo/mode/image12.webp",
+          "tag": "femme"
+        }
+      ]
+    }
+  }
+]
