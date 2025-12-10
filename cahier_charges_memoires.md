@@ -85,7 +85,6 @@ Listez toutes les salles de votre musée (minimum 4, idéal 6-8):
 | 3 | Illustration & Art Numérique|[digital painting, concept art, BD] | | |
 | 4 | Architecture & Intérieur|[bâtiments, espaces, design d’intérieur] | | |
 | 5 |Mode & Style Personnel |[tenues, accessoires, street style] | | |
-| 6 | Vidéo & Motion Design|[courts-métrages, animations, clips] | | |
 
 ### 2.2 Types de mémoires
 
@@ -310,12 +309,12 @@ Listez vos composants Vue principaux:
   - Grille responsive (mobile + desktop)
   - Animation au scroll (ScrollTrigger)
 
-- [ ] *F3 - Ajout de mémoire*
+- [X] *F3 - Ajout de mémoire*
   - Formulaire avec titre, description, date, tags
   - Upload d'image (base64 ou URL)
   - Validation des champs obligatoires
 
-- [ ] *F4 - Édition de mémoire*
+- [X] *F4 - Édition de mémoire*
   - Modifier les informations d'une mémoire existante
   - Sauvegarde instantanée
 
@@ -407,14 +406,14 @@ Listez vos composants Vue principaux:
 
 ### 6.2 Écrans principaux à maquetter
 
-- [ ] Page d'accueil / Landing
-- [ ] Vue d'ensemble du musée (toutes les salles)
-- [ ] Vue détaillée d'une salle (grille de mémoires)
-- [ ] Détail d'une mémoire (modal ou page dédiée)
-- [ ] Formulaire d'ajout/édition de mémoire
-- [ ] Page de recherche/filtres
+- [X] Page d'accueil / Landing
+- [X] Vue d'ensemble du musée (toutes les salles)
+- [X] Vue détaillée d'une salle (grille de mémoires)
+- [X] Détail d'une mémoire (modal ou page dédiée)
+- [X] Formulaire d'ajout/édition de mémoire
+- [X] Page de recherche/filtres
 - [ ] Page profil utilisateur (optionnel)
-- [ ] Version mobile de 2-3 écrans clés
+- [X] Version mobile de 2-3 écrans clés
 
 ### 6.3 Interactions clés à maquetter
 
@@ -475,18 +474,18 @@ Listez vos composants Vue principaux:
 ### 8.2 Critères de qualité
 
 - [ ] Interface intuitive et facile à utiliser
-- [ ] Design cohérent et esthétique
-- [ ] Animations pertinentes (pas excessives)
-- [ ] Temps de chargement < 2 secondes
-- [ ] Aucun bug bloquant
-- [ ] Messages d'erreur clairs
+- [X] Design cohérent et esthétique
+- [X] Animations pertinentes (pas excessives)
+- [X] Temps de chargement < 2 secondes
+- [X] Aucun bug bloquant
+- [X] Messages d'erreur clairs
 - [ ] Documentation complète (README)
 
 ### 8.3 Critères créatifs
 
-- [ ] Concept original et personnel
-- [ ] Expérience utilisateur émotionnelle
-- [ ] Attention aux détails visuels
+- [X] Concept original et personnel
+- [X] Expérience utilisateur émotionnelle
+- [X] Attention aux détails visuels
 - [ ] Cohérence thématique
 
 
