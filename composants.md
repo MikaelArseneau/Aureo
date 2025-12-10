@@ -9,4 +9,6 @@ AppHeader.vue => header qui va etre sur toute les pages du site
 
 
 ### Specific
- AjouterModalRoom.vue =>
+ AjouterModalRoom.vue => modal qui modifier un carte sélectionner ou ajouter tout selon si le id existe ou non
+ modalRoom.vue => affcihe les informations lorsque on appuye sur une image
+ swiperRoom.vue => swiper des images dans les rooms selon la lenght de valeur de créarion
