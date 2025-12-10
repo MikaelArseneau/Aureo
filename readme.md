@@ -1,10 +1,16 @@
-Projet Aurero — Option A
+# Aureo
 
-Mikael Arseneau — Chef de projet / Architecture
+## À propos du projet
 
-Alexandre Gendron — Responsable du Design & des Animations
+-Projet scolaire réalisé dans le cadre du cours Web 5 (582-511MO) au Cégep de Montmorency, programme Techniques d'intégration multimédia.
 
-Rafael Angon Dubé — Données & Systèmes
+-Ce musée interactif permet aux utilisateurs de créer, organiser et explorer des souvenirs personnels à travers différentes salles thématiques
+
+## Équipe
+
+- Mikael Arseneau — Chef de projet / Architecture
+- Alexandre Gendron — Responsable du Design & des Animations
+- Rafael Angon Dubé — Données & Systèmes
 
 [Figma Design](https://www.figma.com/design/BHqRt2kwqxnABE3SfXrv0y/projet-final-web5?node-id=0-1&t=xovW3cMtvI7AJprp-1)
 
