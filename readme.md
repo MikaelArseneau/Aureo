@@ -82,7 +82,8 @@ Toute ressource tierce pertinente
 
 ## Licence
 
-Projet éducatif - Cégep de Montmorency © 2024-2025 ---
+## Projet éducatif - Cégep de Montmorency © 2024-2025
+
 **Session**: Automne 2025
 **Enseignante**: Marie-Michelle Ouellet
 **Programme**: Techniques d'intégration multimédia (TIM)
