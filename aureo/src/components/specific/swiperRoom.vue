@@ -151,14 +151,14 @@ const filteredPhotos = computed(() => {
         :alt="photo.description"
         @click="modalRom(photo)"
         loading="lazy"
-        style="color: #1a1a1a;"
+        style="color: #1a1a1a"
       />
     </swiper-slide>
 
     <!-- Affichage si aucun résultat -->
     <swiper-slide v-if="filteredPhotos.length === 0" class="aucun_resultat">
       <div class="erreur">Oupssi !!!</div>
-      Aucun resultat
+      Aucun résultat :(
     </swiper-slide>
   </swiper>
 
