@@ -85,7 +85,6 @@ Listez toutes les salles de votre musée (minimum 4, idéal 6-8):
 | 3 | Illustration & Art Numérique|[digital painting, concept art, BD] | | |
 | 4 | Architecture & Intérieur|[bâtiments, espaces, design d’intérieur] | | |
 | 5 |Mode & Style Personnel |[tenues, accessoires, street style] | | |
-| 6 | Vidéo & Motion Design|[courts-métrages, animations, clips] | | |
 
 ### 2.2 Types de mémoires
 
@@ -155,7 +154,7 @@ Insérez ici 3-5 images d'inspiration (ou liens):
 - Salle 3: [#F8F32B]
 - Salle 4: [#A675A1]
 - Salle 5: [#4B88A2]
-- Salle 6: [#5FBB97]
+
 *Couleurs système:*
 
 - Succès: [#10B981]
@@ -305,17 +304,17 @@ Listez vos composants Vue principaux:
   - Transitions animées avec GSAP
   - Menu de navigation visible
 
-- [ ] *F2 - Affichage des mémoires*
+- [X] *F2 - Affichage des mémoires*
   - Les mémoires s'affichent sous forme de cartes
   - Grille responsive (mobile + desktop)
   - Animation au scroll (ScrollTrigger)
 
-- [ ] *F3 - Ajout de mémoire*
+- [X] *F3 - Ajout de mémoire*
   - Formulaire avec titre, description, date, tags
   - Upload d'image (base64 ou URL)
   - Validation des champs obligatoires
 
-- [ ] *F4 - Édition de mémoire*
+- [X] *F4 - Édition de mémoire*
   - Modifier les informations d'une mémoire existante
   - Sauvegarde instantanée
 
@@ -342,7 +341,7 @@ Listez vos composants Vue principaux:
   - Tablette (768px+)
   - Desktop (1024px+)
 
-- [ ] *F10 - Accessibilité*
+- [X] *F10 - Accessibilité*
   - Navigation au clavier
   - ARIA labels
   - Contraste WCAG AA
@@ -407,14 +406,14 @@ Listez vos composants Vue principaux:
 
 ### 6.2 Écrans principaux à maquetter
 
-- [ ] Page d'accueil / Landing
-- [ ] Vue d'ensemble du musée (toutes les salles)
-- [ ] Vue détaillée d'une salle (grille de mémoires)
-- [ ] Détail d'une mémoire (modal ou page dédiée)
-- [ ] Formulaire d'ajout/édition de mémoire
-- [ ] Page de recherche/filtres
+- [X] Page d'accueil / Landing
+- [X] Vue d'ensemble du musée (toutes les salles)
+- [X] Vue détaillée d'une salle (grille de mémoires)
+- [X] Détail d'une mémoire (modal ou page dédiée)
+- [X] Formulaire d'ajout/édition de mémoire
+- [X] Page de recherche/filtres
 - [ ] Page profil utilisateur (optionnel)
-- [ ] Version mobile de 2-3 écrans clés
+- [X] Version mobile de 2-3 écrans clés
 
 ### 6.3 Interactions clés à maquetter
 
@@ -461,12 +460,12 @@ Listez vos composants Vue principaux:
 
 ### 8.1 Critères techniques
 
-- [ ] Application Vue.js fonctionnelle sans erreurs console
-- [ ] Minimum 8 composants Vue bien structurés
-- [ ] Vue Router avec 5+ routes
-- [ ] Pinia implémenté avec state management cohérent
-- [ ] CSS organisé avec variables et mixins
-- [ ] Animations GSAP fluides (60 FPS)
+- [X] Application Vue.js fonctionnelle sans erreurs console
+- [X] Minimum 8 composants Vue bien structurés
+- [X] Vue Router avec 5+ routes
+- [X] Pinia implémenté avec state management cohérent
+- [X] CSS organisé avec variables et mixins
+- [X] Animations GSAP fluides (60 FPS)
 - [ ] Données persistantes (LocalStorage)
 - [ ] Code validé (ESLint)
 - [ ] Responsive sur 3 breakpoints
@@ -474,20 +473,20 @@ Listez vos composants Vue principaux:
 
 ### 8.2 Critères de qualité
 
-- [ ] Interface intuitive et facile à utiliser
-- [ ] Design cohérent et esthétique
-- [ ] Animations pertinentes (pas excessives)
-- [ ] Temps de chargement < 2 secondes
-- [ ] Aucun bug bloquant
-- [ ] Messages d'erreur clairs
-- [ ] Documentation complète (README)
+- [X] Interface intuitive et facile à utiliser
+- [X] Design cohérent et esthétique
+- [X] Animations pertinentes (pas excessives)
+- [X] Temps de chargement < 2 secondes
+- [X] Aucun bug bloquant
+- [X] Messages d'erreur clairs
+- [X] Documentation complète (README)
 
 ### 8.3 Critères créatifs
 
-- [ ] Concept original et personnel
-- [ ] Expérience utilisateur émotionnelle
-- [ ] Attention aux détails visuels
-- [ ] Cohérence thématique
+- [X] Concept original et personnel
+- [X] Expérience utilisateur émotionnelle
+- [X] Attention aux détails visuels
+- [X] Cohérence thématique
 
 
 
