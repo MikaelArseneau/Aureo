@@ -167,7 +167,7 @@ export default {
     const onSlideChange = (swiper) => {
       currentSlide.value = swiper.realIndex;
       currentImage.value = demoImages[swiper.realIndex];
-      console.log(swiper.realIndex);
+  
       id_cat.value = swiper.realIndex;
     };
 
@@ -320,7 +320,7 @@ function test() {
   width: 200px;
   height: 65px;
   position: relative;
-  margin-left: 1.2em;
+  margin-left: 1.5em;
   border: solid 3px #1a1a1a;
   z-index: 999999;
   display: flex;
@@ -478,7 +478,7 @@ function test() {
   display: flex;
   gap: 48px;
   flex-direction: row-reverse;
-  margin-right: 1.2em;
+  margin-right: 1.5em;
   position: relative;
   justify-content: space-around;
   align-items: flex-end;

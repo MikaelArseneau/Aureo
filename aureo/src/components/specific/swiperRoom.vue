@@ -147,7 +147,7 @@ const filteredPhotos = computed(() => {
     >
       <img
         :src="photo.url"
-        alt="photo"
+        :alt="photo.description"
         @click="modalRom(photo)"
         loading="lazy"
       />

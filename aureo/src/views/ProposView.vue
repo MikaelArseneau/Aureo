@@ -79,6 +79,7 @@ body {
   flex-direction: column;
   position: relative;
   margin: 0.8rem;
+  margin-top: 3em;
 }
 .propos {
   text-decoration: none;
