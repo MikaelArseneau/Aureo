@@ -64,6 +64,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 8px; /* espace entre les deux lignes */
+  margin-left: 2em;
 }
 
 /* Texte "Aureo" */
@@ -85,7 +86,7 @@
 
 /* Bouton "À propos" */
 .propos {
-  padding-right: 32px;
+  margin-right: 2em;
   font-family: "switzer";
   font-size: clamp(18px, 4.5vw, 24px);
   font-style: italic;

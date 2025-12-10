@@ -119,7 +119,7 @@ onMounted(() => {
   text-align: center;
 font-family: "switzer";
 color: #1a1a1a;
-margin-top: 150px;
+margin-top: 175px;
 }
 .texte_milieu{
   font-size: clamp(20px, 8vw, 80px);

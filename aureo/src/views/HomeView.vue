@@ -67,6 +67,7 @@
     @swiper="onSwiperInit"
     @slideChange="onSlideChange"
   >
+  <!-- affiche image selon le :src="currentImage"  -->
     <img
       class="image autre1"
       id="image1"
@@ -158,12 +159,13 @@ export default {
         .url,
     ];
     /* fait les  effet de swiper */
+    /*change la value du current image selon le index du slider*/
     const onSwiperInit = (swiper) => {
       currentSlide.value = swiper.realIndex;
       currentImage.value = demoImages[swiper.realIndex];
       id_cat.value = swiper.realIndex;
     };
-
+    /*change la value du current image selon le index du slider*/
     const onSlideChange = (swiper) => {
       currentSlide.value = swiper.realIndex;
       currentImage.value = demoImages[swiper.realIndex];
@@ -180,9 +182,11 @@ export default {
       tl_titre.delay(0.7);
 
       // --- Premier et Deuxième texte : animation seulement à la première visite ---
-      const firstVisit = !sessionStorage.getItem("visited");
-      let DelaySwiper = 2.8;
-      if (firstVisit) {
+      const firstVisit = !sessionStorage.getItem("visited"); // regarde si le site a été visité
+                                                            // si il a jamais été visité first visite devient flase a cause du !
+      let DelaySwiper = 2.8; // varaiable de temps pour le swiper
+
+      if (firstVisit) { // si jamais visité
         DelaySwiper = 6.2;
         tl_titre
           .fromTo(
@@ -198,13 +202,14 @@ export default {
           )
           .to(titre_2, { opacity: 0, duration: 0.3, delay: 0.5 });
 
-        sessionStorage.setItem("visited", "true");
-      } else {
+        sessionStorage.setItem("visited", "true"); // fais que le site devient visité
+      } else { // si deja visité
         gsap.set(titre_1, { opacity: 0 });
         gsap.set(titre_2, { opacity: 0 });
       }
 
       // --- Troisième texte : joue à chaque mounted ---
+      // joue toute le temps
       tl_titre
         .fromTo(
           titre_3,
@@ -231,6 +236,7 @@ export default {
       });
 
       // --- Animation swiper ---
+      //prend la valeur de delaySwiper de départ
       const swiperEl = document.getElementsByClassName("mySwiper");
       gsap.fromTo(
         swiperEl,

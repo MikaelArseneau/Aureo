@@ -45,7 +45,8 @@ let swiperInstance = null;
 const updateSwiper = () => {
   if (swiperInstance) swiperInstance.update();
 };
-
+//si changement dans le selectag du radio
+// redimensionne le swiper
 watch(selectedTag, async () => {
   await nextTick();
   updateSwiper();
@@ -150,6 +151,7 @@ const filteredPhotos = computed(() => {
         :alt="photo.description"
         @click="modalRom(photo)"
         loading="lazy"
+        style="color: #1a1a1a;"
       />
     </swiper-slide>
 
