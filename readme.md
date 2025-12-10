@@ -87,7 +87,3 @@ Toute ressource tierce pertinente
 **Session**: Automne 2025
 **Enseignante**: Marie-Michelle Ouellet
 **Programme**: Techniques d'intégration multimédia (TIM)
-
-```
-
-```
